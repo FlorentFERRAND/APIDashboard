@@ -220,6 +220,7 @@ button.bg-danger:focus {
   flex: 1 1 auto;
   padding: 1.25rem;
   background-color: #fff;
+  border-radius: 0.45rem;
 }
 
 .card > hr {

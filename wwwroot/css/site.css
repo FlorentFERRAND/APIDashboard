@@ -1,16 +1,16 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
-a.navbar-brand {
+/*a.navbar-brand {
   white-space: normal;
   text-align: center;
   word-break: break-all;
-}
+}*/
 
 /* Provide sufficient contrast against white background */
-a {
+/*a {
   color: #0366d6;
-}
+}*/
 
 .btn-primary {
   color: #fff;
@@ -236,11 +236,6 @@ button.bg-danger:focus {
 .card > .list-group:last-child .list-group-item:last-child {
   border-bottom-right-radius: 0.35rem;
   border-bottom-left-radius: 0.35rem;
-}
-
-.card-body {
-  flex: 1 1 auto;
-  padding: 1.25rem;
 }
 
 .card-title {

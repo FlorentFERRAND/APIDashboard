@@ -159,7 +159,7 @@
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                     @foreach (Issues myIssue in Model._Issues)
                     {
-                        <a data-toggle="collapse" href="#issues" style="text-decoration:none;margin-top: 0;color:#000000;display:block; text-align:center; font-size:30px;">@myIssue.TitleIssue</a>
+                        <a data-toggle="collapse" href="#issues" style="text-decoration:none;color:#000000;font-size:1.90rem;">@myIssue.TitleIssue</a>
                     }
                 </div>
                 <div id="issues" class="panel-collapse collapse">
@@ -196,7 +196,7 @@
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                     @foreach (Methods myName in Model._Methods)
                     {
-                        <a data-toggle="collapse" href="#methods" style="text-decoration:none;margin-top: 0;color:#000000;display:block; text-align:center; font-size:30px;">@myName.TitleMethod</a>
+                        <a data-toggle="collapse" href="#methods" style="text-decoration:none;color:#000000;font-size:1.90rem;">@myName.TitleMethod</a>
                     }
                 </div>
                 <div id="methods" class="panel-collapse collapse">
@@ -503,7 +503,7 @@
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                     @foreach (Calendars myCal in Model._Calendars)
                     {
-                        <a data-toggle="collapse" href="#calendars" style="text-decoration:none; margin-top: 0; color:#000000; display:block; text-align:center; font-size:30px;">@myCal.TitleCalendar</a>
+                        <a data-toggle="collapse" href="#calendars" style="text-decoration:none;color:#000000;font-size:1.90rem;">@myCal.TitleCalendar</a>
                     }
                 </div>
                 <div id="calendars" class="panel-collapse collapse">

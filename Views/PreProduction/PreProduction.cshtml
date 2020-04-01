@@ -523,18 +523,19 @@
                                     <tbody>
                                         <div>
                                             @*@foreach (Calendars myCal in Model._Calendars)
-                                                {
-                                                    var styleCal = (myCal.StateDateCalendar == "ON") ? "color: #3c763d;" : "color: #e74a3b;";
-                                                    if (myCal.DateOfTheDay.Contains("01/01"))
-                                                    {
-                                                        <tr>
-                                                            <td class="xl63" width="50">@myCal.DateOfTheDay</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="xl64 text-success" width="50" style="@styleCal;">@myCal.StateDateCalendar</td>
-                                                        </tr>
-                                                    }
-                                                }*@
+                                            {
+                                                var styleCal = (myCal.StateDateCalendar == "ON") ? "color: #3c763d;" : "";
+                                                var styleCal1 = (myCal.StateDateCalendar == "OFF") ? "color: #e74a3b;" : "";
+                                                /*if (myCal.DateOfTheDay.Contains("01/01"))
+                                                {*/
+                                                    <tr>
+                                                        <td class="xl63" width="50">@myCal.DateOfTheDay</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="xl64" width="50" style="@styleCal;@styleCal1;">@myCal.StateDateCalendar</td>
+                                                    </tr>
+                                                //}
+                                            }*@
                                             <tr>
                                                 <td class="xl63" width="50" heigt="21">04-01-20</td>
                                                 <td class="xl63" width="50">04-02-20</td>

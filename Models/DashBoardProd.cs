@@ -45,10 +45,6 @@ namespace APIDashboard.Models
 
             try
             {
-                /*string folderCSV = Path.GetFullPath("FichiersCSV\\Production\\");
-                string fileImportantInformationsCSV = "ImportantInformations";
-                string filePathExtension = ".csv";
-                string fileMethodsStatus = Path.GetFullPath(folderCSV + fileImportantInformationsCSV + filePathExtension);*/
 				string fileMethodsStatus = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot/Production","ImportantInformations.csv");
                 using (var reader = new StreamReader(fileMethodsStatus))
                 {
@@ -107,10 +103,6 @@ namespace APIDashboard.Models
 
             try
             {
-                /*string folderCSV = Path.GetFullPath("FichiersCSV\\Production\\");
-                string fileImportantInformationsCSV = "PieChart";
-                string filePathExtension = ".csv";
-                string fileMethodsStatus = Path.GetFullPath(folderCSV + fileImportantInformationsCSV + filePathExtension);*/
 				string fileMethodsStatus = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot/Production","PieChart.csv");
                 using (var reader = new StreamReader(fileMethodsStatus))
                 {
@@ -169,10 +161,6 @@ namespace APIDashboard.Models
 
             try
             {
-                /*string folderCSV = Path.GetFullPath("FichiersCSV\\Production\\");
-                string fileAPIIssuesCSV = "APIIssues";
-                string filePathExtension = ".csv";
-                string fileMethodsStatus = Path.GetFullPath(folderCSV + fileAPIIssuesCSV + filePathExtension);*/
 				string fileMethodsStatus = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot/Production","APIIssues.csv");
                 using (var reader = new StreamReader(fileMethodsStatus))
                 {
@@ -248,10 +236,6 @@ namespace APIDashboard.Models
             string error = string.Empty;
             try
             {
-                /*string folderCSV = Path.GetFullPath("FichiersCSV\\Production\\");
-                string fileNameMethodsStatusCSV = "StatusByMethod";
-                string filePathExtension = ".csv";
-                string fileMethodsStatus = Path.GetFullPath(folderCSV + fileNameMethodsStatusCSV + filePathExtension);*/
 				string fileMethodsStatus = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot/Production","StatusByMethod.csv");
                 using (var reader = new StreamReader(fileMethodsStatus))
                 {

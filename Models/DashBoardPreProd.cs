@@ -28,12 +28,23 @@ namespace APIDashboard.Models
         public string StateMethod { get; set; }
         public List<Methods> _Methods;
 
+        public string TitleCalendar1 { get; set; }
+        public string MonthAP { get; set; }
         public string TitleCalendar { get; set; }
         public string Month { get; set; }
         public string MonthPlus1 { get; set; }
         public string DateOfTheDay { get; set; }
         public string StateDateCalendar { get; set; }
         public List<Calendars> _Calendars;
+
+        //public string TitleCalendar1M1 { get; set; }
+        public string MonthAPM1{ get; set; }
+        public string TitleCalendarM1 { get; set; }
+        public string MonthM1 { get; set; }
+        public string MonthPlus1M1 { get; set; }
+        public string DateOfTheDayM1 { get; set; }
+        public string StateDateCalendarM1 { get; set; }
+        public List<CalendarsM1> _CalendarsM1;
 
         public DashBoardPreProd()
         {
@@ -43,6 +54,7 @@ namespace APIDashboard.Models
             _Methods = GetMethodsStatusList();
             SetMethodsStatusList();
             _Calendars = GetCalendarsDateStateList();
+            _CalendarsM1 = GetCalendarsDateStateListM1();
         }
 
         public List<Informations> GetImportantInformationsList()
@@ -52,10 +64,6 @@ namespace APIDashboard.Models
 
             try
             {
-                /*string folderCSV = Path.GetFullPath("FichiersCSV\\PreProduction\\");
-                string fileImportantInformationsCSV = "ImportantInformations";
-                string filePathExtension = ".csv";
-                string fileMethodsStatus = Path.GetFullPath(folderCSV + fileImportantInformationsCSV + filePathExtension);*/
 				string fileMethodsStatus = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot/PreProduction","ImportantInformations.csv");
                 using (var reader = new StreamReader(fileMethodsStatus))
                 {
@@ -114,10 +122,6 @@ namespace APIDashboard.Models
 
             try
             {
-                /*string folderCSV = Path.GetFullPath("FichiersCSV\\PreProduction\\");
-                string fileImportantInformationsCSV = "PieChart";
-                string filePathExtension = ".csv";
-                string fileMethodsStatus = Path.GetFullPath(folderCSV + fileImportantInformationsCSV + filePathExtension);*/
 				string fileMethodsStatus = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot/PreProduction","PieChart.csv");
                 using (var reader = new StreamReader(fileMethodsStatus))
                 {
@@ -176,10 +180,6 @@ namespace APIDashboard.Models
 
             try
             {
-                /*string folderCSV = Path.GetFullPath("FichiersCSV\\PreProduction\\");
-                string fileAPIIssuesCSV = "APIIssues";
-                string filePathExtension = ".csv";
-                string fileMethodsStatus = Path.GetFullPath(folderCSV + fileAPIIssuesCSV + filePathExtension);*/
 				string fileMethodsStatus = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot/PreProduction","APIIssues.csv");
                 using (var reader = new StreamReader(fileMethodsStatus))
                 {
@@ -255,10 +255,6 @@ namespace APIDashboard.Models
             string error = string.Empty;
             try
             {
-                /*string folderCSV = Path.GetFullPath("FichiersCSV\\PreProduction\\");
-                string fileNameMethodsStatusCSV = "StatusByMethod";
-                string filePathExtension = ".csv";
-                string fileMethodsStatus = Path.GetFullPath(folderCSV + fileNameMethodsStatusCSV + filePathExtension);*/
 				string fileMethodsStatus = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot/PreProduction","StatusByMethod.csv");
                 using (var reader = new StreamReader(fileMethodsStatus))
                 {
@@ -335,13 +331,11 @@ namespace APIDashboard.Models
 
             try
             {
-                /*string folderCSV = Path.GetFullPath("FichiersCSV\\PreProduction\\");
-                string fileCalendarCSV = "Calendars";
-                string filePathExtension = ".csv";
-                string fileMethodsStatus = Path.GetFullPath(folderCSV + fileCalendarCSV + filePathExtension);*/
 				string fileMethodsStatus = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot/PreProduction","Calendars.csv");
                 using (var reader = new StreamReader(fileMethodsStatus))
                 {
+                    List<string> listTitleCalendar1 = new List<string>();
+                    List<string> listMonthAP = new List<string>();
                     List<string> listTitleCalendar = new List<string>();
                     List<string> listMonth = new List<string>();
                     List<string> listMonthPlus1 = new List<string>();
@@ -352,50 +346,60 @@ namespace APIDashboard.Models
                         var line = reader.ReadLine();
                         var values = line.Split(';');
 
-                        listTitleCalendar.Add(values[0]);
-                        listMonth.Add(values[1]);
-                        listMonthPlus1.Add(values[2]);
-                        listDateOfTheDay.Add(values[3]);
-                        listStateDateCalendar.Add(values[4]);
+                        listTitleCalendar1.Add(values[0]);
+                        listMonthAP.Add(values[1]);
+                        listTitleCalendar.Add(values[2]);
+                        listMonth.Add(values[3]);
+                        listMonthPlus1.Add(values[4]);
+                        listDateOfTheDay.Add(values[5]);
+                        listStateDateCalendar.Add(values[6]);
 
-                        /*DateTime? DateDay = null;
-                        if (DateDay.HasValue)
+                        string TitleCal1 = "";
+                        if (String.IsNullOrEmpty(TitleCal1))
                         {
-                            DateDay = Convert.ToDateTime(values[0]);
-                        }*/
+                            TitleCal1 = values[0];
+                        }
+
+                        string MonthAP1 = "";
+                        if (String.IsNullOrEmpty(MonthAP1))
+                        {
+                            MonthAP1 = values[1];
+                        }
 
                         string TitleCal = "";
                         if (String.IsNullOrEmpty(TitleCal))
                         {
-                            TitleCal = values[0];
+                            TitleCal = values[2];
                         }
 
                         string MonthCal = "";
                         if (String.IsNullOrEmpty(MonthCal))
                         {
-                            MonthCal = values[1];
+                            MonthCal = values[3];
                         }
 
                         string MonthPlus1Cal = "";
                         if (String.IsNullOrEmpty(MonthPlus1Cal))
                         {
-                            MonthPlus1Cal = values[2];
+                            MonthPlus1Cal = values[4];
                         }
 
                         string Date = "";
                         if (String.IsNullOrEmpty(Date))
                         {
-                            Date = values[3];
+                            Date = values[5];
                         }
 
                         string State = "";
                         if (String.IsNullOrEmpty(State))
                         {
-                            State = values[4];
+                            State = values[6];
                         }
 
                         CalendarsDateStateList.Add(new Calendars()
                         {
+                            TitleCalendar1 = TitleCal1,
+                            MonthAP = MonthAP1,
                             TitleCalendar = TitleCal,
                             Month = MonthCal,
                             MonthPlus1 =MonthPlus1Cal,
@@ -412,6 +416,100 @@ namespace APIDashboard.Models
             }
 
             return CalendarsDateStateList;
+        }
+
+        public List<CalendarsM1> GetCalendarsDateStateListM1()
+        {
+            List<CalendarsM1> CalendarsDateStateListM1 = new List<CalendarsM1>();
+            string error = string.Empty;
+
+            try
+            {
+				string fileMethodsStatus = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot/PreProduction","CalendarsM1.csv");
+                using (var reader = new StreamReader(fileMethodsStatus))
+                {
+                    //List<string> listTitleCalendar1M1 = new List<string>();
+                    List<string> listMonthAPM1 = new List<string>();
+                    List<string> listTitleCalendarM1 = new List<string>();
+                    List<string> listMonthM1 = new List<string>();
+                    List<string> listMonthPlus1M1 = new List<string>();
+                    List<string> listDateOfTheDayM1 = new List<string>();
+                    List<string> listStateDateCalendarM1 = new List<string>();
+                    while (!reader.EndOfStream)
+                    {
+                        var line = reader.ReadLine();
+                        var values = line.Split(';');
+
+                        //listTitleCalendar1M1.Add(values[0]);
+                        listMonthAPM1.Add(values[0]);
+                        listTitleCalendarM1.Add(values[1]);
+                        listMonthM1.Add(values[2]);
+                        listMonthPlus1M1.Add(values[3]);
+                        listDateOfTheDayM1.Add(values[4]);
+                        listStateDateCalendarM1.Add(values[5]);
+
+                        /*string TitleCal1M1 = "";
+                        if (String.IsNullOrEmpty(TitleCal1M1))
+                        {
+                            TitleCal1M1 = values[0];
+                        }*/
+
+                        string MonthAPPM1 = "";
+                        if (String.IsNullOrEmpty(MonthAPPM1))
+                        {
+                            MonthAPPM1 = values[0];
+                        }
+
+                        string TitleCalM1 = "";
+                        if (String.IsNullOrEmpty(TitleCalM1))
+                        {
+                            TitleCalM1 = values[1];
+                        }
+
+                        string MonthCalM1 = "";
+                        if (String.IsNullOrEmpty(MonthCalM1))
+                        {
+                            MonthCalM1 = values[2];
+                        }
+
+                        string MonthPlus1CalM1 = "";
+                        if (String.IsNullOrEmpty(MonthPlus1CalM1))
+                        {
+                            MonthPlus1CalM1 = values[3];
+                        }
+
+                        string DateM1 = "";
+                        if (String.IsNullOrEmpty(DateM1))
+                        {
+                            DateM1 = values[4];
+                        }
+
+                        string StateM1 = "";
+                        if (String.IsNullOrEmpty(StateM1))
+                        {
+                            StateM1 = values[5];
+                        }
+
+                        CalendarsDateStateListM1.Add(new CalendarsM1()
+                        {
+                            //TitleCalendar1M1 = TitleCal1M1,
+                            MonthAPM1 = MonthAPPM1,
+                            TitleCalendarM1 = TitleCalM1,
+                            MonthM1 = MonthCalM1,
+                            MonthPlus1M1 =MonthPlus1CalM1,
+                            DateOfTheDayM1 = DateM1,
+                            StateDateCalendarM1 = StateM1
+                        });
+                    }
+                    reader.Close();
+                }
+            }
+            catch (Exception e)
+            {
+                error = e.Message;
+            }
+
+            return CalendarsDateStateListM1;
         }
     }
 }

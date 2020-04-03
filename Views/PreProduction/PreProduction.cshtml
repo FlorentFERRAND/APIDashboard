@@ -15,7 +15,7 @@
 <!-- API Issue : No problem has been detected about our API in production environment
     No problem has been detected about our API in preproduction environment | Nothing to report | No date -->
 <div class="container-fluid">
-    <div class="row">
+    <div class="row" style="margin-top:50">
         <div class="col-xl-9 col-lg-12">
             <div class="card shadow mb-4">
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
@@ -503,7 +503,7 @@
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                     @foreach (Calendars myCal in Model._Calendars)
                     {
-                        <a data-toggle="collapse" href="#calendars" class="card-header-link-title">@myCal.TitleCalendar</a>
+                        <a data-toggle="collapse" href="#calendars" class="card-header-link-title">@myCal.TitleCalendar1</a>
                     }
                 </div>
                 <div id="calendars" class="panel-collapse collapse">
@@ -512,177 +512,63 @@
                             <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                 @foreach (Calendars myCal in Model._Calendars)
                                 {
-                                    <h2 class="text-issue">@myCal.Month</h2>
+                                    <h2 class="text-issue">@myCal.MonthAP</h2>
                                 }
                             </div>
                             <table class="table table-striped" style="margin-bottom:0">
                                 <colgroup>
-                                    <col span="4" width="50" />
+                                    <col span="5" width="50" />
                                 </colgroup>
                                 <div class="text-white shadow">
                                     <tbody>
                                         <div>
-                                            @*@foreach (Calendars myCal in Model._Calendars)
+                                            @foreach (Calendars myCal in Model._Calendars)
                                             {
-                                                var styleCal = (myCal.StateDateCalendar == "ON") ? "color: #3c763d;" : "";
-                                                var styleCal1 = (myCal.StateDateCalendar == "OFF") ? "color: #e74a3b;" : "";
-                                                /*if (myCal.DateOfTheDay.Contains("01/01"))
-                                                {*/
-                                                    <tr>
-                                                        <td class="xl63" width="50">@myCal.DateOfTheDay</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="xl64" width="50" style="@styleCal;@styleCal1;">@myCal.StateDateCalendar</td>
-                                                    </tr>
-                                                //}
-                                            }*@
-                                            <tr>
-                                                <td class="xl63" width="50" heigt="21">04-01-20</td>
-                                                <td class="xl63" width="50">04-02-20</td>
-                                                <td class="xl63" width="50">04-03-20</td>
+                                                var styleCal = (myCal.TitleCalendar.Contains("ON") && myCal.Month.Contains("ON") && myCal.MonthPlus1.Contains("ON") && myCal.DateOfTheDay.Contains("ON") && myCal.StateDateCalendar.Contains("ON")) ? "color: #3c763d;font-weight:bold" : "";
+                                                var styleCal1 = (myCal.TitleCalendar.Contains("OFF") && myCal.Month.Contains("OFF") && myCal.MonthPlus1.Contains("OFF") && myCal.DateOfTheDay.Contains("OFF") && myCal.StateDateCalendar.Contains("OFF")) ? "color: #e74a3b;font-weight:bold" : "";
+                                                var styleCal2 = (myCal.TitleCalendar == "") ? "margin:0;padding:0;display:none" : "";
+                                            <tr class="testtest">
+                                                <td style="@styleCal;@styleCal1;@styleCal2">@myCal.TitleCalendar</td>
+                                                <td style="@styleCal;@styleCal1;@styleCal2">@myCal.Month</td>
+                                                <td style="@styleCal;@styleCal1;@styleCal2">@myCal.MonthPlus1</td>
+                                                <td style="@styleCal;@styleCal1;@styleCal2">@myCal.DateOfTheDay</td>
+                                                <td style="@styleCal;@styleCal1;@styleCal2">@myCal.StateDateCalendar</td>
                                             </tr>
-                                            <tr>
-                                                <td class="xl64 text-success" width="50" height="21">OFF</td>
-                                                <td class="xl64 text-danger" width="50">OFF</td>
-                                                <td class="xl64 text-success" width="50">ON</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="xl63" width="50" heigt="21">04-06-20</td>
-                                                <td class="xl63" width="50">04-07-20</td>
-                                                <td class="xl63" width="50">04-08-20</td>
-                                                <td class="xl63" width="50">04-09-20</td>
-                                                <td class="xl63" width="50">04-10-20</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="xl64 text-success" width="50" height="21">ON</td>
-                                                <td class="xl64 text-success" width="50">ON</td>
-                                                <td class="xl64 text-danger" width="50">OFF</td>
-                                                <td class="xl64 text-success" width="50">ON</td>
-                                                <td class="xl64 text-success" width="50">ON</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="xl63" width="50" heigt="21">04-13-20</td>
-                                                <td class="xl63" width="50">04-14-20</td>
-                                                <td class="xl63" width="50">04-15-20</td>
-                                                <td class="xl63" width="50">04-16-20</td>
-                                                <td class="xl63" width="50">04-17-20</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="xl64 text-success" width="50" height="21">ON</td>
-                                                <td class="xl64 text-danger" width="50">OFF</td>
-                                                <td class="xl64 text-danger" width="50">OFF</td>
-                                                <td class="xl64 text-success" width="50">ON</td>
-                                                <td class="xl64 text-success" width="50">ON</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="xl63" width="50" heigt="21">04-20-20</td>
-                                                <td class="xl63" width="50">04-21-20</td>
-                                                <td class="xl63" width="50">04-22-20</td>
-                                                <td class="xl63" width="50">04-23-20</td>
-                                                <td class="xl63" width="50">04-24-20</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="xl64 text-success" width="50" height="21">ON</td>
-                                                <td class="xl64 text-danger" width="50">OFF</td>
-                                                <td class="xl64 text-danger" width="50">OFF</td>
-                                                <td class="xl64 text-success" width="50">ON</td>
-                                                <td class="xl64 text-success" width="50">ON</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="xl63" width="50" heigt="21">04-27-20</td>
-                                                <td class="xl63" width="50">04-28-20</td>
-                                                <td class="xl63" width="50">04-29-20</td>
-                                                <td class="xl63" width="50">04-30-20</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="xl64 text-success" width="50" height="21">ON</td>
-                                                <td class="xl64 text-danger" width="50">OFF</td>
-                                                <td class="xl64 text-danger" width="50">OFF</td>
-                                                <td class="xl64 text-success" width="50">ON</td>
-                                            </tr>                                               
+                                            }                                             
                                         </div>
                                     </tbody>
                                 </div>
                             </table>
                         </div>
                     </div>
-                    <div class="col-lg-6 mb-6" style="position:relative; left:537px;">
+                    <div class="col-lg-6 mb-6" style="position:relative;left:550px;">
                         <div class="card bg-text text-white shadow">
                             <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                @foreach (Calendars myCal in Model._Calendars)
+                                @foreach (CalendarsM1 myCalM1 in Model._CalendarsM1)
                                 {
-                                    <h2 class="text-issue">@myCal.MonthPlus1</h2>
+                                    <h2 class="text-issue">@myCalM1.MonthAPM1</h2>
                                 }
                             </div>
                             <table class="table table-striped" style="margin-bottom:0">
                                 <colgroup>
-                                    <col span="4" width="50" />
+                                    <col span="5" width="50" />
                                 </colgroup>
                                 <div class="text-white shadow">
                                     <tbody>
                                         <div>
-                                            <tr>
-                                                <td class="xl63" width="50" heigt="21">05-01-20</td>
+                                            @foreach (CalendarsM1 myCalM1 in Model._CalendarsM1)
+                                            {
+                                                var styleCal = (myCalM1.TitleCalendarM1.Contains("ON") && myCalM1.MonthM1.Contains("ON") && myCalM1.MonthPlus1M1.Contains("ON") && myCalM1.DateOfTheDayM1.Contains("ON") && myCalM1.StateDateCalendarM1.Contains("ON")) ? "color: #3c763d;font-weight:bold" : "";
+                                                var styleCal1 = (myCalM1.TitleCalendarM1.Contains("OFF") && myCalM1.MonthM1.Contains("OFF") && myCalM1.MonthPlus1M1.Contains("OFF") && myCalM1.DateOfTheDayM1.Contains("OFF") && myCalM1.StateDateCalendarM1.Contains("OFF")) ? "color: #e74a3b;font-weight:bold" : "";
+                                                var styleCal2 = (myCalM1.TitleCalendarM1 == "") ? "margin:0;padding:0;display:none" : "";
+                                            <tr class="testtest">
+                                                <td style="@styleCal;@styleCal1;@styleCal2">@myCalM1.TitleCalendarM1</td>
+                                                <td style="@styleCal;@styleCal1;@styleCal2">@myCalM1.MonthM1</td>
+                                                <td style="@styleCal;@styleCal1;@styleCal2">@myCalM1.MonthPlus1M1</td>
+                                                <td style="@styleCal;@styleCal1;@styleCal2">@myCalM1.DateOfTheDayM1</td>
+                                                <td style="@styleCal;@styleCal1;@styleCal2">@myCalM1.StateDateCalendarM1</td>
                                             </tr>
-                                            <tr>
-                                                <td class="xl64 text-success" width="50" height="21">ON</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="xl63" width="50" heigt="21">05-04-20</td>
-                                                <td class="xl63" width="50">05-05-20</td>
-                                                <td class="xl63" width="50">05-06-20</td>
-                                                <td class="xl63" width="50">05-07-20</td>
-                                                <td class="xl63" width="50">05-08-20</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="xl64 text-success" width="50" height="21">ON</td>
-                                                <td class="xl64 text-success" width="50">ON</td>
-                                                <td class="xl64 text-success" width="50">ON</td>
-                                                <td class="xl64 text-success" width="50">ON</td>
-                                                <td class="xl64 text-success" width="50">ON</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="xl63" width="50" heigt="21">05-11-20</td>
-                                                <td class="xl63" width="50">05-12-20</td>
-                                                <td class="xl63" width="50">05-13-20</td>
-                                                <td class="xl63" width="50">05-14-20</td>
-                                                <td class="xl63" width="50">05-15-20</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="xl64 text-success" width="50" height="21">ON</td>
-                                                <td class="xl64 text-danger" width="50">OFF</td>
-                                                <td class="xl64 text-danger" width="50">OFF</td>
-                                                <td class="xl64 text-success" width="50">ON</td>
-                                                <td class="xl64 text-success" width="50">ON</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="xl63" width="50" heigt="21">05-18-20</td>
-                                                <td class="xl63" width="50">05-19-20</td>
-                                                <td class="xl63" width="50">05-20-20</td>
-                                                <td class="xl63" width="50">05-21-20</td>
-                                                <td class="xl63" width="50">05-22-20</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="xl64 text-success" width="50" height="21">ON</td>
-                                                <td class="xl64 text-danger" width="50">OFF</td>
-                                                <td class="xl64 text-success" width="50">ON</td>
-                                                <td class="xl64 text-success" width="50">ON</td>
-                                                <td class="xl64 text-success" width="50">ON</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="xl63" width="50" heigt="21">04-25-20</td>
-                                                <td class="xl63" width="50">04-26-20</td>
-                                                <td class="xl63" width="50">04-27-20</td>
-                                                <td class="xl63" width="50">04-28-20</td>
-                                                <td class="xl63" width="50">04-29-20</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="xl64 text-success" width="50" height="21">ON</td>
-                                                <td class="xl64 text-danger" width="50">OFF</td>
-                                                <td class="xl64 text-danger" width="50">OFF</td>
-                                                <td class="xl64 text-success" width="50">ON</td>
-                                                <td class="xl64 text-success" width="50">ON</td>
-                                            </tr>                                               
+                                            }                                             
                                         </div>
                                     </tbody>
                                 </div>

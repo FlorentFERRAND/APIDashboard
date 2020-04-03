@@ -105,6 +105,10 @@ for details on configuring this project to bundle and minify static web assets. 
   }
 }
 
+.testtest {
+  height: auto;
+}
+
 p {
   /*font-size: 1.3em;*/
   color: #000000;
@@ -116,8 +120,8 @@ p {
 }
 
 .text-issue {
-  text-align: center;
-  color: #000000;
+  /*text-align: center;*/
+  color: black !important;
 }
 
 .text-pourcentage .text-issue .text-methods {

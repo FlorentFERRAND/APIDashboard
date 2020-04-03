@@ -524,16 +524,16 @@
                                         <div>
                                             @foreach (Calendars myCal in Model._Calendars)
                                             {
-                                                var styleCal = (myCal.TitleCalendar.Contains("ON") && myCal.Month.Contains("ON") && myCal.MonthPlus1.Contains("ON") && myCal.DateOfTheDay.Contains("ON") && myCal.StateDateCalendar.Contains("ON")) ? "color: #3c763d;font-weight:bold" : "";
-                                                var styleCal1 = (myCal.TitleCalendar.Contains("OFF") && myCal.Month.Contains("OFF") && myCal.MonthPlus1.Contains("OFF") && myCal.DateOfTheDay.Contains("OFF") && myCal.StateDateCalendar.Contains("OFF")) ? "color: #e74a3b;font-weight:bold" : "";
+                                                var styleCal = (myCal.TitleCalendar == "ON" && myCal.Month == "ON" && myCal.MonthPlus1 == "ON" && myCal.DateOfTheDay == "ON" && myCal.StateDateCalendar == "ON") ? "color: #3c763d;font-weight:bold" : "";
+                                                var styleCal1 = (myCal.TitleCalendar == "OFF" && myCal.Month == "OFF" && myCal.MonthPlus1 == "OFF" && myCal.DateOfTheDay == "OFF" && myCal.StateDateCalendar == "OFF") ? "color: #e74a3b;font-weight:bold" : "";
                                                 var styleCal2 = (myCal.TitleCalendar == "") ? "margin:0;padding:0;display:none" : "";
-                                            <tr class="testtest">
-                                                <td style="@styleCal;@styleCal1;@styleCal2">@myCal.TitleCalendar</td>
-                                                <td style="@styleCal;@styleCal1;@styleCal2">@myCal.Month</td>
-                                                <td style="@styleCal;@styleCal1;@styleCal2">@myCal.MonthPlus1</td>
-                                                <td style="@styleCal;@styleCal1;@styleCal2">@myCal.DateOfTheDay</td>
-                                                <td style="@styleCal;@styleCal1;@styleCal2">@myCal.StateDateCalendar</td>
-                                            </tr>
+                                                <tr class="deleteHeightTR">
+                                                    <td style="@styleCal;@styleCal1;@styleCal2">@myCal.TitleCalendar</td>
+                                                    <td style="@styleCal;@styleCal1;@styleCal2">@myCal.Month</td>
+                                                    <td style="@styleCal;@styleCal1;@styleCal2">@myCal.MonthPlus1</td>
+                                                    <td style="@styleCal;@styleCal1;@styleCal2">@myCal.DateOfTheDay</td>
+                                                    <td style="@styleCal;@styleCal1;@styleCal2">@myCal.StateDateCalendar</td>
+                                                </tr>
                                             }                                             
                                         </div>
                                     </tbody>
@@ -541,7 +541,7 @@
                             </table>
                         </div>
                     </div>
-                    <div class="col-lg-6 mb-6" style="position:relative;left:550px;">
+                    <div class="col-lg-6 mb-6" style="position:relative;left:537px;">
                         <div class="card bg-text text-white shadow">
                             <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                 @foreach (CalendarsM1 myCalM1 in Model._CalendarsM1)
@@ -558,16 +558,16 @@
                                         <div>
                                             @foreach (CalendarsM1 myCalM1 in Model._CalendarsM1)
                                             {
-                                                var styleCal = (myCalM1.TitleCalendarM1.Contains("ON") && myCalM1.MonthM1.Contains("ON") && myCalM1.MonthPlus1M1.Contains("ON") && myCalM1.DateOfTheDayM1.Contains("ON") && myCalM1.StateDateCalendarM1.Contains("ON")) ? "color: #3c763d;font-weight:bold" : "";
-                                                var styleCal1 = (myCalM1.TitleCalendarM1.Contains("OFF") && myCalM1.MonthM1.Contains("OFF") && myCalM1.MonthPlus1M1.Contains("OFF") && myCalM1.DateOfTheDayM1.Contains("OFF") && myCalM1.StateDateCalendarM1.Contains("OFF")) ? "color: #e74a3b;font-weight:bold" : "";
+                                                var styleCal = (myCalM1.TitleCalendarM1 == "ON" && myCalM1.MonthM1 == "ON" && myCalM1.MonthPlus1M1 == "ON" && myCalM1.DateOfTheDayM1 == "ON" && myCalM1.StateDateCalendarM1 == "ON") ? "color: #3c763d;font-weight:bold" : "";
+                                                var styleCal1 = (myCalM1.TitleCalendarM1 == "OFF" && myCalM1.MonthM1 == "OFF" && myCalM1.MonthPlus1M1 == "OFF" && myCalM1.DateOfTheDayM1 == "OFF" && myCalM1.StateDateCalendarM1 == "OFF") ? "color: #e74a3b;font-weight:bold" : "";
                                                 var styleCal2 = (myCalM1.TitleCalendarM1 == "") ? "margin:0;padding:0;display:none" : "";
-                                            <tr class="testtest">
-                                                <td style="@styleCal;@styleCal1;@styleCal2">@myCalM1.TitleCalendarM1</td>
-                                                <td style="@styleCal;@styleCal1;@styleCal2">@myCalM1.MonthM1</td>
-                                                <td style="@styleCal;@styleCal1;@styleCal2">@myCalM1.MonthPlus1M1</td>
-                                                <td style="@styleCal;@styleCal1;@styleCal2">@myCalM1.DateOfTheDayM1</td>
-                                                <td style="@styleCal;@styleCal1;@styleCal2">@myCalM1.StateDateCalendarM1</td>
-                                            </tr>
+                                                <tr class="deleteHeightTR">
+                                                    <td style="@styleCal;@styleCal1;@styleCal2">@myCalM1.TitleCalendarM1</td>
+                                                    <td style="@styleCal;@styleCal1;@styleCal2">@myCalM1.MonthM1</td>
+                                                    <td style="@styleCal;@styleCal1;@styleCal2">@myCalM1.MonthPlus1M1</td>
+                                                    <td style="@styleCal;@styleCal1;@styleCal2">@myCalM1.DateOfTheDayM1</td>
+                                                    <td style="@styleCal;@styleCal1;@styleCal2">@myCalM1.StateDateCalendarM1</td>
+                                                </tr>
                                             }                                             
                                         </div>
                                     </tbody>

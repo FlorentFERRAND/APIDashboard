@@ -26,6 +26,7 @@ namespace APIDashboard.Models
         public List<Issues> _Issues;
 
         public string TitleMethod { get; set; }
+        public string CategoryMethod { get; set; }
         public string NameMethod { get; set; }
         public string StateMethod { get; set; }
         public List<Methods> _Methods;
@@ -239,17 +240,19 @@ namespace APIDashboard.Models
 				string fileMethodsStatus = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot/Production","StatusByMethod.csv");
                 using (var reader = new StreamReader(fileMethodsStatus))
                 {
-                    List<string> listTitleMehod = new List<string>();
-                    List<string> listMethods = new List<string>();
-                    List<string> listStatus = new List<string>();
+                    List<string> listTitleMethod = new List<string>();
+                    List<string> listCategoryMethod = new List<string>();
+                    List<string> listNameMethod = new List<string>();
+                    List<string> listStateMethod = new List<string>();
                     while (!reader.EndOfStream)
                     {
                         var line = reader.ReadLine();
                         var values = line.Split(';');
 
-                        listTitleMehod.Add(values[0]);
-                        listMethods.Add(values[1]);
-                        listStatus.Add(values[2]);
+                        listTitleMethod.Add(values[0]);
+                        listCategoryMethod.Add(values[1]);
+                        listNameMethod.Add(values[2]);
+                        listStateMethod.Add(values[3]);
 
                         string Title = "";
                         if (String.IsNullOrEmpty(Title))
@@ -257,23 +260,31 @@ namespace APIDashboard.Models
                             Title = values[0];
                         }
 
+                        string CategoryMeth = "";
+                        if (String.IsNullOrEmpty(CategoryMeth))
+                        {
+                            CategoryMeth = values[1];
+                        }
+
                         string Name = "";
                         if (String.IsNullOrEmpty(Name))
                         {
-                            Name = values[1];
+                            Name = values[2];
                         }
 
-                        string Status = "";
-                        if (String.IsNullOrEmpty(Status))
+                        string State = "";
+                        if (String.IsNullOrEmpty(State))
                         {
-                            Status = values[2];
+                            State = values[3];
                         }
+
 
                         MethodsStatusList.Add(new Methods()
                         {
                             TitleMethod = Title,
+                            CategoryMethod = CategoryMeth,
                             NameMethod = Name,
-                            StateMethod = Status
+                            StateMethod = State
                         });
                     }
                     reader.Close();

@@ -202,7 +202,12 @@
                         <div class="col-lg-6 mb-6">
                             <div class="card bg-text text-white shadow">
                                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h2 class="text-issue">Sellers</h2>
+                                    @foreach (Methods myName in Model._Methods)
+                                    {
+                                       if(myName.CategoryMethod.Contains("Sellers")){
+                                            <h2 class="text-issue">@myName.CategoryMethod</h2> 
+                                        }
+                                    }
                                 </div>
                                 <div class="card-body-methods">
                                     @foreach (Methods myName in Model._Methods)
@@ -240,7 +245,12 @@
                         <div class="col-lg-6 mb-6">
                             <div class="card bg-text text-white shadow">
                                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h2 class="text-issue">Offers</h2>
+                                    @foreach (Methods myName in Model._Methods)
+                                    {
+                                       if(myName.CategoryMethod.Contains("Offers")){
+                                            <h2 class="text-issue">@myName.CategoryMethod</h2> 
+                                        }
+                                    }
                                 </div>
                                 <div class="card-body-methods">
                                     @foreach (Methods myName in Model._Methods)
@@ -277,7 +287,12 @@
                         <div class="col-lg-6 mb-6">
                             <div class="card bg-text text-white shadow">
                                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h2 class="text-issue">Products</h2>
+                                    @foreach (Methods myName in Model._Methods)
+                                    {
+                                       if(myName.CategoryMethod.Contains("Products")){
+                                            <h2 class="text-issue">@myName.CategoryMethod</h2> 
+                                        }
+                                    }
                                 </div>
                                 <div class="card-body-methods">
                                     @foreach (Methods myName in Model._Methods)
@@ -330,7 +345,12 @@
                         <div class="col-lg-6 mb-6">
                             <div class="card bg-text text-white shadow">
                                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h2 class="text-issue">Orders</h2>
+                                    @foreach (Methods myName in Model._Methods)
+                                    {
+                                       if(myName.CategoryMethod.Contains("Orders")){
+                                            <h2 class="text-issue">@myName.CategoryMethod</h2> 
+                                        }
+                                    }
                                 </div>
                                 <div class="card-body-methods">
                                     @foreach (Methods myName in Model._Methods)
@@ -371,7 +391,12 @@
                         <div class="col-lg-6 mb-6">
                             <div class="card bg-text text-white shadow">
                                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h2 class="text-issue">Fulfilment</h2>
+                                    @foreach (Methods myName in Model._Methods)
+                                    {
+                                       if(myName.CategoryMethod.Contains("Fulfillment")){
+                                            <h2 class="text-issue">@myName.CategoryMethod</h2> 
+                                        }
+                                    }
                                 </div>
                                 <div class="card-body-methods">
                                     @foreach (Methods myName in Model._Methods)
@@ -448,7 +473,12 @@
                         <div class="col-lg-6 mb-6">
                             <div class="card bg-text text-white shadow">
                                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h2 class="text-issue">Discussions</h2>
+                                    @foreach (Methods myName in Model._Methods)
+                                    {
+                                       if(myName.CategoryMethod.Contains("Discussions")){
+                                            <h2 class="text-issue">@myName.CategoryMethod</h2> 
+                                        }
+                                    }
                                 </div>
                                 <div class="card-body-methods">
                                     @foreach (Methods myName in Model._Methods)

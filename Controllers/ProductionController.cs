@@ -11,7 +11,7 @@ namespace APIDashboard.Controllers
         public IActionResult Production(string titleInfos, string infos, string stateInfos,
         string titlePC, string statusbyMetPC, int numberPC,
         string titleIss, int numIss, string expliIss, string stIss, string dateResoIss,
-        string titleMet, string nameMet, string staMet)
+        string titleMet, string cateMet, string nameMet, string staMet)
         {
             DashBoardProd dashboardP = new DashBoardProd()
             {
@@ -27,6 +27,7 @@ namespace APIDashboard.Controllers
                 StateIssue = stIss,
                 DateOfResolutionIssue = dateResoIss,
                 TitleMethod = titleMet,
+                CategoryMethod = cateMet,
                 NameMethod = nameMet,
                 StateMethod = staMet,
             };

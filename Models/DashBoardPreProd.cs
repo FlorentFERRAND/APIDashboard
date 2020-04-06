@@ -320,7 +320,7 @@ namespace APIDashboard.Models
 
             try
             {
-				string fileMethodsStatus = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot/PreProduction","Calendars.csv");
+				string fileMethodsStatus = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot/PreProduction","CalendarM1.csv");
                 using (var reader = new StreamReader(fileMethodsStatus))
                 {
                     List<string> listTitleCalendarM1 = new List<string>();
@@ -414,7 +414,7 @@ namespace APIDashboard.Models
 
             try
             {
-				string fileMethodsStatus = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot/PreProduction","CalendarsM1.csv");
+				string fileMethodsStatus = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot/PreProduction","CalendarM2.csv");
                 using (var reader = new StreamReader(fileMethodsStatus))
                 {
                     List<string> listMonthCalM2 = new List<string>();

@@ -204,7 +204,12 @@
                         <div class="col-lg-6 mb-6">
                             <div class="card bg-text text-white shadow">
                                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h2 class="text-issue">Sellers</h2>
+                                    @foreach (Methods myName in Model._Methods)
+                                    {
+                                        if(myName.CategoryMethod.Contains("Sellers")){
+                                            <h2 class="text-issue">@myName.CategoryMethod</h2> 
+                                        }
+                                    }
                                 </div>
                                 <div class="card-body-methods">
                                     @foreach (Methods myName in Model._Methods)
@@ -223,17 +228,11 @@
                                         var style2 = (myName.StateMethod == "KO") ? "background-color: #e74a3b;" : "";
                                         if (myName.NameMethod.Contains("Info"))
                                         {
-                                            if (myName._color == "st-green" || myName._color == "st-yellow" || myName._color == "st-red")
-                                            {
-                                                <p>@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span></p>
-                                            }
+                                            <p>@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span></p>
                                         }
                                         if (myName.NameMethod.Contains("Indi"))
                                         {
-                                            if (myName._color == "st-green" || myName._color == "st-yellow" || myName._color == "st-red")
-                                            {
-                                                <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span> </p>
-                                            }
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span> </p>
                                         }
                                     }
                                 </div>
@@ -242,7 +241,12 @@
                         <div class="col-lg-6 mb-6">
                             <div class="card bg-text text-white shadow">
                                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h2 class="text-issue">Offers</h2>
+                                    @foreach (Methods myName in Model._Methods)
+                                    {
+                                       if(myName.CategoryMethod.Contains("Offers")){
+                                            <h2 class="text-issue">@myName.CategoryMethod</h2> 
+                                        } 
+                                    }
                                 </div>
                                 <div class="card-body-methods">
                                     @foreach (Methods myName in Model._Methods)
@@ -279,7 +283,12 @@
                         <div class="col-lg-6 mb-6">
                             <div class="card bg-text text-white shadow">
                                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h2 class="text-issue">Products</h2>
+                                    @foreach (Methods myName in Model._Methods)
+                                    {
+                                       if(myName.CategoryMethod.Contains("Products")){
+                                            <h2 class="text-issue">@myName.CategoryMethod</h2> 
+                                        }
+                                    }
                                 </div>
                                 <div class="card-body-methods">
                                     @foreach (Methods myName in Model._Methods)
@@ -332,7 +341,12 @@
                         <div class="col-lg-6 mb-6">
                             <div class="card bg-text text-white shadow">
                                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h2 class="text-issue">Orders</h2>
+                                    @foreach (Methods myName in Model._Methods)
+                                    {
+                                       if(myName.CategoryMethod.Contains("Orders")){
+                                            <h2 class="text-issue">@myName.CategoryMethod</h2> 
+                                        } 
+                                    }
                                 </div>
                                 <div class="card-body-methods">
                                     @foreach (Methods myName in Model._Methods)
@@ -373,7 +387,12 @@
                         <div class="col-lg-6 mb-6">
                             <div class="card bg-text text-white shadow">
                                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h2 class="text-issue">Fulfilment</h2>
+                                    @foreach (Methods myName in Model._Methods)
+                                    {
+                                       if(myName.CategoryMethod.Contains("Fulfillment")){
+                                            <h2 class="text-issue">@myName.CategoryMethod</h2> 
+                                        }
+                                    }
                                 </div>
                                 <div class="card-body-methods">
                                     @foreach (Methods myName in Model._Methods)
@@ -450,7 +469,12 @@
                         <div class="col-lg-6 mb-6">
                             <div class="card bg-text text-white shadow">
                                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h2 class="text-issue">Discussions</h2>
+                                    @foreach (Methods myName in Model._Methods)
+                                    {
+                                       if(myName.CategoryMethod.Contains("Discussions")){
+                                            <h2 class="text-issue">@myName.CategoryMethod</h2> 
+                                        }
+                                    }
                                 </div>
                                 <div class="card-body-methods">
                                     @foreach (Methods myName in Model._Methods)
@@ -501,18 +525,18 @@
         <div class="col-xl-12 col-lg-12">
             <div class="card shadow mb-4" style="height:auto;">
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                    @foreach (Calendars myCal in Model._Calendars)
+                    @foreach (CalendarM1 myCal in Model._CalendarM1)
                     {
-                        <a data-toggle="collapse" href="#calendars" class="card-header-link-title">@myCal.TitleCalendar1</a>
+                        <a data-toggle="collapse" href="#calendars" class="card-header-link-title">@myCal.TitleCalendarM1</a>
                     }
                 </div>
                 <div id="calendars" class="panel-collapse collapse">
                     <div class="col-lg-6 mb-6" style="position:absolute;">
                         <div class="card bg-text text-white shadow">
                             <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                @foreach (Calendars myCal in Model._Calendars)
+                                @foreach (CalendarM1 myCal in Model._CalendarM1)
                                 {
-                                    <h2 class="text-issue">@myCal.MonthAP</h2>
+                                    <h2 class="text-issue">@myCal.MonthCalM1</h2>
                                 }
                             </div>
                             <table class="table table-striped" style="margin-bottom:0">
@@ -522,17 +546,17 @@
                                 <div class="text-white shadow">
                                     <tbody>
                                         <div>
-                                            @foreach (Calendars myCal in Model._Calendars)
+                                            @foreach (CalendarM1 myCal in Model._CalendarM1)
                                             {
-                                                var styleCal = (myCal.TitleCalendar == "ON" && myCal.Month == "ON" && myCal.MonthPlus1 == "ON" && myCal.DateOfTheDay == "ON" && myCal.StateDateCalendar == "ON") ? "color: #3c763d;font-weight:bold" : "";
-                                                var styleCal1 = (myCal.TitleCalendar == "OFF" && myCal.Month == "OFF" && myCal.MonthPlus1 == "OFF" && myCal.DateOfTheDay == "OFF" && myCal.StateDateCalendar == "OFF") ? "color: #e74a3b;font-weight:bold" : "";
-                                                var styleCal2 = (myCal.TitleCalendar == "") ? "margin:0;padding:0;display:none" : "";
+                                                var styleCal = (myCal.DayOfTheWeekDayStatusOfTheDay1M1 == "ON" && myCal.DayOfTheWeekDayStatusOfTheDay2M1 == "ON" && myCal.DayOfTheWeekDayStatusOfTheDay3M1 == "ON" && myCal.DayOfTheWeekDayStatusOfTheDay4M1 == "ON" && myCal.DayOfTheWeekDayStatusOfTheDay5M1 == "ON") ? "color: #3c763d;font-weight:bold" : "";
+                                                var styleCal1 = (myCal.DayOfTheWeekDayStatusOfTheDay1M1 == "OFF" && myCal.DayOfTheWeekDayStatusOfTheDay2M1 == "OFF" && myCal.DayOfTheWeekDayStatusOfTheDay3M1 == "OFF" && myCal.DayOfTheWeekDayStatusOfTheDay4M1 == "OFF" && myCal.DayOfTheWeekDayStatusOfTheDay5M1 == "OFF") ? "color: #e74a3b;font-weight:bold" : "";
+                                                var styleCal2 = (myCal.DayOfTheWeekDayStatusOfTheDay1M1 == "") ? "margin:0;padding:0;display:none" : "";
                                                 <tr class="deleteHeightTR">
-                                                    <td style="@styleCal;@styleCal1;@styleCal2">@myCal.TitleCalendar</td>
-                                                    <td style="@styleCal;@styleCal1;@styleCal2">@myCal.Month</td>
-                                                    <td style="@styleCal;@styleCal1;@styleCal2">@myCal.MonthPlus1</td>
-                                                    <td style="@styleCal;@styleCal1;@styleCal2">@myCal.DateOfTheDay</td>
-                                                    <td style="@styleCal;@styleCal1;@styleCal2">@myCal.StateDateCalendar</td>
+                                                    <td style="@styleCal;@styleCal1;@styleCal2">@myCal.DayOfTheWeekDayStatusOfTheDay1M1</td>
+                                                    <td style="@styleCal;@styleCal1;@styleCal2">@myCal.DayOfTheWeekDayStatusOfTheDay2M1</td>
+                                                    <td style="@styleCal;@styleCal1;@styleCal2">@myCal.DayOfTheWeekDayStatusOfTheDay3M1</td>
+                                                    <td style="@styleCal;@styleCal1;@styleCal2">@myCal.DayOfTheWeekDayStatusOfTheDay4M1</td>
+                                                    <td style="@styleCal;@styleCal1;@styleCal2">@myCal.DayOfTheWeekDayStatusOfTheDay5M1</td>
                                                 </tr>
                                             }                                             
                                         </div>
@@ -544,9 +568,9 @@
                     <div class="col-lg-6 mb-6" style="position:relative;left:537px;">
                         <div class="card bg-text text-white shadow">
                             <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                @foreach (CalendarsM1 myCalM1 in Model._CalendarsM1)
+                                @foreach (CalendarM2 myCalM1 in Model._CalendarM2)
                                 {
-                                    <h2 class="text-issue">@myCalM1.MonthAPM1</h2>
+                                    <h2 class="text-issue">@myCalM1.MonthCalM2</h2>
                                 }
                             </div>
                             <table class="table table-striped" style="margin-bottom:0">
@@ -556,17 +580,17 @@
                                 <div class="text-white shadow">
                                     <tbody>
                                         <div>
-                                            @foreach (CalendarsM1 myCalM1 in Model._CalendarsM1)
+                                            @foreach (CalendarM2 myCalM1 in Model._CalendarM2)
                                             {
-                                                var styleCal = (myCalM1.TitleCalendarM1 == "ON" && myCalM1.MonthM1 == "ON" && myCalM1.MonthPlus1M1 == "ON" && myCalM1.DateOfTheDayM1 == "ON" && myCalM1.StateDateCalendarM1 == "ON") ? "color: #3c763d;font-weight:bold" : "";
-                                                var styleCal1 = (myCalM1.TitleCalendarM1 == "OFF" && myCalM1.MonthM1 == "OFF" && myCalM1.MonthPlus1M1 == "OFF" && myCalM1.DateOfTheDayM1 == "OFF" && myCalM1.StateDateCalendarM1 == "OFF") ? "color: #e74a3b;font-weight:bold" : "";
-                                                var styleCal2 = (myCalM1.TitleCalendarM1 == "") ? "margin:0;padding:0;display:none" : "";
+                                                var styleCal = (myCalM1.DayOfTheWeekDayStatusOfTheDay1M2 == "ON" && myCalM1.DayOfTheWeekDayStatusOfTheDay2M2 == "ON" && myCalM1.DayOfTheWeekDayStatusOfTheDay3M2 == "ON" && myCalM1.DayOfTheWeekDayStatusOfTheDay4M2 == "ON" && myCalM1.DayOfTheWeekDayStatusOfTheDay5M2 == "ON") ? "color: #3c763d;font-weight:bold" : "";
+                                                var styleCal1 = (myCalM1.DayOfTheWeekDayStatusOfTheDay1M2 == "OFF" && myCalM1.DayOfTheWeekDayStatusOfTheDay2M2 == "OFF" && myCalM1.DayOfTheWeekDayStatusOfTheDay4M2 == "OFF" && myCalM1.DayOfTheWeekDayStatusOfTheDay4M2 == "OFF" && myCalM1.DayOfTheWeekDayStatusOfTheDay5M2 == "OFF") ? "color: #e74a3b;font-weight:bold" : "";
+                                                var styleCal2 = (myCalM1.DayOfTheWeekDayStatusOfTheDay1M2 == "") ? "margin:0;padding:0;display:none" : "";
                                                 <tr class="deleteHeightTR">
-                                                    <td style="@styleCal;@styleCal1;@styleCal2">@myCalM1.TitleCalendarM1</td>
-                                                    <td style="@styleCal;@styleCal1;@styleCal2">@myCalM1.MonthM1</td>
-                                                    <td style="@styleCal;@styleCal1;@styleCal2">@myCalM1.MonthPlus1M1</td>
-                                                    <td style="@styleCal;@styleCal1;@styleCal2">@myCalM1.DateOfTheDayM1</td>
-                                                    <td style="@styleCal;@styleCal1;@styleCal2">@myCalM1.StateDateCalendarM1</td>
+                                                    <td style="@styleCal;@styleCal1;@styleCal2">@myCalM1.DayOfTheWeekDayStatusOfTheDay1M2</td>
+                                                    <td style="@styleCal;@styleCal1;@styleCal2">@myCalM1.DayOfTheWeekDayStatusOfTheDay2M2</td>
+                                                    <td style="@styleCal;@styleCal1;@styleCal2">@myCalM1.DayOfTheWeekDayStatusOfTheDay3M2</td>
+                                                    <td style="@styleCal;@styleCal1;@styleCal2">@myCalM1.DayOfTheWeekDayStatusOfTheDay4M2</td>
+                                                    <td style="@styleCal;@styleCal1;@styleCal2">@myCalM1.DayOfTheWeekDayStatusOfTheDay5M2</td>
                                                 </tr>
                                             }                                             
                                         </div>

@@ -8,7 +8,10 @@ namespace APIDashboard.Controllers
     public class ProductionController : Controller
     {
         // GET: /<controller>/
-        public IActionResult Production(string titleInfos, string infos, string stateInfos, string titlePC, string statusbyMetPC, int numberPC, string titleIss, int numIss, string expliIss, string stIss, string dateResoIss, string titleMet, string nameMet, string staMet)
+        public IActionResult Production(string titleInfos, string infos, string stateInfos,
+        string titlePC, string statusbyMetPC, int numberPC,
+        string titleIss, int numIss, string expliIss, string stIss, string dateResoIss,
+        string titleMet, string nameMet, string staMet)
         {
             DashBoardProd dashboardP = new DashBoardProd()
             {

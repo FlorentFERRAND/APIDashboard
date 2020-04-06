@@ -125,24 +125,22 @@
                     type: 'pie',
                     data: {
                         labels: ["@foreach (PieChart myPieChart in Model._PieChart) {
-                                                        if (myPieChart.StatusByMethodPieChart == "OK") { @myPieChart.StatusByMethodPieChart; }
-                                                    }", "@foreach (PieChart myPieChart in Model._PieChart) {
-                                                        if (myPieChart.StatusByMethodPieChart == "KO") { @myPieChart.StatusByMethodPieChart; }
-                                                    }", "@foreach (PieChart myPieChart in Model._PieChart) {
-                                                        if (myPieChart.StatusByMethodPieChart == "NOK") { @myPieChart.StatusByMethodPieChart; }
-                                                    }"],
+                                    if (myPieChart.StatusByMethodPieChart == "OK") { @myPieChart.StatusByMethodPieChart; }
+                                    }", "@foreach (PieChart myPieChart in Model._PieChart) {
+                                            if (myPieChart.StatusByMethodPieChart == "KO") { @myPieChart.StatusByMethodPieChart; }
+                                    }", "@foreach (PieChart myPieChart in Model._PieChart) {
+                                            if (myPieChart.StatusByMethodPieChart == "NOK") { @myPieChart.StatusByMethodPieChart; }
+                                    }"],
                         datasets: [{
                         data: [@foreach (PieChart myPieChart in Model._PieChart) {
-                                                        if (myPieChart.StatusByMethodPieChart == "OK") { @myPieChart.NumberMethodsByStatus; }
-                                                    },
-                                                    @foreach (PieChart myPieChart in Model._PieChart) {
-                                                        if (myPieChart.StatusByMethodPieChart == "KO") { @myPieChart.NumberMethodsByStatus; }
-                                                    },
-                                                    @foreach (PieChart myPieChart in Model._PieChart) {
-                                                        if (myPieChart.StatusByMethodPieChart == "NOK") { @myPieChart.NumberMethodsByStatus; }
-                                                    }],
-                                                backgroundColor: ["#1CC88A", "#FF5A5E", "#F6C23E"],
-                                                hoverBackgroundColor: ["#1CC88A", "#FF5A5E", "#F6C23E"]
+                                    if (myPieChart.StatusByMethodPieChart == "OK") { @myPieChart.NumberMethodsByStatus; }
+                                    }, @foreach (PieChart myPieChart in Model._PieChart) {
+                                            if (myPieChart.StatusByMethodPieChart == "KO") { @myPieChart.NumberMethodsByStatus; }
+                                    }, @foreach (PieChart myPieChart in Model._PieChart) {
+                                            if (myPieChart.StatusByMethodPieChart == "NOK") { @myPieChart.NumberMethodsByStatus; }
+                                    }],
+                        backgroundColor: ["#1CC88A", "#FF5A5E", "#F6C23E"],
+                        hoverBackgroundColor: ["#1CC88A", "#FF5A5E", "#F6C23E"]
                         }]
                     },
                     options: {
@@ -548,15 +546,22 @@
                                         <div>
                                             @foreach (CalendarM1 myCal in Model._CalendarM1)
                                             {
-                                                var styleCal = (myCal.DayOfTheWeekDayStatusOfTheDay1M1 == "ON" && myCal.DayOfTheWeekDayStatusOfTheDay2M1 == "ON" && myCal.DayOfTheWeekDayStatusOfTheDay3M1 == "ON" && myCal.DayOfTheWeekDayStatusOfTheDay4M1 == "ON" && myCal.DayOfTheWeekDayStatusOfTheDay5M1 == "ON") ? "color: #3c763d;font-weight:bold" : "";
-                                                var styleCal1 = (myCal.DayOfTheWeekDayStatusOfTheDay1M1 == "OFF" && myCal.DayOfTheWeekDayStatusOfTheDay2M1 == "OFF" && myCal.DayOfTheWeekDayStatusOfTheDay3M1 == "OFF" && myCal.DayOfTheWeekDayStatusOfTheDay4M1 == "OFF" && myCal.DayOfTheWeekDayStatusOfTheDay5M1 == "OFF") ? "color: #e74a3b;font-weight:bold" : "";
+                                                var styleCal = (myCal.DayOfTheWeekDayStatusOfTheDay1M1 == "ON" && myCal.DayOfTheWeekDayStatusOfTheDay2M1 == "ON"
+                                                && myCal.DayOfTheWeekDayStatusOfTheDay3M1 == "ON" && myCal.DayOfTheWeekDayStatusOfTheDay4M1 == "ON"
+                                                && myCal.DayOfTheWeekDayStatusOfTheDay5M1 == "ON") ? "color: #3c763d;font-weight:bold" : "";
+
+                                                var styleCal1 = (myCal.DayOfTheWeekDayStatusOfTheDay1M1 == "OFF" && myCal.DayOfTheWeekDayStatusOfTheDay2M1 == "OFF"
+                                                && myCal.DayOfTheWeekDayStatusOfTheDay3M1 == "OFF" && myCal.DayOfTheWeekDayStatusOfTheDay4M1 == "OFF"
+                                                && myCal.DayOfTheWeekDayStatusOfTheDay5M1 == "OFF") ? "color: #e74a3b;font-weight:bold" : "";
+
                                                 var styleCal2 = (myCal.DayOfTheWeekDayStatusOfTheDay1M1 == "") ? "margin:0;padding:0;display:none" : "";
+                                                
                                                 <tr class="deleteHeightTR">
-                                                    <td style="@styleCal;@styleCal1;@styleCal2">@myCal.DayOfTheWeekDayStatusOfTheDay1M1</td>
-                                                    <td style="@styleCal;@styleCal1;@styleCal2">@myCal.DayOfTheWeekDayStatusOfTheDay2M1</td>
-                                                    <td style="@styleCal;@styleCal1;@styleCal2">@myCal.DayOfTheWeekDayStatusOfTheDay3M1</td>
-                                                    <td style="@styleCal;@styleCal1;@styleCal2">@myCal.DayOfTheWeekDayStatusOfTheDay4M1</td>
-                                                    <td style="@styleCal;@styleCal1;@styleCal2">@myCal.DayOfTheWeekDayStatusOfTheDay5M1</td>
+                                                    <td style="@styleCal;@styleCal1;@styleCal2;">@myCal.DayOfTheWeekDayStatusOfTheDay1M1</td>
+                                                    <td style="@styleCal;@styleCal1;@styleCal2;">@myCal.DayOfTheWeekDayStatusOfTheDay2M1</td>
+                                                    <td style="@styleCal;@styleCal1;@styleCal2;">@myCal.DayOfTheWeekDayStatusOfTheDay3M1</td>
+                                                    <td style="@styleCal;@styleCal1;@styleCal2;">@myCal.DayOfTheWeekDayStatusOfTheDay4M1</td>
+                                                    <td style="@styleCal;@styleCal1;@styleCal2;">@myCal.DayOfTheWeekDayStatusOfTheDay5M1</td>
                                                 </tr>
                                             }                                             
                                         </div>
@@ -582,9 +587,16 @@
                                         <div>
                                             @foreach (CalendarM2 myCalM1 in Model._CalendarM2)
                                             {
-                                                var styleCal = (myCalM1.DayOfTheWeekDayStatusOfTheDay1M2 == "ON" && myCalM1.DayOfTheWeekDayStatusOfTheDay2M2 == "ON" && myCalM1.DayOfTheWeekDayStatusOfTheDay3M2 == "ON" && myCalM1.DayOfTheWeekDayStatusOfTheDay4M2 == "ON" && myCalM1.DayOfTheWeekDayStatusOfTheDay5M2 == "ON") ? "color: #3c763d;font-weight:bold" : "";
-                                                var styleCal1 = (myCalM1.DayOfTheWeekDayStatusOfTheDay1M2 == "OFF" && myCalM1.DayOfTheWeekDayStatusOfTheDay2M2 == "OFF" && myCalM1.DayOfTheWeekDayStatusOfTheDay4M2 == "OFF" && myCalM1.DayOfTheWeekDayStatusOfTheDay4M2 == "OFF" && myCalM1.DayOfTheWeekDayStatusOfTheDay5M2 == "OFF") ? "color: #e74a3b;font-weight:bold" : "";
+                                                var styleCal = (myCalM1.DayOfTheWeekDayStatusOfTheDay1M2 == "ON" && myCalM1.DayOfTheWeekDayStatusOfTheDay2M2 == "ON"
+                                                && myCalM1.DayOfTheWeekDayStatusOfTheDay3M2 == "ON" && myCalM1.DayOfTheWeekDayStatusOfTheDay4M2 == "ON"
+                                                && myCalM1.DayOfTheWeekDayStatusOfTheDay5M2 == "ON") ? "color: #3c763d;font-weight:bold" : "";
+
+                                                var styleCal1 = (myCalM1.DayOfTheWeekDayStatusOfTheDay1M2 == "OFF" && myCalM1.DayOfTheWeekDayStatusOfTheDay2M2 == "OFF"
+                                                && myCalM1.DayOfTheWeekDayStatusOfTheDay4M2 == "OFF" && myCalM1.DayOfTheWeekDayStatusOfTheDay4M2 == "OFF"
+                                                && myCalM1.DayOfTheWeekDayStatusOfTheDay5M2 == "OFF") ? "color: #e74a3b;font-weight:bold" : "";
+
                                                 var styleCal2 = (myCalM1.DayOfTheWeekDayStatusOfTheDay1M2 == "") ? "margin:0;padding:0;display:none" : "";
+
                                                 <tr class="deleteHeightTR">
                                                     <td style="@styleCal;@styleCal1;@styleCal2">@myCalM1.DayOfTheWeekDayStatusOfTheDay1M2</td>
                                                     <td style="@styleCal;@styleCal1;@styleCal2">@myCalM1.DayOfTheWeekDayStatusOfTheDay2M2</td>

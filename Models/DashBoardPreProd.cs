@@ -417,7 +417,6 @@ namespace APIDashboard.Models
 				string fileMethodsStatus = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot/PreProduction","CalendarsM1.csv");
                 using (var reader = new StreamReader(fileMethodsStatus))
                 {
-                    //List<string> listTitleCalendar1M1 = new List<string>();
                     List<string> listMonthCalM2 = new List<string>();
                     List<string> listDayOfTheWeekDayStatusOfTheDay1M2 = new List<string>();
                     List<string> listDayOfTheWeekDayStatusOfTheDay2M2 = new List<string>();
@@ -429,19 +428,12 @@ namespace APIDashboard.Models
                         var line = reader.ReadLine();
                         var values = line.Split(';');
 
-                        //listTitleCalendar1M1.Add(values[0]);
                         listMonthCalM2.Add(values[0]);
                         listDayOfTheWeekDayStatusOfTheDay1M2.Add(values[1]);
                         listDayOfTheWeekDayStatusOfTheDay2M2.Add(values[2]);
                         listDayOfTheWeekDayStatusOfTheDay3M2.Add(values[3]);
                         listDayOfTheWeekDayStatusOfTheDay4M2.Add(values[4]);
                         listDayOfTheWeekDayStatusOfTheDay5M2.Add(values[5]);
-
-                        /*string TitleCal1M1 = "";
-                        if (String.IsNullOrEmpty(TitleCal1M1))
-                        {
-                            TitleCal1M1 = values[0];
-                        }*/
 
                         string MonthCaldrM2 = "";
                         if (String.IsNullOrEmpty(MonthCaldrM2))
@@ -481,7 +473,6 @@ namespace APIDashboard.Models
 
                         CalendarsDateStateListM1.Add(new CalendarM2()
                         {
-                            //TitleCalendar1M1 = TitleCal1M1,
                             MonthCalM2 = MonthCaldrM2,
                             DayOfTheWeekDayStatusOfTheDay1M2 = Day1M2,
                             DayOfTheWeekDayStatusOfTheDay2M2 = Day2M2,

@@ -226,17 +226,11 @@
                                         var style2 = (myName.StateMethod == "KO") ? "background-color: #e74a3b;" : "";
                                         if (myName.NameMethod.Contains("Info"))
                                         {
-                                            if (myName._color == "st-green" || myName._color == "st-yellow" || myName._color == "st-red")
-                                            {
-                                                <p>@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span></p>
-                                            }
+                                            <p>@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span></p>
                                         }
                                         if (myName.NameMethod.Contains("Indi"))
                                         {
-                                            if (myName._color == "st-green" || myName._color == "st-yellow" || myName._color == "st-red")
-                                            {
-                                                <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span> </p>
-                                            }
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span> </p>
                                         }
                                     }
                                 </div>

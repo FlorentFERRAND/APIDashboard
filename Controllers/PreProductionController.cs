@@ -11,7 +11,12 @@ namespace APIDashboard.Controllers
             return View();
         }
 
-        public IActionResult PreProduction(string titleInfos, string infos, string stateInfos, string titlePC, string statusbyMetPC, int numberPC, string titleIss, int numIss, string expliIss, string stIss, string dateResoIss, string titleMet, string nameMet, string staMet, string titleCal1, string monthAP1 ,string titleCal, string month, string monthPlus1, string dateOfTheDay, string state, /*string titleCal1M1,*/ string monthAPP1M1, string titleCalM1, string monthM1, string monthPlus1M1, string dateOfTheDayM1, string stateM1)
+        public IActionResult PreProduction(string titleInfos, string infos, string stateInfos,
+        string titlePC, string statusbyMetPC, int numberPC,
+        string titleIss, int numIss, string expliIss, string stIss, string dateResoIss,
+        string titleMet, string nameMet, string staMet,
+        string titleCalendrM1, string monthCalM1, string day1M1, string day2M1, string day3M1, string day4M1, string day5M1,
+        string monthCalM2, string day1M2, string day2M2, string day3M2, string day4M2, string day5M2)
         {            
             DashBoardPreProd dashboardPP = new DashBoardPreProd()
             {
@@ -29,20 +34,19 @@ namespace APIDashboard.Controllers
                 TitleMethod = titleMet,
                 NameMethod = nameMet,
                 StateMethod = staMet,
-                TitleCalendar1 = titleCal1,
-                MonthAP = monthAP1,
-                TitleCalendar = titleCal,
-                Month = month,
-                MonthPlus1 = monthPlus1,
-                DateOfTheDay = dateOfTheDay,
-                StateDateCalendar = state,
-                //TitleCalendar1M1 = titleCal1M1,
-                MonthAPM1 = monthAPP1M1,
-                TitleCalendarM1 = titleCalM1,
-                MonthM1 = monthM1,
-                MonthPlus1M1 = monthPlus1M1,
-                DateOfTheDayM1 = dateOfTheDayM1,
-                StateDateCalendarM1 = stateM1
+                TitleCalendarM1 = titleCalendrM1,
+                MonthCalM1 = monthCalM1,
+                DayOfTheWeekDayStatusOfTheDay1M1 = day1M1,
+                DayOfTheWeekDayStatusOfTheDay2M1 = day2M1,
+                DayOfTheWeekDayStatusOfTheDay3M1 = day3M1,
+                DayOfTheWeekDayStatusOfTheDay4M1 = day4M1,
+                DayOfTheWeekDayStatusOfTheDay5M1 = day5M1,
+                MonthCalM2 = monthCalM2,
+                DayOfTheWeekDayStatusOfTheDay1M2 = day1M2,
+                DayOfTheWeekDayStatusOfTheDay2M2 = day2M2,
+                DayOfTheWeekDayStatusOfTheDay3M2 = day3M2,
+                DayOfTheWeekDayStatusOfTheDay4M2 = day4M2,
+                DayOfTheWeekDayStatusOfTheDay5M2 = day5M2
             };
             dashboardPP.GetMethodsStatusList();
 

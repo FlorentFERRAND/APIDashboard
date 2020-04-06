@@ -35,7 +35,7 @@ namespace APIDashboard.Controllers
                 CategoryMethod = cateMet,
                 NameMethod = nameMet,
                 StateMethod = staMet,
-                TitleCalendarM1 = titleCalendrM1,
+                //TitleCalendarM1 = titleCalendrM1,
                 MonthCalM1 = monthCalM1,
                 DayOfTheWeekDayStatusOfTheDay1M1 = day1M1,
                 DayOfTheWeekDayStatusOfTheDay2M1 = day2M1,

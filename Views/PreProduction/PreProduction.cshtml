@@ -523,9 +523,9 @@
         <div class="col-xl-12 col-lg-12">
             <div class="card shadow mb-4" style="height:auto;">
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                    @foreach (CalendarM1 myCal in Model._CalendarM1)
+                    @foreach (CalendarsTitle myCalTitle in Model._CalendarsTitle)
                     {
-                        <a data-toggle="collapse" href="#calendars" class="card-header-link-title">@myCal.TitleCalendarM1</a>
+                        <a data-toggle="collapse" href="#calendars" class="card-header-link-title">@myCalTitle.CalendarsCardTitle</a>
                     }
                 </div>
                 <div id="calendars" class="panel-collapse collapse">

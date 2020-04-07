@@ -28,7 +28,7 @@
                         {
                             var style = (myInfos.StateImportantInformations == "OK") ? "background-color: #1cc88a !important; color:#ffffff" : "";
                             var style1 = (myInfos.StateImportantInformations == "KO") ? "background-color: #f2dede !important; color:#a94442" : "";
-                            var style2 = (myInfos.StateImportantInformations == "NOK") ? "background-color: #f6c23e !important; color:#ffffff" : "";
+                            var style2 = (myInfos.StateImportantInformations == "NOK") ? "background-color: #febe28 !important; color:#ffffff" : "";
                             if (myInfos.ImportantInfos.Contains("API"))
                             {
                                 <div class="card bg-success text-white shadow" style="@style;@style1;@style2">
@@ -44,7 +44,7 @@
                         {
                             var style = (myInfos.StateImportantInformations == "OK") ? "background-color: #1cc88a !important; color:#ffffff" : "";
                             var style1 = (myInfos.StateImportantInformations == "KO") ? "background-color: #f2dede !important; color:#a94442" : "";
-                            var style2 = (myInfos.StateImportantInformations == "NOK") ? "background-color: #f6c23e !important; color:#ffffff" : "";
+                            var style2 = (myInfos.StateImportantInformations == "NOK") ? "background-color: #febe28 !important; color:#ffffff" : "";
                             if (myInfos.ImportantInfos.Contains("Get") || myInfos.ImportantInfos.Contains("Submit"))
                             {
                                 <div class="card bg-success text-white shadow" style="@style;@style1;@style2">
@@ -60,7 +60,7 @@
                         {
                             var style = (myInfos.StateImportantInformations == "OK") ? "background-color: #1cc88a !important; color:#ffffff" : "";
                             var style1 = (myInfos.StateImportantInformations == "KO") ? "background-color: #f2dede !important; color:#a94442" : "";
-                            var style2 = (myInfos.StateImportantInformations == "NOK") ? "background-color: #f6c23e !important; color:#ffffff" : "";
+                            var style2 = (myInfos.StateImportantInformations == "NOK") ? "background-color: #febe28 !important; color:#ffffff" : "";
                             if (myInfos.ImportantInfos.Contains("Validate") || myInfos.ImportantInfos.Contains("Create"))
                             {
                                 <div class="card bg-success text-white shadow" style="@style;@style1;@style2">
@@ -76,7 +76,7 @@
                         {
                             var style = (myInfos.StateImportantInformations == "OK") ? "background-color: #1cc88a !important; color:#ffffff" : "";
                             var style1 = (myInfos.StateImportantInformations == "KO") ? "background-color: #f2dede !important; color:#a94442" : "";
-                            var style2 = (myInfos.StateImportantInformations == "NOK") ? "background-color: #f6c23e !important; color:#ffffff" : "";
+                            var style2 = (myInfos.StateImportantInformations == "NOK") ? "background-color: #febe28 !important; color:#ffffff" : "";
                             if (myInfos.ImportantInfos.Contains("Close"))
                             {
                                 <div class="card bg-success text-white shadow" style="@style;@style1;@style2">
@@ -92,7 +92,7 @@
                         {
                             var style = (myInfos.StateImportantInformations == "OK") ? "background-color: #1cc88a !important; color:#ffffff" : "";
                             var style1 = (myInfos.StateImportantInformations == "KO") ? "background-color: #f2dede !important; color:#a94442" : "";
-                            var style2 = (myInfos.StateImportantInformations == "NOK") ? "background-color: #f6c23e !important; color:#ffffff" : "";
+                            var style2 = (myInfos.StateImportantInformations == "NOK") ? "background-color: #febe28 !important; color:#ffffff" : "";
                             if (myInfos.ImportantInfos.Contains("Manage"))
                             {
                                 <div class="card bg-success text-white shadow" style="@style;@style1;@style2">
@@ -137,8 +137,8 @@
                                     }, @foreach (PieChart myPieChart in Model._PieChart) {
                                             if (myPieChart.StatusByMethodPieChart == "NOK") { @myPieChart.NumberMethodsByStatus; }
                                     }],
-                        backgroundColor: ["#1CC88A", "#FF5A5E", "#F6C23E"],
-                        hoverBackgroundColor: ["#1CC88A", "#FF5A5E", "#F6C23E"]
+                        backgroundColor: ["#1CC88A", "#FF5A5E", "#FEBE28"],
+                        hoverBackgroundColor: ["#1CC88A", "#FF5A5E", "#FEBE28"]
                         }]
                     },
                     options: {
@@ -211,7 +211,7 @@
                                     @foreach (Methods myName in Model._Methods)
                                     {
                                         var style = (myName.StateMethod == "OK") ? "background-color: #1cc88a;" : "";
-                                        var style1 = (myName.StateMethod == "NOK") ? @"background-color: #f6c23e; display: inline-block;
+                                        var style1 = (myName.StateMethod == "NOK") ? @"background-color: #febe28; display: inline-block;
                                                                     padding: 9px 3px;
                                                                     font - size: 20px;
                                                                     font - weight: 700;
@@ -248,7 +248,7 @@
                                     @foreach (Methods myName in Model._Methods)
                                     {
                                         var style = (myName.StateMethod == "OK") ? "background-color: #1cc88a;" : "";
-                                        var style1 = (myName.StateMethod == "NOK") ? @"background-color: #f6c23e;
+                                        var style1 = (myName.StateMethod == "NOK") ? @"background-color: #febe28;
                                                                     display: inline-block;
                                                                     padding: 9px 3px;
                                                                     font - size: 20px;
@@ -290,7 +290,7 @@
                                     @foreach (Methods myName in Model._Methods)
                                     {
                                         var style = (myName.StateMethod == "OK") ? "background-color: #1cc88a;" : "";
-                                        var style1 = (myName.StateMethod == "NOK") ? @"background-color: #f6c23e;
+                                        var style1 = (myName.StateMethod == "NOK") ? @"background-color: #febe28;
                                                                     display: inline-block;
                                                                     padding: 9px 3px;
                                                                     font - size: 20px;
@@ -348,7 +348,7 @@
                                     @foreach (Methods myName in Model._Methods)
                                     {
                                         var style = (myName.StateMethod == "OK") ? "background-color: #1cc88a;" : "";
-                                        var style1 = (myName.StateMethod == "NOK") ? @"background-color: #f6c23e;
+                                        var style1 = (myName.StateMethod == "NOK") ? @"background-color: #febe28;
                                                                     display: inline-block;
                                                                     padding: 9px 3px;
                                                                     font - size: 20px;
@@ -394,7 +394,7 @@
                                     @foreach (Methods myName in Model._Methods)
                                     {
                                         var style = (myName.StateMethod == "OK") ? "background-color: #1cc88a;" : "";
-                                        var style1 = (myName.StateMethod == "NOK") ? @"background-color: #f6c23e;
+                                        var style1 = (myName.StateMethod == "NOK") ? @"background-color: #febe28;
                                                                     display: inline-block;
                                                                     padding: 9px 3px;
                                                                     font - size: 20px;
@@ -476,7 +476,7 @@
                                     @foreach (Methods myName in Model._Methods)
                                     {
                                         var style = (myName.StateMethod == "OK") ? "background-color: #1cc88a;" : "";
-                                        var style1 = (myName.StateMethod == "NOK") ? @"background-color: #f6c23e;
+                                        var style1 = (myName.StateMethod == "NOK") ? @"background-color: #febe28;
                                                                     display: inline-block;
                                                                     padding: 9px 3px;
                                                                     font - size: 20px;

@@ -1,8 +1,8 @@
 Status By Method;Sellers;GetSellerInformation;OK
 ;;GetSellerIndicator;OK
-;Offers;GetOfferListPaginated;NOK
+;Offers;GetOfferListPaginated;OK
 ;;SubmitOfferPackage;NOK
-;;GetOfferPackageSubmissionResult;KO
+;;GetOfferPackageSubmissionResult;NOK
 ;Products;GetAllowedCategoryTree;OK
 ;;GetProductList;OK
 ;;GetModelList;OK

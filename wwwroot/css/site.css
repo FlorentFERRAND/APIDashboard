@@ -535,52 +535,12 @@ a.badge-warning:focus, a.badge-warning.focus {
   }
 }
 
-.text-danger-tooltip {
-  color: #e74a3b !important;
-  font-weight: bold;
-}
-
-  .text-danger-tooltip .tooltiptext {
-      visibility: hidden;
-      width: 120px;
-      background-color: grey;
-      color: #fff;
-      text-align: center;
-      border-radius: 6px;
-      padding: 5px 0;
-      /* Position the tooltip */
-      position: absolute;
-      z-index: 1;
-      top: 44%;
-      left: 34%;
-      opacity: 0;
-      transition: opacity 1s;
-      border-style: solid;
-  }
-
-  .text-danger-tooltip:hover .tooltiptext {
-      visibility: visible;
-      opacity: 1;
-  }
-
 .text-success {
   font-weight: bold;
 }
 
 .text-danger {
   font-weight: bold;
-}
-
-.st-green {
-  background-color: #1bc98e;
-}
-
-.st-yellow {
-  background-color: #f4b30d;
-}
-
-.st-red {
-  background-color: #e74a3b;
 }
 
 a#cRetour{

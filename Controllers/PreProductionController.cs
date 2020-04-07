@@ -15,7 +15,7 @@ namespace APIDashboard.Controllers
         string titlePC, string statusbyMetPC, int numberPC,
         string titleIss, int numIss, string expliIss, string stIss, string dateResoIss,
         string titleMet, string cateMet, string nameMet, string staMet,
-        string titleCalendrM1, string monthCalM1, string day1M1, string day2M1, string day3M1, string day4M1, string day5M1,
+        string calsCTitle, string monthCalM1, string day1M1, string day2M1, string day3M1, string day4M1, string day5M1,
         string monthCalM2, string day1M2, string day2M2, string day3M2, string day4M2, string day5M2)
         {            
             DashBoardPreProd dashboardPP = new DashBoardPreProd()
@@ -35,7 +35,7 @@ namespace APIDashboard.Controllers
                 CategoryMethod = cateMet,
                 NameMethod = nameMet,
                 StateMethod = staMet,
-                //TitleCalendarM1 = titleCalendrM1,
+                CalendarsCardTitle = calsCTitle,
                 MonthCalM1 = monthCalM1,
                 DayOfTheWeekDayStatusOfTheDay1M1 = day1M1,
                 DayOfTheWeekDayStatusOfTheDay2M1 = day2M1,

@@ -7,7 +7,6 @@ namespace APIDashboard.Models
 {
     public class CalendarM1
     {
-        public string TitleCalendarM1 { get; set; }
         public string MonthCalM1 {get;set;}
         public string DayOfTheWeekDayStatusOfTheDay1M1 { get; set; }
         public string DayOfTheWeekDayStatusOfTheDay2M1 { get; set; }

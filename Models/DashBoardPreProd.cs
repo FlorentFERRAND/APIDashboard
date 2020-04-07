@@ -29,7 +29,9 @@ namespace APIDashboard.Models
         public string StateMethod { get; set; }
         public List<Methods> _Methods;
 
-        public string TitleCalendarM1 { get; set; }
+        public string CalendarsCardTitle { get; set; }
+        public List<CalendarsTitle> _CalendarsTitle;
+
         public string MonthCalM1 {get;set;}
         public string DayOfTheWeekDayStatusOfTheDay1M1 { get; set; }
         public string DayOfTheWeekDayStatusOfTheDay2M1 { get; set; }
@@ -52,6 +54,7 @@ namespace APIDashboard.Models
             _PieChart = GetPieChartList();
             _Issues = GetAPIIssuesList();
             _Methods = GetMethodsStatusList();
+            _CalendarsTitle = GetCalendarsTitleList();
             _CalendarM1 = GetCalendarsDateStateListM1();
             _CalendarM2 = GetCalendarsDateStateListM2();
         }
@@ -313,9 +316,49 @@ namespace APIDashboard.Models
             return MethodsStatusList;
         }
 
+        public List<CalendarsTitle> GetCalendarsTitleList()
+        {
+            List<CalendarsTitle> CalendarsTitleList = new List<CalendarsTitle>();
+            string error = string.Empty;
+
+            try
+            {
+                string fileMethodsStatus = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot/PreProduction","CalendarsTitle.csv");
+                using (var reader = new StreamReader(fileMethodsStatus))
+                {
+                    List<string> listCalendarsTitle = new List<string>();
+                    while (!reader.EndOfStream)
+                    {
+                        var line = reader.ReadLine();
+                        var values = line.Split(';');
+
+                        listCalendarsTitle.Add(values[0]);
+
+                        string CalsTitle = "";
+                        if (String.IsNullOrEmpty(CalsTitle))
+                        {
+                            CalsTitle = values[0];
+                        }
+
+                        CalendarsTitleList.Add(new CalendarsTitle()
+                        {
+                            CalendarsCardTitle = CalsTitle
+                        });
+                    }
+                    reader.Close();
+                }    
+            }
+            catch(Exception e)
+            {
+                error = e.Message;
+            }
+
+            return CalendarsTitleList;
+        }
+
         public List<CalendarM1> GetCalendarsDateStateListM1()
         {
-            List<CalendarM1> CalendarsDateStateList = new List<CalendarM1>();
+            List<CalendarM1> CalendarsDateStateListM1 = new List<CalendarM1>();
             string error = string.Empty;
 
             try
@@ -323,7 +366,6 @@ namespace APIDashboard.Models
 				string fileMethodsStatus = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot/PreProduction","CalendarM1.csv");
                 using (var reader = new StreamReader(fileMethodsStatus))
                 {
-                    List<string> listTitleCalendarM1 = new List<string>();
                     List<string> listMonthCalM1 = new List<string>();
                     List<string> listDayOfTheWeekDayStatusOfTheDay1M1 = new List<string>();
                     List<string> listDayOfTheWeekDayStatusOfTheDay2M1 = new List<string>();
@@ -335,59 +377,51 @@ namespace APIDashboard.Models
                         var line = reader.ReadLine();
                         var values = line.Split(';');
 
-                        listTitleCalendarM1.Add(values[0]);
-                        listMonthCalM1.Add(values[1]);
-                        listDayOfTheWeekDayStatusOfTheDay1M1.Add(values[2]);
-                        listDayOfTheWeekDayStatusOfTheDay2M1.Add(values[3]);
-                        listDayOfTheWeekDayStatusOfTheDay3M1.Add(values[4]);
-                        listDayOfTheWeekDayStatusOfTheDay4M1.Add(values[5]);
-                        listDayOfTheWeekDayStatusOfTheDay5M1.Add(values[6]);
-
-                        string TitleCalM1 = "";
-                        if (String.IsNullOrEmpty(TitleCalM1))
-                        {
-                            TitleCalM1 = values[0];
-                        }
+                        listMonthCalM1.Add(values[0]);
+                        listDayOfTheWeekDayStatusOfTheDay1M1.Add(values[1]);
+                        listDayOfTheWeekDayStatusOfTheDay2M1.Add(values[2]);
+                        listDayOfTheWeekDayStatusOfTheDay3M1.Add(values[3]);
+                        listDayOfTheWeekDayStatusOfTheDay4M1.Add(values[4]);
+                        listDayOfTheWeekDayStatusOfTheDay5M1.Add(values[5]);
 
                         string MonthCaldrM1 = "";
                         if (String.IsNullOrEmpty(MonthCaldrM1))
                         {
-                            MonthCaldrM1 = values[1];
+                            MonthCaldrM1 = values[0];
                         }
 
                         string Day1M1 = "";
                         if (String.IsNullOrEmpty(Day1M1))
                         {
-                            Day1M1 = values[2];
+                            Day1M1 = values[1];
                         }
 
                         string Day2M1 = "";
                         if (String.IsNullOrEmpty(Day2M1))
                         {
-                            Day2M1 = values[3];
+                            Day2M1 = values[2];
                         }
 
                         string Day3M1 = "";
                         if (String.IsNullOrEmpty(Day3M1))
                         {
-                            Day3M1 = values[4];
+                            Day3M1 = values[3];
                         }
 
                         string Day4M1 = "";
                         if (String.IsNullOrEmpty(Day4M1))
                         {
-                            Day4M1 = values[5];
+                            Day4M1 = values[4];
                         }
 
                         string Day5M1 = "";
                         if (String.IsNullOrEmpty(Day5M1))
                         {
-                            Day5M1 = values[6];
+                            Day5M1 = values[5];
                         }
 
-                        CalendarsDateStateList.Add(new CalendarM1()
+                        CalendarsDateStateListM1.Add(new CalendarM1()
                         {
-                            TitleCalendarM1 = TitleCalM1,
                             MonthCalM1 = MonthCaldrM1,
                             DayOfTheWeekDayStatusOfTheDay1M1 = Day1M1,
                             DayOfTheWeekDayStatusOfTheDay2M1 = Day2M1,
@@ -404,12 +438,12 @@ namespace APIDashboard.Models
                 error = e.Message;
             }
 
-            return CalendarsDateStateList;
+            return CalendarsDateStateListM1;
         }
 
         public List<CalendarM2> GetCalendarsDateStateListM2()
         {
-            List<CalendarM2> CalendarsDateStateListM1 = new List<CalendarM2>();
+            List<CalendarM2> CalendarsDateStateListM2 = new List<CalendarM2>();
             string error = string.Empty;
 
             try
@@ -471,7 +505,7 @@ namespace APIDashboard.Models
                             Day5M2 = values[5];
                         }
 
-                        CalendarsDateStateListM1.Add(new CalendarM2()
+                        CalendarsDateStateListM2.Add(new CalendarM2()
                         {
                             MonthCalM2 = MonthCaldrM2,
                             DayOfTheWeekDayStatusOfTheDay1M2 = Day1M2,
@@ -489,7 +523,7 @@ namespace APIDashboard.Models
                 error = e.Message;
             }
 
-            return CalendarsDateStateListM1;
+            return CalendarsDateStateListM2;
         }
     }
 }

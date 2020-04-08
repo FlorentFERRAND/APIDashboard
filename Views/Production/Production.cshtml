@@ -24,9 +24,9 @@
 					<div class="col-lg-12 mb-4">
                         @foreach (Informations myInfos in Model._Informations)
                         {
-                            var style = (myInfos.StateImportantInformations == "OK") ? "background-color: #1cc88a !important; color:#ffffff" : "";
-                            var style1 = (myInfos.StateImportantInformations == "KO") ? "background-color: #f2dede !important; color:#a94442" : "";
-                            var style2 = (myInfos.StateImportantInformations == "NOK") ? "background-color: #febe28 !important; color:#ffffff" : "";
+                            var style = (myInfos.StateImportantInformations == "OK") ? "background-color:#1cc88a !important;color:#ffffff" : "";
+                            var style1 = (myInfos.StateImportantInformations == "KO") ? "background-color:#f2dede !important;color:#a94442" : "";
+                            var style2 = (myInfos.StateImportantInformations == "NOK") ? "background-color:#febe28 !important;color:#ffffff" : "";
                             if (myInfos.ImportantInfos.Contains("API"))
                             {
 						<div class="card bg-success text-white shadow" style="@style;@style1;@style2">
@@ -40,12 +40,12 @@
 					<div class="col-lg-6 mb-4">
                         @foreach (Informations myInfos in Model._Informations)
                         {
-                            var style = (myInfos.StateImportantInformations == "OK") ? "background-color: #1cc88a !important; color:#ffffff" : "";
-                            var style1 = (myInfos.StateImportantInformations == "KO") ? "background-color: #f2dede !important; color:#a94442" : "";
-                            var style2 = (myInfos.StateImportantInformations == "NOK") ? "background-color: #febe28 !important; color:#ffffff" : "";
+                            var style = (myInfos.StateImportantInformations == "OK") ? "background-color:#1cc88a !important;color:#ffffff" : "";
+                            var style1 = (myInfos.StateImportantInformations == "KO") ? "background-color:#f2dede !important;color:#a94442" : "";
+                            var style2 = (myInfos.StateImportantInformations == "NOK") ? "background-color:#febe28 !important;color:#ffffff" : "";
                             if (myInfos.ImportantInfos.Contains("Get") || myInfos.ImportantInfos.Contains("Submit"))
                             {
-						<div class="card bg-success text-white shadow" style="@style;@style1;@style2;">
+						<div class="card bg-success text-white shadow" style="@style;@style1;@style2">
 							<div class="card-body">
 								<p style="@style;@style1;@style2">@myInfos.ImportantInfos</p>
 							</div>
@@ -56,9 +56,9 @@
 					<div class="col-lg-6 mb-4">
                         @foreach (Informations myInfos in Model._Informations)
                         {
-                            var style = (myInfos.StateImportantInformations == "OK") ? "background-color: #1cc88a !important; color:#ffffff" : "";
-                            var style1 = (myInfos.StateImportantInformations == "KO") ? "background-color: #f2dede !important; color:#a94442" : "";
-                            var style2 = (myInfos.StateImportantInformations == "NOK") ? "background-color: #febe28 !important; color:#ffffff" : "";
+                            var style = (myInfos.StateImportantInformations == "OK") ? "background-color:#1cc88a !important;color:#ffffff" : "";
+                            var style1 = (myInfos.StateImportantInformations == "KO") ? "background-color:#f2dede !important;color:#a94442" : "";
+                            var style2 = (myInfos.StateImportantInformations == "NOK") ? "background-color:#febe28 !important;color:#ffffff" : "";
                             if (myInfos.ImportantInfos.Contains("Validate") || myInfos.ImportantInfos.Contains("Create"))
                             {
 						<div class="card bg-success text-white shadow" style="@style;@style1;@style2">
@@ -72,9 +72,9 @@
 					<div class="col-lg-6 mb-4">
                         @foreach (Informations myInfos in Model._Informations)
                         {
-                            var style = (myInfos.StateImportantInformations == "OK") ? "background-color: #1cc88a !important; color:#ffffff" : "";
-                            var style1 = (myInfos.StateImportantInformations == "KO") ? "background-color: #f2dede !important; color:#a94442" : "";
-                            var style2 = (myInfos.StateImportantInformations == "NOK") ? "background-color: #febe28 !important; color:#ffffff" : "";
+                            var style = (myInfos.StateImportantInformations == "OK") ? "background-color:#1cc88a !important;color:#ffffff" : "";
+                            var style1 = (myInfos.StateImportantInformations == "KO") ? "background-color:#f2dede !important;color:#a94442" : "";
+                            var style2 = (myInfos.StateImportantInformations == "NOK") ? "background-color:#febe28 !important;color:#ffffff" : "";
                             if (myInfos.ImportantInfos.Contains("Close"))
                             {
 						<div class="card bg-success text-white shadow" style="@style;@style1;@style2">
@@ -88,9 +88,9 @@
 					<div class="col-lg-6 mb-4">
                         @foreach (Informations myInfos in Model._Informations)
                         {
-                            var style = (myInfos.StateImportantInformations == "OK") ? "background-color: #1cc88a !important; color:#ffffff" : "";
-                            var style1 = (myInfos.StateImportantInformations == "KO") ? "background-color: #f2dede !important; color:#a94442" : "";
-                            var style2 = (myInfos.StateImportantInformations == "NOK") ? "background-color: #febe28 !important; color:#ffffff" : "";
+                            var style = (myInfos.StateImportantInformations == "OK") ? "background-color:#1cc88a !important;color:#ffffff" : "";
+                            var style1 = (myInfos.StateImportantInformations == "KO") ? "background-color:#f2dede !important;color:#a94442" : "";
+                            var style2 = (myInfos.StateImportantInformations == "NOK") ? "background-color:#febe28 !important;color:#ffffff" : "";
                             if (myInfos.ImportantInfos.Contains("Manage"))
                             {
 						<div class="card bg-success text-white shadow" style="@style;@style1;@style2">
@@ -112,7 +112,7 @@
 					    <h2 class="text-issue">@myPieChart.TitlePieChart</h2>
                     }
 				</div>
-				<div style="background-color:#ffffff">
+				<div class="content-canvas">
                     <canvas id="myPieChart"></canvas>
                 </div>
                 <script>
@@ -162,21 +162,21 @@
                     <table class="table table-striped">
                         <thead>
                             <tr>
-                                <th scope="col" style="text-align:center;">#</th>
-                                <th scope="col" style="text-align:center;">Issue</th>
-                                <th scope="col" style="text-align:center;width:120px;">Status</th>
-                                <th scope="col" style="text-align:center;width:120px;">Planned</th>
+                                <th scope="col" class="apiissuestrthcol124">#</th>
+                                <th scope="col" class="apiissuestrthcol124">Issue</th>
+                                <th scope="col" class="apiissuestrthcol3">Status</th>
+                                <th scope="col" class="apiissuestrthcol124">Planned</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach (Issues myIssue in Model._Issues)
                             {
-                                var style = (myIssue.StateIssue == "DONE") ? "color:#28a745; font-weight:bold;" : "color: #007bff;font-weight:bold;";
-                                var style1 = (myIssue.StateIssue == "Nothing to report") ? "color:#28a745; font-weight:bold;" : "";
+                                var style = (myIssue.StateIssue == "DONE") ? "color:#28a745;font-weight:bold;text-align:center" : "color:#007bff;font-weight:bold;text-align:center";
+                                var style1 = (myIssue.StateIssue == "Nothing to report") ? "color:#28a745;font-weight:bold;text-align:center" : "";
                                 <tr>
                                     <th scope="row">@myIssue.NumberIssue</th>
                                     <td>@myIssue.ExplicationIssue</td>
-                                    <td style="@style;@style1;">@myIssue.StateIssue</td>
+                                    <td style="@style;@style1">@myIssue.StateIssue</td>
                                     <td>@myIssue.DateOfResolutionIssue</td>
                                 </tr>
                             }
@@ -210,25 +210,16 @@
                                 <div class="card-body-methods">
                                     @foreach (Methods myName in Model._Methods)
                                     {
-                                        var style = (myName.StateMethod == "OK") ? "background-color: #1cc88a;" : "";
-                                        var style1 = (myName.StateMethod == "NOK") ? @"background-color: #febe28; display: inline-block;
-                                                                    padding: 9px 3px;
-                                                                    font - size: 20px;
-                                                                    font - weight: 700;
-                                                                    line - height: 1;
-                                                                    text - align: center;
-                                                                    white - space: nowrap;
-                                                                    vertical - align: baseline;
-                                                                    border - radius: 0.35rem;
-                                                                    transition: color 0.15s ease-in-out, background - color 0.15s ease-in-out, border - color 0.15s ease-in-out, box - shadow 0.15s ease-in-out;" : "";
-                                        var style2 = (myName.StateMethod == "KO") ? "background-color: #e74a3b;" : "";
+                                        var style = (myName.StateMethod == "OK") ? "background-color:#1cc88a" : "";
+                                        var style1 = (myName.StateMethod == "NOK") ? @"background-color:#febe28; display:inline-block;padding:9px 3px;font-size:20px;font-weight:700;line-height:1;text-align:center;white-space:nowrap;vertical-align:baseline;border-radius:0.35rem;transition:color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out" : "";
+                                        var style2 = (myName.StateMethod == "KO") ? "background-color:#e74a3b" : "";
                                         if (myName.NameMethod.Contains("Info"))
                                         {
-                                            <p>@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span></p>
+                                            <p>@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span></p>
                                         }
                                         if (myName.NameMethod.Contains("Indi"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
                                         }
                                     }
                                 </div>
@@ -247,30 +238,20 @@
                                 <div class="card-body-methods">
                                     @foreach (Methods myName in Model._Methods)
                                     {
-                                        var style = (myName.StateMethod == "OK") ? "background-color: #1cc88a;" : "";
-                                        var style1 = (myName.StateMethod == "NOK") ? @"background-color: #febe28;
-                                                                    display: inline-block;
-                                                                    padding: 9px 3px;
-                                                                    font - size: 20px;
-                                                                    font - weight: 700;
-                                                                    line - height: 1;
-                                                                    text - align: center;
-                                                                    white - space: nowrap;
-                                                                    vertical - align: baseline;
-                                                                    border - radius: 0.35rem;
-                                                                    transition: color 0.15s ease-in-out, background - color 0.15s ease-in-out, border - color 0.15s ease-in-out, box - shadow 0.15s ease-in-out;" : "";
-                                        var style2 = (myName.StateMethod == "KO") ? "background-color: #e74a3b;" : "";
+                                        var style = (myName.StateMethod == "OK") ? "background-color:#1cc88a" : "";
+                                        var style1 = (myName.StateMethod == "NOK") ? @"background-color:#febe28; display:inline-block;padding:9px 3px;font-size:20px;font-weight:700;line-height:1;text-align:center;white-space:nowrap;vertical-align:baseline;border-radius:0.35rem;transition:color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out" : "";
+                                        var style2 = (myName.StateMethod == "KO") ? "background-color:#e74a3b;" : "";
                                         if (myName.NameMethod.Contains("ListPaginated"))
                                         {
-                                            <p>@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span> </p>
+                                            <p>@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("SubmitOfferPackage"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("OfferPackageSubmissionResult"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
                                         }
                                     }
                                 </div>
@@ -289,46 +270,36 @@
                                 <div class="card-body-methods">
                                     @foreach (Methods myName in Model._Methods)
                                     {
-                                        var style = (myName.StateMethod == "OK") ? "background-color: #1cc88a;" : "";
-                                        var style1 = (myName.StateMethod == "NOK") ? @"background-color: #febe28;
-                                                                    display: inline-block;
-                                                                    padding: 9px 3px;
-                                                                    font - size: 20px;
-                                                                    font - weight: 700;
-                                                                    line - height: 1;
-                                                                    text - align: center;
-                                                                    white - space: nowrap;
-                                                                    vertical - align: baseline;
-                                                                    border - radius: 0.35rem;
-                                                                    transition: color 0.15s ease-in-out, background - color 0.15s ease-in-out, border - color 0.15s ease-in-out, box - shadow 0.15s ease-in-out;" : "";
-                                        var style2 = (myName.StateMethod == "KO") ? "background-color: #e74a3b;" : "";
+                                        var style = (myName.StateMethod == "OK") ? "background-color:#1cc88a" : "";
+                                        var style1 = (myName.StateMethod == "NOK") ? @"background-color:#febe28; display:inline-block;padding:9px 3px;font-size:20px;font-weight:700;line-height:1;text-align:center;white-space:nowrap;vertical-align:baseline;border-radius:0.35rem;transition:color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out" : "";
+                                        var style2 = (myName.StateMethod == "KO") ? "background-color:#e74a3b" : "";
                                         if (myName.NameMethod.Contains("CategoryTree"))
                                         {
-                                            <p>@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span> </p>
+                                            <p>@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("GetProductList"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("ModelList"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("BrandList"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("SubmitProductPackage"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("ProductPackageSubmissionResult"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("GetProductListbyIdentifier"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
                                         }
                                     }
                                 </div>
@@ -347,34 +318,24 @@
                                 <div class="card-body-methods">
                                     @foreach (Methods myName in Model._Methods)
                                     {
-                                        var style = (myName.StateMethod == "OK") ? "background-color: #1cc88a;" : "";
-                                        var style1 = (myName.StateMethod == "NOK") ? @"background-color: #febe28;
-                                                                    display: inline-block;
-                                                                    padding: 9px 3px;
-                                                                    font - size: 20px;
-                                                                    font - weight: 700;
-                                                                    line - height: 1;
-                                                                    text - align: center;
-                                                                    white - space: nowrap;
-                                                                    vertical - align: baseline;
-                                                                    border - radius: 0.35rem;
-                                                                    transition: color 0.15s ease-in-out, background - color 0.15s ease-in-out, border - color 0.15s ease-in-out, box - shadow 0.15s ease-in-out;" : "";
-                                        var style2 = (myName.StateMethod == "KO") ? "background-color: #e74a3b;" : "";
+                                        var style = (myName.StateMethod == "OK") ? "background-color:#1cc88a" : "";
+                                        var style1 = (myName.StateMethod == "NOK") ? @"background-color:#febe28; display:inline-block;padding:9px 3px;font-size:20px;font-weight:700;line-height:1;text-align:center;white-space:nowrap;vertical-align:baseline;border-radius:0.35rem;transition:color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out" : "";
+                                        var style2 = (myName.StateMethod == "KO") ? "background-color:#e74a3b" : "";
                                         if (myName.NameMethod.Contains("GetOrderList"))
                                         {
-                                            <p>@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span> </p>
+                                            <p>@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("Global"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("ValidateOrderList"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("Refund"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
                                         }
                                     }
                                 </div>
@@ -393,70 +354,60 @@
                                 <div class="card-body-methods">
                                     @foreach (Methods myName in Model._Methods)
                                     {
-                                        var style = (myName.StateMethod == "OK") ? "background-color: #1cc88a;" : "";
-                                        var style1 = (myName.StateMethod == "NOK") ? @"background-color: #febe28;
-                                                                    display: inline-block;
-                                                                    padding: 9px 3px;
-                                                                    font - size: 20px;
-                                                                    font - weight: 700;
-                                                                    line - height: 1;
-                                                                    text - align: center;
-                                                                    white - space: nowrap;
-                                                                    vertical - align: baseline;
-                                                                    border - radius: 0.35rem;
-                                                                    transition: color 0.15s ease-in-out, background - color 0.15s ease-in-out, border - color 0.15s ease-in-out, box - shadow 0.15s ease-in-out;" : "";
-                                        var style2 = (myName.StateMethod == "KO") ? "background-color: #e74a3b;" : "";
+                                        var style = (myName.StateMethod == "OK") ? "background-color:#1cc88a" : "";
+                                        var style1 = (myName.StateMethod == "NOK") ? @"background-color:#febe28; display:inline-block;padding:9px 3px;font-size:20px;font-weight:700;line-height:1;text-align:center;white-space:nowrap;vertical-align:baseline;border-radius:0.35rem;transition:color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out" : "";
+                                        var style2 = (myName.StateMethod == "KO") ? "background-color:#e74a3b;" : "";
                                         if (myName.NameMethod.Contains("SubmitFulfilmentSupplyOrder"))
                                         {
-                                            <p>@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span> </p>
+                                            <p>@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("OnDemand"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod == ("GetFulfilmentSupplyOrderReportList"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("DeliveryDocument"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod == ("GetFulfilmentSupplyOrder"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("FulfilmentActivation"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod == ("GetFulfilmentActivation"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("ToSupply"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("Action"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("CreateExternal"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("OrderStatus"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("StockList"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("Parcel"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
                                         }
                                     }
                                 </div>
@@ -475,38 +426,28 @@
                                 <div class="card-body-methods">
                                     @foreach (Methods myName in Model._Methods)
                                     {
-                                        var style = (myName.StateMethod == "OK") ? "background-color: #1cc88a;" : "";
-                                        var style1 = (myName.StateMethod == "NOK") ? @"background-color: #febe28;
-                                                                    display: inline-block;
-                                                                    padding: 9px 3px;
-                                                                    font - size: 20px;
-                                                                    font - weight: 700;
-                                                                    line - height: 1;
-                                                                    text - align: center;
-                                                                    white - space: nowrap;
-                                                                    vertical - align: baseline;
-                                                                    border - radius: 0.35rem;
-                                                                    transition: color 0.15s ease-in-out, background - color 0.15s ease-in-out, border - color 0.15s ease-in-out, box - shadow 0.15s ease-in-out;" : "";
-                                        var style2 = (myName.StateMethod == "KO") ? "background-color: #e74a3b;" : "";
+                                        var style = (myName.StateMethod == "OK") ? "background-color:#1cc88a" : "";
+                                        var style1 = (myName.StateMethod == "NOK") ? @"background-color:#febe28; display:inline-block;padding:9px 3px;font-size:20px;font-weight:700;line-height:1;text-align:center;white-space:nowrap;vertical-align:baseline;border-radius:0.35rem;transition:color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out" : "";
+                                        var style2 = (myName.StateMethod == "KO") ? "background-color:#e74a3b;" : "";
                                         if (myName.NameMethod.Contains("ClaimList"))
                                         {
-                                            <p>@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span> </p>
+                                            <p>@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("OfferQuestionList"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("OrderQuestionList"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("Close"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("Mail"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2;">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
                                         }
                                     }
                                 </div>

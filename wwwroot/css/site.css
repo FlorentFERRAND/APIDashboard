@@ -73,16 +73,24 @@ body {
   }
 }
 
-.deleteHeightTR {
-  height: auto;
-}
-
 p {
   color: #000000;
 }
 
 .text-issue {
   color: black !important;
+}
+
+.content-canvas {
+  background-color: #ffffff;
+}
+
+.apiissuestrthcol124 {
+  text-align:center;
+}
+.apiissuestrthcol3 {
+  text-align: center;
+  width: 159px;
 }
 
 .bg-success {
@@ -416,6 +424,22 @@ a.badge-success:focus, a.badge-success.focus {
   .col-lg-3 {
       width: 30%;
   }
+}
+
+.calM1 {
+  position:absolute;
+}
+
+.calM1M2Table {
+  margin-bottom:0;
+}
+
+.deleteHeightTR {
+  height: auto;
+}
+
+.calM2 {
+  left:537px;
 }
 
 a#cRetour{

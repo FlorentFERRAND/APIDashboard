@@ -400,7 +400,6 @@ tr {
 
 .badge-success {
   color: #fff;
-  /*background-color: #1cc88a;*/
   float: right;
 }
 
@@ -446,7 +445,6 @@ a#cRetour.cInvisible{
   opacity:0;
   transition:all ease-in 0.5s;
 }
-
 a#cRetour.cVisible{
   bottom:20px;
   opacity:1;

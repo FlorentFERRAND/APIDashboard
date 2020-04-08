@@ -1,15 +1,13 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-a.navbar-brand {
+﻿a.navbar-brand {
   white-space: normal;
   text-align: center;
   word-break: break-all;
 }
-
-/* Provide sufficient contrast against white background */
 a {
   color: #0366d6;
+}
+a.nav-link{
+  font-size: 1.3rem;
 }
 
 .btn-primary {
@@ -24,12 +22,9 @@ a {
   border-color: #1861ac;
 }
 
-a.nav-link{
-  font-size: 1.3rem;
-}
-/* Sticky footer styles
--------------------------------------------------- */
 html {
+  position: relative;
+  min-height: 100%;
   font-size: 14px;
 }
 @media (min-width: 768px) {
@@ -54,52 +49,25 @@ button.accept-policy {
   line-height: inherit;
 }
 
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
-}
-
 body {
-  /* Margin bottom by footer height */
   margin-bottom: 60px;
-}
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
 }
 
 /* CSS ajouté */
- /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
-for details on configuring this project to bundle and minify static web assets. */
-
-/* Wrapping element */
-/* Set some basic padding to keep content from hitting the edges */
-
-
-/* Carousel */
 .carousel-caption p {
   font-size: 20px;
   line-height: 1.4;
 }
 
-/* Make .svg files in the carousel display properly in older browsers */
 .carousel-inner .item img[src$=".svg"] {
   width: 100%;
 }
 
-/* QR code generator */
 #qrCode {
   margin: 15px;
 }
 
-/* Hide/rearrange for smaller screens */
 @media screen and (max-width: 767px) {
-  /* Hide captions */
   .carousel-caption {
       display: none;
   }
@@ -110,28 +78,16 @@ for details on configuring this project to bundle and minify static web assets. 
 }
 
 p {
-  /*font-size: 1.3em;*/
   color: #000000;
 }
 
-.text-primary {
-  margin-top: 10px;
-  color: #000000 !important;
-}
-
 .text-issue {
-  /*text-align: center;*/
   color: black !important;
-}
-
-.text-pourcentage .text-issue .text-methods {
   margin-top: 10px;
-  color: black !important;
 }
 
 .bg-success {
   margin: 10px 10px;
-  /*background-color: #1cc88a !important;*/
 }
 
 a.bg-success:hover, a.bg-success:focus,
@@ -140,52 +96,16 @@ button.bg-success:focus {
   background-color: #169b6b !important;
 }
 
-/*.bg-success p{
-  color:#ffffff;
-}*/
-
-.bg-danger {
-  margin: 10px 10px;
-  /*background-color: #f2dede !important;*/
-}
-
-a.bg-danger:hover, a.bg-danger:focus,
-button.bg-danger:hover,
-button.bg-danger:focus {
-  background-color: #f2dede !important;
-}
-
-/*.bg-danger p {
-  color: #a94442;
-}*/
-
 .bg-text {
   margin: 10px 10px;
 }
 
-  .bg-text p {
-      color: #000000;
-  }
+.bg-text p {
+  color: #000000;
+}
 
 .container-fluid {
   margin-top: 30px;
-}
-
-.alert {
-  width: 300px;
-}
-
-@media (min-width: 320px) {
-  .alert {
-      width: 230px;
-  }
-}
-
-
-@media (min-width: 768px) {
-  .alert {
-      width: 310px;
-  }
 }
 
 .row {
@@ -195,9 +115,6 @@ button.bg-danger:focus {
   margin-left: -0.75rem;
 }
 
-/*.border-left-primary {
-  border-left: 0.25rem solid #78261f !important;
-}*/
 .card {
   position: relative;
   display: flex;
@@ -481,22 +398,6 @@ tr {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.badge-danger {
-  color: #fff;
-  /*background-color: #e74a3b;*/
-  float: right;
-}
-
-a.badge-danger:hover, a.badge-danger:focus {
-  color: #fff;
-  background-color: #d52a1a;
-}
-
-a.badge-danger:focus, a.badge-danger.focus {
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(231, 74, 59, 0.5);
-}
-
 .badge-success {
   color: #fff;
   /*background-color: #1cc88a;*/
@@ -513,34 +414,10 @@ a.badge-success:focus, a.badge-success.focus {
   box-shadow: 0 0 0 0.2rem rgba(28, 200, 138, 0.5);
 }
 
-.badge-warning {
-  color: #000;
-  /*background-color: #f6c23e;*/
-  float: right;
-}
-
-a.badge-warning:hover, a.badge-warning:focus {
-  color: #fff;
-  background-color: #f4b30d;
-}
-
-a.badge-warning:focus, a.badge-warning.focus {
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(246, 194, 62, 0.5);
-}
-
 @media (min-width:1200px) {
   .col-lg-3 {
       width: 30%;
   }
-}
-
-.text-success {
-  font-weight: bold;
-}
-
-.text-danger {
-  font-weight: bold;
 }
 
 a#cRetour{
@@ -575,6 +452,13 @@ a#cRetour.cVisible{
   opacity:1;
 }
 
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
 .footer-p{
   font-size:1.0em;
 }

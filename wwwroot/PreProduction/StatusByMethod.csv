@@ -28,7 +28,7 @@ Status By Method;Sellers;GetSellerInformation;OK
 ;;GetProductStockList;OK
 ;;ManageParcel;OK
 ;Discussions;GetOrderClaimList;OK
-;;GetOfferQuestionList;KO
-;;GetOrderQuestionList;KO
+;;GetOfferQuestionList;OK
+;;GetOrderQuestionList;OK
 ;;CloseDiscussionList;OK
 ;Webmail;GetDiscussionMailList;OK

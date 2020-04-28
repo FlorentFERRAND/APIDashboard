@@ -1,6 +1,6 @@
-API Issues;1;We meet actually a problem to get data from GetOfferPackageSubmissionResult by API from S12. Our technical teams are mobilized on the subject.;IN PROGRESS;T2 2020
-;2;We meet actually a slowdown about the creation of products by API in production due to our deployment in preproduction from that date 01-30-2020. Our technical teams are mobilized on the subject.;DONE;T1 2020
-;3;We meet actually a slowdown about the integration of offers by API from the Week 04. Our technical teams are mobilized on the subject.;DONE;T1 2020
-;4;We meet actually a slowdown about the integration of offers by API from the beginning of winter sales 2020. Our technical teams are mobilized on the subject.;DONE;T1 2020
-;5;We meet actually a problem to get logs on the API method GetModelList. Our technical teams are mobilized on the subject.;DONE;T4 2019
-;6;We meet actually a problem to get logs on the API method GetOrderList. Our technical teams are mobilized on the subject.;DONE;T4 2019
+API Issues;1;We meet currently a problem to get data from GetOfferPackageSubmissionResult by API from S12. Our technical teams are mobilized on the subject.;IN PROGRESS;T2 2020
+;2;We meet currently a slowdown about the creation of products by API in production due to our deployment in preproduction from that date 01-30-2020. Our technical teams are mobilized on the subject.;DONE;T1 2020
+;3;We meet currently a slowdown about the integration of offers by API from the Week 04. Our technical teams are mobilized on the subject.;DONE;T1 2020
+;4;We meet currently a slowdown about the integration of offers by API from the beginning of winter sales 2020. Our technical teams are mobilized on the subject.;DONE;T1 2020
+;5;We meet currently a problem to get logs on the API method GetModelList. Our technical teams are mobilized on the subject.;DONE;T4 2019
+;6;We meet currently a problem to get logs on the API method GetOrderList. Our technical teams are mobilized on the subject.;DONE;T4 2019

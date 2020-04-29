@@ -1,4 +1,10 @@
-﻿a.navbar-brand {
+﻿@font-face {
+  font-family: 'Montserrat-Light';
+  src: url('~/font/Montserrat-Light.etf');
+  src: url('~/font/Montserrat-Light.etf?#iefix') format('embedded-opentype'),
+         url('~/font/Montserrat-Light.svg#Montserrat-Light') format('svg');
+}
+a.navbar-brand {
   white-space: normal;
   text-align: center;
   word-break: break-all;
@@ -6,8 +12,21 @@
 a {
   color: #0366d6;
 }
-a.nav-link{
-  font-size: 1.3rem;
+a.nav-link-r{
+  font-size:16px!important;
+  font-weight: bold;
+  color:var(--dark-blue-color)!important;
+  font-family: 'Montserrat-Light', sans-serif;
+  padding-right: 2.5rem;
+  text-decoration: none;
+}
+a.nav-link-l{
+  font-size:16px!important;
+  font-weight: bold;
+  color:var(--dark-blue-color)!important;
+  font-family: 'Montserrat-Light', sans-serif;
+  padding-left: 2.5rem;
+  text-decoration: none;
 }
 
 .btn-primary {
@@ -78,7 +97,8 @@ p {
 }
 
 .text-issue {
-  color: black !important;
+  font-family: 'Montserrat-Light', sans-serif;
+  color:black;
 }
 
 .content-canvas {
@@ -129,9 +149,14 @@ button.bg-success:focus {
 .p, .card-body {
   color: #a94442;
 }
-
+.card-body-methods-p-font {
+  font-size:16px!important;
+  font-family: 'Montserrat-Light', sans-serif;
+}
 .card-body-methods-p {
   margin-top: 30px;
+  font-size:16px!important;
+  font-family: 'Montserrat-Light', sans-serif;
 }
 
 .card-body {
@@ -198,10 +223,31 @@ button.bg-success:focus {
   }
 
   a.card-header-link-title {
+    color:var(--dark-blue-color)!important;
+    font-family: 'Montserrat-Light', sans-serif;
     text-decoration:none;
-    color:#000000;
-    font-size:1.90rem;
+    font-size:32px;
   }
+.issue-font {
+  font-size:16px!important;
+  font-family: 'Montserrat-Light', sans-serif;
+  text-align:center;
+}
+.issue-font-w {
+  font-size:16px!important;
+  font-family: 'Montserrat-Light', sans-serif;
+  text-align:center;
+  width:159px;
+}
+.issue-font-content{
+  font-size:14px!important;
+  font-family: 'Montserrat-Light', sans-serif;
+}
+.issue-font-content-j{
+  font-size:14px!important;
+  font-family: 'Montserrat-Light', sans-serif;
+  text-align: justify;
+}
 
 .card-footer {
   padding: 0.75rem 1.25rem;
@@ -434,13 +480,17 @@ a.badge-success:focus, a.badge-success.focus {
   left:537px;
 }
 
+.BackToTop a{
+  box-shadow: 0px 10px 20px #00000029;
+  border: 5px solid white;
+  border-radius: 50px;
+}
 a#cRetour{
-  border-radius:3px;
-  padding: 8px 10px 8px 10px;
-  font-size:15px;
+  width: 40px;
+  height: 40px;
   text-align:center;
   color:#fff;
-  background:rgba(0, 0, 0, 0.25);
+  background:#e13a13;
   position:fixed;
   right:20px;
   opacity:1;
@@ -450,10 +500,15 @@ a#cRetour{
   -webkit-backface-visibility: hidden;
   text-decoration: none;
 }
-a#cRetour:before{ content: "\25b2"; }
 a#cRetour:hover{
-  background:rgba(0, 0, 0, 1);
+  background: #293847;
   transition:all ease-in 0.2s;
+}
+a#cRetour:after{
+  content: "\25b2"; font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1em;
 }
 a#cRetour.cInvisible{
   bottom:-35px;
@@ -472,6 +527,10 @@ a#cRetour.cVisible{
   white-space: nowrap;
   line-height: 60px;
 }
-.footer-p{
-  font-size:1.0em;
+.copyright-text{
+  font-size: 12px!important;
+  font-weight: 300!important;
+  color: var(--grey-color)!important;
+  font-family: 'Montserrat-Light', sans-serif;
+  text-align: center;
 }

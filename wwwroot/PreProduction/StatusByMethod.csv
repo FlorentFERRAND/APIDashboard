@@ -14,7 +14,7 @@ Status By Method;Sellers;GetSellerInformation;OK
 ;;GetGlobalConfiguration;OK
 ;;ValidateOrderList;OK
 ;;CreateRefundVoucher;OK
-;Fulfillment;SubmitFulfilmentSupplyOrder;OK
+;Fulfilment;SubmitFulfilmentSupplyOrder;OK
 ;;SubmitFulfilmentOnDemandSupplyOrder;OK
 ;;GetFulfilmentSupplyOrderReportList;OK
 ;;GetFulfilmentDeliveryDocument;OK

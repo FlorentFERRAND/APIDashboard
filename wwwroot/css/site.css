@@ -505,7 +505,8 @@ a#cRetour:hover{
   transition:all ease-in 0.2s;
 }
 a#cRetour:after{
-  content: "\25b2"; font-family: FontAwesome;
+  content: "\25b2";
+  font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
   font-size: 1em;

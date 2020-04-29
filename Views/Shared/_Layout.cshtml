@@ -4,12 +4,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - APIDashboard</title>
+    <link rel="icon" type="image/png" href="~/img/icon.png" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white mb-3">
+        <nav class="col-xl-9 col-lg-12 navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white mb-3">
             <div class="container">
                 <img src="~/img/Logo.png" alt="Cdiscount">
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
@@ -21,6 +24,7 @@
                             <a class="nav-link-l" asp-area="" asp-controller="PreProduction" asp-action="PreProduction">PreProduction</a>
                         </li>
                     </ul>
+                    <i class='fa fa-bell fa-dropdown'></i>
                 </div>
             </div>
         </nav>

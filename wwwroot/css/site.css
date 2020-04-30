@@ -123,17 +123,6 @@ button.bg-success:focus {
   color: #000000;
 }
 
-.container-fluid {
-  margin-top: 30px;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -0.75rem;
-  margin-left: -0.75rem;
-}
-
 .card {
   position: relative;
   display: flex;
@@ -222,6 +211,10 @@ button.bg-success:focus {
       border-top: 0;
   }
 
+  .fa-exclamation-circle {
+   font-size:20px;
+   color:#e13a13;
+  }
   a.card-header-link-title {
     color:var(--dark-blue-color)!important;
     font-family: 'Montserrat-Light', sans-serif;
@@ -485,6 +478,10 @@ a.badge-success:focus, a.badge-success.focus {
   border: 5px solid white;
   border-radius: 50px;
 }
+
+.fa-arrow-up{
+  vertical-align: middle;
+}
 a#cRetour{
   width: 40px;
   height: 40px;
@@ -505,7 +502,6 @@ a#cRetour:hover{
   transition:all ease-in 0.2s;
 }
 a#cRetour:after{
-  content: "\25b2";
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;

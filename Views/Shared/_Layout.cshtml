@@ -7,15 +7,16 @@
     <link rel="icon" type="image/png" href="~/img/icon.png" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
-    
-<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 <body>
     <header>
-        <nav class="col-xl-9 col-lg-12 navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white mb-3">
-            <div class="container">
-                <img src="~/img/Logo.png" alt="Cdiscount">
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+        <div class="container">
+            <nav class="row navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white mb-3">
+                <div class="col-xs-5 col-md-4 col-lg-3 col-xl-3 navbar-brand">
+                    <img src="~/img/Logo.png" alt="Cdiscount">
+                </div>
+                <div class="col-xs-12 col-md-7 col-lg-6 col-xl-6 navbar-collapse collapse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link-r" asp-area="" asp-controller="Production" asp-action="Production">Production</a>
@@ -24,10 +25,9 @@
                             <a class="nav-link-l" asp-area="" asp-controller="PreProduction" asp-action="PreProduction">PreProduction</a>
                         </li>
                     </ul>
-                    <i class='fa fa-bell fa-dropdown'></i>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
     <div class="container">
         <main role="main" class="pb-3">

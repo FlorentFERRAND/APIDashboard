@@ -7,9 +7,9 @@
 	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
 	<link rel="stylesheet" href="~/css/site.css" />
 </environment>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-xl-9 col-lg-12">
@@ -460,13 +460,19 @@
     </div>
 </div>
 
-<div class="BackToTop"><a id="cRetour" title="Back to top" class="cInvisible" href="#"><i style='vertical-align:middle' class='fas'>&#xf062;</i></a></div>
-
+<button onclick="topFunction()" id="myBtn" title="Back to top"><i class="fas fa-arrow-up"></i></button>
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  window.onscroll = function(ev) {
-    document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
-  };
-});
+   window.onscroll = function() {scrollFunction()};
+
+   function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+         document.getElementById("myBtn").style.display = "block";
+      } else {
+         document.getElementById("myBtn").style.display = "none";
+      }
+   }
+   function topFunction() {
+      $('html,body').animate({ scrollTop: 0 }, 1000);
+   }
 </script>
 

@@ -194,6 +194,34 @@
                     {
                         <a data-toggle="collapse" href="#methods" class="card-header-link-title">@myName.TitleMethod</a>
                     }
+                    <div class="col-xs-5 col-md-7 col-lg-2 col-xl-2 navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                        <button id="myBtn1" class="buttonExclamationPopup"><i class='fas fa-exclamation-circle'/></i></button>
+                    </div>
+                    <div id="myPopup" class="popup">
+                        <div class="popup-content">
+                            <div class="popup-title">
+                                <span class="close">&times;</span>
+                                <h2 class="popup-title-h2">Status</h2>
+                            </div>
+                            <div class="content">
+                                <p class="content-h2">Each API method will be assigned to a different status like explained below:</p>
+                                <ul>
+                                    <li>
+                                        <p class="content-ul-li">
+                                            <b>OK:</b> All informations can be get by our API method and informations are available from your seller's zone.</p>
+                                    </li>
+                                    <li>
+                                        <p class="content-ul-li">
+                                            <b>NOK:</b> Some issue has been detected like a non update of offers in your Products catalog page of your seller's zone but informations can be get from API method.</p>
+                                    </li>
+                                    <li>
+                                        <p class="content-ul-li">
+                                            <b>KO:</b> An issue has been detected about this API method and our team are mobilized to resolved this problem. Some API method are down. No informations are reported.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div id="methods" class="panel-collapse collapse">
                     <div class="row">
@@ -574,4 +602,21 @@
    function topFunction() {
       $('html,body').animate({ scrollTop: 0 }, 1000);
    }
+</script>
+
+<script>
+    popup = document.getElementById("myPopup");
+    var btn = document.getElementById("myBtn1");
+    var span = document.getElementsByClassName("close")[0];
+    btn.onclick = function() {
+        popup.style.display = "block";
+    }
+    span.onclick = function() {
+        popup.style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == popup) {
+            popup.style.display = "none";
+        }
+    }
 </script>

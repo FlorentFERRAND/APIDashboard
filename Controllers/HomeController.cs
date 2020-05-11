@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using APIDashboard.Models;
+using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace APIDashboard.Controllers
 {

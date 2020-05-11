@@ -560,12 +560,6 @@ a#cRetour:hover{
   background: #293847;
   transition:all ease-in 0.2s;
 }
-a#cRetour:after{
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 1em;
-}
 a#cRetour.cInvisible{
   bottom:-35px;
   opacity:0;

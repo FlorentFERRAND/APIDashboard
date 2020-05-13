@@ -11,7 +11,7 @@ namespace APIDashboard.Controllers
         public IActionResult Production(string titleInfos, string infos, string stateInfos,
         string titlePC, string statusbyMetPC, int numberPC,
         string titleIss, int numIss, string expliIss, string stIss, string dateResoIss,
-        string titleMet, string cateMet, string nameMet, string staMet)
+        string titleMet, string cateMet, string nameMet, string staMet, string tooltipStaMet)
         {
             DashBoardProd dashboardP = new DashBoardProd()
             {
@@ -30,6 +30,7 @@ namespace APIDashboard.Controllers
                 CategoryMethod = cateMet,
                 NameMethod = nameMet,
                 StateMethod = staMet,
+                TooltipStateMethod = tooltipStaMet
             };
             dashboardP.GetMethodsStatusList();
 

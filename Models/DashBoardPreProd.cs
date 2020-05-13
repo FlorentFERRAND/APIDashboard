@@ -27,6 +27,7 @@ namespace APIDashboard.Models
         public string CategoryMethod { get; set; }
         public string NameMethod { get; set; }
         public string StateMethod { get; set; }
+        public string TooltipStateMethod { get; set; }
         public List<Methods> _Methods;
 
         public string CalendarsCardTitle { get; set; }
@@ -264,6 +265,7 @@ namespace APIDashboard.Models
                     List<string> listCategoryMethod = new List<string>();
                     List<string> listNameMethod = new List<string>();
                     List<string> listStateMethod = new List<string>();
+                    List<string> listTooltipStateMethod = new List<string>();
                     while (!reader.EndOfStream)
                     {
                         var line = reader.ReadLine();
@@ -273,6 +275,7 @@ namespace APIDashboard.Models
                         listCategoryMethod.Add(values[1]);
                         listNameMethod.Add(values[2]);
                         listStateMethod.Add(values[3]);
+                        listTooltipStateMethod.Add(values[4]);
 
                         string Title = "";
                         if (String.IsNullOrEmpty(Title))
@@ -298,12 +301,19 @@ namespace APIDashboard.Models
                             State = values[3];
                         }
 
+                        string Tootltip = "";
+                        if (String.IsNullOrEmpty(Tootltip))
+                        {
+                            Tootltip = values[4];
+                        }
+
                         MethodsStatusList.Add(new Methods()
                         {
                             TitleMethod = Title,
                             CategoryMethod = CategoryMeth,
                             NameMethod = Name,
-                            StateMethod = State
+                            StateMethod = State,
+                            TooltipStateMethod = Tootltip
                         });
                     }
                     reader.Close();

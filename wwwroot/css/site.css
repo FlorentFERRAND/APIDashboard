@@ -506,17 +506,14 @@ tr {
   border-radius: 0.35rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-
 .badge-success {
   color: #fff;
   float: right;
 }
-
 a.badge-success:hover, a.badge-success:focus {
   color: #fff;
   background-color: #169b6b;
 }
-
 a.badge-success:focus, a.badge-success.focus {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(28, 200, 138, 0.5);

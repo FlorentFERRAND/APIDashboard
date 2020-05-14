@@ -12,20 +12,19 @@ a.navbar-brand {
 a {
   color: #0366d6;
 }
-a.nav-link-r{
+a.nav-link-p{
   font-size:16px!important;
   font-weight: bold;
   color:var(--dark-blue-color)!important;
   font-family: 'Montserrat-Light', sans-serif;
-  padding-right: 2.5rem;
   text-decoration: none;
 }
-a.nav-link-l{
+a.nav-link-pp{
   font-size:16px!important;
   font-weight: bold;
   color:var(--dark-blue-color)!important;
   font-family: 'Montserrat-Light', sans-serif;
-  padding-left: 2.5rem;
+  padding-left: 7rem;
   text-decoration: none;
 }
 

@@ -9,8 +9,8 @@ a.navbar-brand {
   text-align: center;
   word-break: break-all;
 }
-a {
-  color: #0366d6;
+#navbar-nav-menu-header{
+  padding-left: 9rem;
 }
 a.nav-link-p{
   font-size:16px!important;

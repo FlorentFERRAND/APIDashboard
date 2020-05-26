@@ -1,8 +1,8 @@
 Status By Method;Sellers;GetSellerInformation;OK;
 ;;GetSellerIndicator;OK;
 ;Offers;GetOfferListPaginated;OK;
-;;SubmitOfferPackage;NOK;We note a slow down of integration of offers package from API from S12. The file remain at the status 'File being integrated' in the seller's store.
-;;GetOfferPackageSubmissionResult;NOK;We meet currently a problem to get data from GetOfferPackageSubmissionResult by API from S12. Our technical teams are mobilized on the subject.
+;;SubmitOfferPackage;OK;We note a slow down of integration of offers package from API from S12. The file remain at the status 'File being integrated' in the seller's store.
+;;GetOfferPackageSubmissionResult;OK;We meet currently a problem to get data from GetOfferPackageSubmissionResult by API from S12. Our technical teams are mobilized on the subject.
 ;Products;GetAllowedCategoryTree;OK;
 ;;GetProductList;OK;
 ;;GetModelList;OK;

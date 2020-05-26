@@ -9,6 +9,7 @@
 </environment>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 
 <div class="container-fluid">
 	<div class="row">
@@ -207,16 +208,13 @@
                                 <p class="content-h2">Each API method will be assigned to a different status like explained below:</p>
                                 <ul>
                                     <li>
-                                        <p class="content-ul-li">
-                                            <b>OK:</b> All informations can be get by our API method and informations are available from your seller's zone.</p>
+                                        <p class="content-ul-li"><b>OK:</b> All informations can be get by our API method and informations are available from your seller's zone.</p>
                                     </li>
                                     <li>
-                                        <p class="content-ul-li">
-                                            <b>NOK:</b> Some issue has been detected like a non update of offers in your Products catalog page of your seller's zone but informations can be get from API method.</p>
+                                        <p class="content-ul-li"><b>NOK:</b> Some issue has been detected like a non update of offers in your Products catalog page of your seller's zone but informations can be get from API method.</p>
                                     </li>
                                     <li>
-                                        <p class="content-ul-li">
-                                            <b>KO:</b> An issue has been detected about this API method and our team are mobilized to resolved this problem. Some API method are down. No informations are reported.</p>
+                                        <p class="content-ul-li"><b>KO:</b> An issue has been detected about this API method and our team are mobilized to resolved this problem. Some API method are down. No informations are reported.</p>
                                     </li>
                                 </ul>
                             </div>
@@ -243,11 +241,11 @@
                                         var style2 = (myName.StateMethod == "KO") ? "background-color:#e74a3b" : "";
                                         if (myName.NameMethod.Contains("Info"))
                                         {
-                                            <p class="card-body-methods-p-font">@myName.NameMethod<span title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}" class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span></p>
+                                            <p class="card-body-methods-p-font">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span></p>
                                         }
                                         if (myName.NameMethod.Contains("Indi"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}" class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span> </p>
                                         }
                                     }
                                 </div>
@@ -271,15 +269,15 @@
                                         var style2 = (myName.StateMethod == "KO") ? "background-color:#e74a3b;" : "";
                                         if (myName.NameMethod.Contains("ListPaginated"))
                                         {
-                                            <p class="card-body-methods-p-font">@myName.NameMethod<span title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}" class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p-font">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("SubmitOfferPackage"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}" class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("OfferPackageSubmissionResult"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}" class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span> </p>
                                         }
                                     }
                                 </div>
@@ -303,31 +301,31 @@
                                         var style2 = (myName.StateMethod == "KO") ? "background-color:#e74a3b" : "";
                                         if (myName.NameMethod.Contains("CategoryTree"))
                                         {
-                                            <p class="card-body-methods-p-font">@myName.NameMethod<span title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}" class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p-font">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("GetProductList"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}" class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("ModelList"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}" class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("BrandList"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}" class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("SubmitProductPackage"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}" class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("ProductPackageSubmissionResult"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}" class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("GetProductListbyIdentifier"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}" class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span> </p>
                                         }
                                     }
                                 </div>
@@ -351,19 +349,19 @@
                                         var style2 = (myName.StateMethod == "KO") ? "background-color:#e74a3b" : "";
                                         if (myName.NameMethod.Contains("GetOrderList"))
                                         {
-                                            <p class="card-body-methods-p-font">@myName.NameMethod<span title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}" class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p-font">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("Global"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}" class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("ValidateOrderList"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}" class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("Refund"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}" class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span> </p>
                                         }
                                     }
                                 </div>
@@ -387,55 +385,55 @@
                                         var style2 = (myName.StateMethod == "KO") ? "background-color:#e74a3b;" : "";
                                         if (myName.NameMethod.Contains("SubmitFulfilmentSupplyOrder"))
                                         {
-                                            <p class="card-body-methods-p-font">@myName.NameMethod<span title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}" class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p-font">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("OnDemand"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}" class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod == ("GetFulfilmentSupplyOrderReportList"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}" class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("DeliveryDocument"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}" class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod == ("GetFulfilmentSupplyOrder"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}" class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("FulfilmentActivation"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}" class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod == ("GetFulfilmentActivation"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}" class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("ToSupply"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}" class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("Action"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}" class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("CreateExternal"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}" class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("OrderStatus"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}" class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("StockList"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}" class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("Parcel"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}" class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span> </p>
                                         }
                                     }
                                 </div>
@@ -459,23 +457,23 @@
                                         var style2 = (myName.StateMethod == "KO") ? "background-color:#e74a3b;" : "";
                                         if (myName.NameMethod.Contains("ClaimList"))
                                         {
-                                            <p class="card-body-methods-p-font">@myName.NameMethod<span title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}" class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p-font">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("OfferQuestionList"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}" class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("OrderQuestionList"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}" class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("Close"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}" class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("Mail"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}" class="badge badge-success" style="@style;@style1;@style2">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span> </p>
                                         }
                                     }
                                 </div>
@@ -489,20 +487,6 @@
 </div>
 
 <button onclick="topFunction()" id="myBtn" title="Back to top"><i class="fas fa-arrow-up"></i></button>
-<script>
-   window.onscroll = function() {scrollFunction()};
-
-   function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-         document.getElementById("myBtn").style.display = "block";
-      } else {
-         document.getElementById("myBtn").style.display = "none";
-      }
-   }
-   function topFunction() {
-      $('html,body').animate({ scrollTop: 0 }, 1000);
-   }
-</script>
 
 <script>
     popup = document.getElementById("myPopup");
@@ -519,4 +503,22 @@
             popup.style.display = "none";
         }
     }
+</script>
+<script>
+    $(document).ready(function() {
+        $('[data-toggle="tooltip"]').tooltip();   
+    });
+</script>
+<script>
+   window.onscroll = function() {scrollFunction()};
+   function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+         document.getElementById("myBtn").style.display = "block";
+      } else {
+         document.getElementById("myBtn").style.display = "none";
+      }
+   }
+   function topFunction() {
+      $('html,body').animate({ scrollTop: 0 }, 1000);
+   }
 </script>

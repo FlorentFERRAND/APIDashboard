@@ -10,7 +10,7 @@ Status By Method;Sellers;GetSellerInformation;OK;
 ;;SubmitProductPackage;OK;
 ;;GetProductPackageSubmissionResult;OK;
 ;;GetProductListByIdentifier;OK;
-;Orders;GetOrderList;OK;
+;Orders;GetOrderList;NOK;Orders has been placed by customers by sellers can not get back them
 ;;GetGlobalConfiguration;OK;
 ;;ValidateOrderList;OK;
 ;;CreateRefundVoucher;OK;

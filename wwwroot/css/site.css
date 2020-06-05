@@ -101,6 +101,7 @@ p {
 }
 
 .content-canvas {
+  border-radius: 0.45rem;
   background-color: #ffffff;
 }
 

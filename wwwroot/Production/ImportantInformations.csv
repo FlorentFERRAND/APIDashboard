@@ -1,8 +1,8 @@
 Important Informations;It is no longer possible to log into your API account caused by a Sectigo/Comodo Root certificate expiration since 05-30-20. The problem has been identified and is being corrected by Common Services.;NOK
 ;We meet currently a problem to get offers data from API from S12. Our technical teams are mobilized on the subject.;NOK
-;We meet currently a problem of forwarding mails by API form S19.The problem has been identified and is being corrected by our teams.;NOK
-;We meet currently a problem of forwarding orders by API form the 05-26-20. Orders has been placed by customers by sellers can not get back them.The problem has been identified and is being corrected by our teams.;NOK
 ;We meet currently a problem of publication of offers by API. This error message appears: 'Publication site: Your offer has not been updated because you must specify all the sites on which your offer is published'. The problem has been identified and is being corrected by our teams.;NOK
+;We meet currently a problem of forwarding mails by API form S19.The problem has been identified and is being corrected by our teams.;OK
+;We meet currently a problem of forwarding orders by API form the 05-26-20. Orders has been placed by customers by sellers can not get back them.The problem has been identified and is being corrected by our teams.;OK
 ;SubmitOfferPackage;NOK
 ;GetOfferPackageSubmissionResult;NOK
-;GetOrderList;NOK
+;GetOrderList;OK

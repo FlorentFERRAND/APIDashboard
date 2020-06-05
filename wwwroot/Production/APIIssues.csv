@@ -1,5 +1,5 @@
 API Issues;1;It is no longer possible to log into your API account caused by a Sectigo Root certificate expiration since 05-30-20.;IN PROGRESS;T2 2020
 ;2;We meet currently a problem to get data from GetOfferPackageSubmissionResult by API from S12. Our technical teams are mobilized on the subject.;IN PROGRESS;T2 2020
-;3;We meet currently a problem of forwarding mails by API from S19. The problem has been identified and is being corrected by our teams.;IN PROGRESS;T2 2020
-;4;We meet currently a problem of forwarding orders by API form the 05-26-20. Orders has been placed by customers by sellers can not get back them.The problem has been identified and is being corrected by our teams.;IN PROGRESS;T2 2020
-;5;We meet currently a problem of publication of offers by API. This error message appears: 'Publication site: Your offer has not been updated because you must specify all the sites on which your offer is published'. The problem has been identified and is being corrected by our teams.;IN PROGRESS;T2 2020
+;3;We meet currently a problem of publication of offers by API. This error message appears: 'Publication site: Your offer has not been updated because you must specify all the sites on which your offer is published'. The problem has been identified and is being corrected by our teams.;IN PROGRESS;T2 2020
+;4;We meet currently a problem of forwarding mails by API from S19. The problem has been identified and is being corrected by our teams.;DONE;T2 2020
+;5;We meet currently a problem of forwarding orders by API form the 05-26-20. Orders has been placed by customers by sellers can not get back them.The problem has been identified and is being corrected by our teams.;DONE;T2 2020

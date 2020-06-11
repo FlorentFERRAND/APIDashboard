@@ -10,7 +10,7 @@ Status By Method;Sellers;GetSellerInformation;OK;
 ;;SubmitProductPackage;OK;
 ;;GetProductPackageSubmissionResult;OK;
 ;;GetProductListByIdentifier;OK;
-;Orders;GetOrderList;OK;
+;Orders;GetOrderList;KO;We meet currently a problem to get orders from GetOrderList by API from S24. Our technical teams are mobilized on the subject.
 ;;GetGlobalConfiguration;OK;
 ;;ValidateOrderList;OK;
 ;;CreateRefundVoucher;OK;

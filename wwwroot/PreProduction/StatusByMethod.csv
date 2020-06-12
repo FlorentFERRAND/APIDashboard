@@ -3,6 +3,7 @@ Status By Method;Sellers;GetSellerInformation;OK;
 ;Offers;GetOfferListPaginated;OK;
 ;;SubmitOfferPackage;OK;
 ;;GetOfferPackageSubmissionResult;OK;
+;;GetSellerDeals;OK;
 ;Products;GetAllAllowedCategoryTree;OK;
 ;;GetProductList;OK;
 ;;GetModelList;OK;

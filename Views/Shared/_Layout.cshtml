@@ -10,7 +10,7 @@
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 <body>
-    <header>
+    <header class="menu-header-fixed">
         <div class="container">
             <nav class="row navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white mb-3">
                 <div class="col-xs-5 col-md-4 col-lg-3 col-xl-3 navbar-brand">
@@ -43,5 +43,19 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
+    <script>
+	$(window).scroll(function(){
+		var sticky = $('.menu-header-fixed'),
+		 scroll = $(window).scrollTop();
+		if (scroll >= 1) {
+            sticky.addClass('sticky');
+            sticky.addClass('shadow');
+        }
+		else{
+            sticky.removeClass('sticky');
+            sticky.removeClass('shadow');
+        }
+	});
+</script>
 </body>
 </html>

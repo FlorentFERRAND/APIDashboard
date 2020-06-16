@@ -4,6 +4,17 @@
   src: url('~/font/Montserrat-Light.etf?#iefix') format('embedded-opentype'),
          url('~/font/Montserrat-Light.svg#Montserrat-Light') format('svg');
 }
+
+header.menu-header-fixed {
+  position: sticky;
+}
+.sticky {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  width: 100%;
+}
+
 a.navbar-brand {
   white-space: normal;
   text-align: center;

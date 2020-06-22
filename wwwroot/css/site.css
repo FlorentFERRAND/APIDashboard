@@ -277,12 +277,13 @@ button.bg-success:focus {
     text-align: center;
   }
   .colorBackGrdBtn{
-    background-color:#293847;
+    background-color:#aaaaaa;
     border:#293847;
     color: #ffffff;
   }
   .colorBackGrdBtn:hover{
-    color: #aaaaaa;
+    background-color: #293847;
+    color: #ffffff;
   }
   .close {
     color: #aaaaaa;

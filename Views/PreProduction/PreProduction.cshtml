@@ -218,6 +218,7 @@
                                     </li>
                                 </ul>
                             </div>
+                            <div class="BtnCenter"><button type="button" class="btn colorBackGrdBtn" name="close">Close</button></div>
                         </div>
                     </div>
                 </div>
@@ -589,8 +590,8 @@
         </div>
     </div>
 </div>
-
 <button onclick="topFunction()" id="myBtn" title="Back to top"><i class="fas fa-arrow-up"></i></button>
+
 <script>
     popup = document.getElementById("myPopup");
     var btn = document.getElementById("myBtn1");
@@ -606,6 +607,14 @@
             popup.style.display = "none";
         }
     }
+</script>
+<script>
+    $(popup).find("button[name=close]").on("click", function() {
+		if ($(".formElementError").is(':visible')) {
+			$(".formElementError").remove();
+		}
+		$(popup).hide();
+	});
 </script>
 <script>
     $(document).ready(function() {

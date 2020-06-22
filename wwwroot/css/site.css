@@ -273,6 +273,17 @@ button.bg-success:focus {
     padding:0;
     text-align:justify;
   }
+  .BtnCenter{
+    text-align: center;
+  }
+  .colorBackGrdBtn{
+    background-color:#293847;
+    border:#293847;
+    color: #ffffff;
+  }
+  .colorBackGrdBtn:hover{
+    color: #aaaaaa;
+  }
   .close {
     color: #aaaaaa;
     float: right;

@@ -227,6 +227,9 @@ button.bg-success:focus {
     padding:0;
     background:#f8f9fc;
   }
+  .buttonExclamationPopup:focus{
+    outline: 0;
+  }
   .popup {
     display: none;
     position: fixed;

@@ -2,7 +2,7 @@ Status By Method;Sellers;GetSellerInformation;OK;
 ;;GetSellerIndicator;OK;
 ;Offers;GetOfferListPaginated;OK;
 ;;SubmitOfferPackage;OK;Publication site: Your offer has not been updated because you must specify all the sites on which your offer is published.
-;;GetOfferPackageSubmissionResult;NOK;We meet currently a problem to get data from GetOfferPackageSubmissionResult by API from S26. Our technical teams are mobilized on the subject.
+;;GetOfferPackageSubmissionResult;OK;We meet currently a problem to get data from GetOfferPackageSubmissionResult by API from S26. Our technical teams are mobilized on the subject.
 ;;GetSellerDeals;OK;
 ;Products;GetAllowedCategoryTree;OK;
 ;;GetProductList;OK;

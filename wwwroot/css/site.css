@@ -279,23 +279,23 @@ button.bg-success:focus {
     text-align: center;
   }
   .colorBackGrdBtn{
-    background-color:#aaaaaa;
+    background-color:#293847;
     border:#293847;
     color: #ffffff;
   }
   .colorBackGrdBtn:hover{
-    background-color: #293847;
+    background-color: #aaaaaa;
     color: #ffffff;
   }
   .close {
-    color: #aaaaaa;
+    color: #293847;
     float: right;
     font-size: 30px;
     font-weight: bold;
   }
   .close:hover,
   .close:focus {
-    color: #000;
+    color: #aaaaaa;
     text-decoration: none;
     cursor: pointer;
   }

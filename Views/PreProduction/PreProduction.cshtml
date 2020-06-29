@@ -22,6 +22,28 @@
                     {
                         <h2 class="text-issue">@myInfos.TitleImportantInformations</h2>
                     }
+                    <div class="col-xs-5 col-md-7 col-lg-2 col-xl-2 navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                        <button id="myBtnII" class="buttonExclamationPopup"><i class='fas fa-exclamation-circle'></i></button>
+                    </div>
+                    <div id="myPopupII" class="popupII">
+                        <div class="popup-content-II">
+                            <div class="popup-title-II">
+                                <span class="closeII">&times;</span>
+                                <h2 class="popup-title-h2-II">Legends</h2>
+                            </div>
+                            <div class="contentII">
+                                <p class="content-h2-II">You can find below the explanation for each card color:</p>
+                                
+                                        <p class="content-ul-li-II"><img width="42" src="~/img/ok.png"> This functionality has been resolved.</p>
+                                   
+                                        <p class="content-ul-li-II"><img width="42" src="~/img/nok.png"> This functionality has been identified and it is under resolution by one of our team.</p>
+                                   
+                                        <p class="content-ul-li-II"><img width="42" src="~/img/ko.png"> This functionality is no longer usable. Our team are mobilized to resolved it.</p>
+                                  
+                            </div>
+                            <div class="BtnCenterII"><button type="button" class="btn colorBackGrdBtnII" name="closeII">Close</button></div>
+                        </div>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-12 mb-4">
@@ -196,29 +218,29 @@
                         <a data-toggle="collapse" href="#methods" class="card-header-link-title">@myName.TitleMethod</a>
                     }
                     <div class="col-xs-5 col-md-7 col-lg-2 col-xl-2 navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                        <button id="myBtn1" class="buttonExclamationPopup"><i class='fas fa-exclamation-circle'/></i></button>
+                        <button id="myBtnSBM" class="buttonExclamationPopup"><i class='fas fa-exclamation-circle'></i></button>
                     </div>
-                    <div id="myPopup" class="popup">
-                        <div class="popup-content">
-                            <div class="popup-title">
-                                <span class="close">&times;</span>
-                                <h2 class="popup-title-h2">Status</h2>
+                    <div id="myPopupSBM" class="popupSBM">
+                        <div class="popup-content-SBM">
+                            <div class="popup-title-SBM">
+                                <span class="closeSBM">&times;</span>
+                                <h2 class="popup-title-h2-SBM">Status</h2>
                             </div>
-                            <div class="content">
-                                <p class="content-h2">Each API method will be assigned to a different status like explained below:</p>
+                            <div class="contentSBM">
+                                <p class="content-h2-SBM">Each API method will be assigned to a different status like explained below:</p>
                                 <ul>
                                     <li>
-                                        <p class="content-ul-li"><b>OK:</b> All informations can be get by our API method and informations are available from your seller's zone.</p>
+                                        <p class="content-ul-li-SBM"><b>OK:</b> All informations can be get by our API method and informations are available from your seller's zone.</p>
                                     </li>
                                     <li>
-                                        <p class="content-ul-li"><b>NOK:</b> Some issue has been detected like a non update of offers in your Products catalog page of your seller's zone but informations can be get from API method.</p>
+                                        <p class="content-ul-li-SBM"><b>NOK:</b> Some issue has been detected like a non update of offers in your Products catalog page of your seller's zone but informations can be get from API method.</p>
                                     </li>
                                     <li>
-                                        <p class="content-ul-li"><b>KO:</b> An issue has been detected about this API method and our team are mobilized to resolved this problem. Some API method are down. No informations are reported.</p>
+                                        <p class="content-ul-li-SBM"><b>KO:</b> An issue has been detected about this API method and our team are mobilized to resolved this problem. Some API method are down. No informations are reported.</p>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="BtnCenter"><button type="button" class="btn colorBackGrdBtn" name="close">Close</button></div>
+                            <div class="BtnCenterSBM"><button type="button" class="btn colorBackGrdBtnSBM" name="closeSBM">Close</button></div>
                         </div>
                     </div>
                 </div>
@@ -593,27 +615,47 @@
 <button onclick="topFunction()" id="myBtn" title="Back to top"><i class="fas fa-arrow-up"></i></button>
 
 <script>
-    popup = document.getElementById("myPopup");
-    var btn = document.getElementById("myBtn1");
-    var span = document.getElementsByClassName("close")[0];
-    btn.onclick = function() {
-        popup.style.display = "block";
+    popupII = document.getElementById("myPopupII");
+    var btnII = document.getElementById("myBtnII");
+    var spanII = document.getElementsByClassName("closeII")[0];
+    btnII.onclick = function() {
+        popupII.style.display = "block";
     }
-    span.onclick = function() {
-        popup.style.display = "none";
+    spanII.onclick = function() {
+        popupII.style.display = "none";
     }
     window.onclick = function(event) {
-        if (event.target == popup) {
-            popup.style.display = "none";
+        if (event.target == popupII) {
+            popupII.style.display = "none";
         }
     }
-</script>
-<script>
-    $(popup).find("button[name=close]").on("click", function() {
+    $(popupII).find("button[name=closeII]").on("click", function() {
 		if ($(".formElementError").is(':visible')) {
 			$(".formElementError").remove();
 		}
-		$(popup).hide();
+		$(popupII).hide();
+	});
+</script>
+<script>
+    popupSBM = document.getElementById("myPopupSBM");
+    var btnSBM = document.getElementById("myBtnSBM");
+    var spanSBM = document.getElementsByClassName("closeSBM")[0];
+    btnSBM.onclick = function() {
+        popupSBM.style.display = "block";
+    }
+    spanSBM.onclick = function() {
+        popupSBM.style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == popupSBM) {
+            popupSBM.style.display = "none";
+        }
+    }
+    $(popupSBM).find("button[name=closeSBM]").on("click", function() {
+		if ($(".formElementError").is(':visible')) {
+			$(".formElementError").remove();
+		}
+		$(popupSBM).hide();
 	});
 </script>
 <script>

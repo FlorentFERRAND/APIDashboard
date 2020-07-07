@@ -1,7 +1,7 @@
 Status By Method;Sellers;GetSellerInformation;OK;
 ;;GetSellerIndicator;OK;
 ;Offers;GetOfferListPaginated;OK;
-;;SubmitOfferPackage;OK;Publication site: Your offer has not been updated because you must specify all the sites on which your offer is published.
+;;SubmitOfferPackage;NOK;We meet currently a problem to update offers by API from S28. This error message appears: Stock: Not enough stock compared to pending orders.
 ;;GetOfferPackageSubmissionResult;OK;We meet currently a problem to get data from GetOfferPackageSubmissionResult by API from S26. Our technical teams are mobilized on the subject.
 ;;GetSellerDeals;OK;
 ;Products;GetAllowedCategoryTree;OK;

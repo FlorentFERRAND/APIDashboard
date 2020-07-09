@@ -267,6 +267,9 @@ button.bg-success:focus {
     padding:0;
     text-align:justify;
   }
+  .content-ul-li{
+    list-style: none;
+  }
   .content-ul-li-II {
     color:var(--dark-blue-color)!important;
     font-size:15px!important;

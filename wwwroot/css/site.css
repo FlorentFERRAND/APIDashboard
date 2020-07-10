@@ -4,7 +4,9 @@
   src: url('~/font/Montserrat-Light.etf?#iefix') format('embedded-opentype'),
          url('~/font/Montserrat-Light.svg#Montserrat-Light') format('svg');
 }
-
+.delete-padding-exclam-point{
+  padding-right: 0px;
+}
 header.menu-header-fixed {
   position: sticky;
 }

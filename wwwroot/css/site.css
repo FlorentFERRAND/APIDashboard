@@ -4,9 +4,7 @@
   src: url('~/font/Montserrat-Light.etf?#iefix') format('embedded-opentype'),
          url('~/font/Montserrat-Light.svg#Montserrat-Light') format('svg');
 }
-.delete-padding-exclam-point{
-  padding-right: 0px;
-}
+
 header.menu-header-fixed {
   position: sticky;
 }
@@ -388,6 +386,9 @@ button.bg-success:focus {
   .fa-exclamation-circle {
    font-size:20px;
    color:#e13a13;
+  }
+  .delete-padding-exclam-point{
+    padding-right: 0px;
   }
   a.card-header-link-title {
     color:var(--dark-blue-color)!important;

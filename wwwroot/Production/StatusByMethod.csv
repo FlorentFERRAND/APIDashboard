@@ -32,4 +32,4 @@ Status By Method;Sellers;GetSellerInformation;OK;
 ;;GetOfferQuestionList;OK;
 ;;GetOrderQuestionList;OK;
 ;;CloseDiscussionList;OK;
-;;GetDiscussionMailList;OK;
+;;GetDiscussionList;OK;

@@ -10,7 +10,7 @@ Status By Method;Sellers;GetSellerInformation;OK;
 ;;GetBrandList;OK;
 ;;SubmitProductPackage;OK;
 ;;GetProductPackageSubmissionResult;OK;
-;;GetProductListByIdentifier;KO;We meet currently a problem to get products information using our API method GetProductListByIdentifier from S29. Our technical teams are mobilized on the subject.
+;;GetProductListByIdentifier;OK;We meet currently a problem to get products information using our API method GetProductListByIdentifier from S29. Our technical teams are mobilized on the subject.
 ;Orders;GetOrderList;OK;Orders has been placed by customers by sellers can not get back them.
 ;;GetGlobalConfiguration;OK;
 ;;ValidateOrderList;OK;

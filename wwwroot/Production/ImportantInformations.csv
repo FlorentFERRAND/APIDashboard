@@ -1,1 +1,1 @@
-Important Informations;We meet currently a problem to get products information using our API from S29. This error message appear: Unable to cast object of type 'System.Data.DataRow' to type 'Cdiscount.Entity.Product.Dao.BarcodeDao'. Our technical teams are mobilized on the subject.;OK
+Important Informations;No problem has been detected about our API in production environment;OK

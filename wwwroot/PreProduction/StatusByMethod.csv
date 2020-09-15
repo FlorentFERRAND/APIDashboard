@@ -9,7 +9,7 @@ Status By Method;Sellers;GetSellerInformation;OK;
 ;;GetModelList;OK;
 ;;GetBrandList;OK;
 ;;SubmitProductPackage;OK;
-;;GetProductPackageSubmissionResult;KO;We meet currently a problem to get data from GetProductPackageSubmissionResult by API from S37. Our technical teams are mobilized on the subject.
+;;GetProductPackageSubmissionResult;OK;We meet currently a problem to get data from GetProductPackageSubmissionResult by API from S37. Our technical teams are mobilized on the subject.
 ;;GetProductListByIdentifier;OK;
 ;Orders;GetOrderList;OK;
 ;;GetGlobalConfiguration;OK;

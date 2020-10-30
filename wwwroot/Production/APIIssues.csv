@@ -1,6 +1,5 @@
-API ISSUES;1;We meet currently a problem to update offers by API using SubmitOfferPackage from S38. Our technical teams are mobilized on the subject. This error message appears: This offer does not exist and therefore cannot be updated on Existing offer;DONE;T3 2020
+API ISSUES;1;We meet currently a problem to update offers in StockAndPrice mode by API using SubmitOfferPackage. This issue will be resolved W46.;IN PROGRESS;T4 2020
 ;2;We meet currently a problem to get products information using our API method GetProductListByIdentifier from S29. Our technical teams are mobilized on the subject.;DONE;T3 2020
 ;3;We meet currently a problem to update offers by API from SubmitOfferPackage from S28. This error message appears: Stock: Not enough stock compared to pending orders. Our technical teams are mobilized on the subject.;DONE;T3 2020
 ;4;We meet currently a problem to get data from GetOfferPackageSubmissionResult by API from S26. Our technical teams are mobilized on the subject.;DONE;T2 2020
 ;5;We meet currently a problem of publication of offers by API. This error message appears: 'Publication site: Your offer has not been updated because you must specify all the sites on which your offer is published'. The problem has been identified and is being corrected by our teams.;DONE;T2 2020
-;6;It is no longer possible to log into your API account caused by a Sectigo Root certificate expiration since 05-30-20.;DONE;T2 2020

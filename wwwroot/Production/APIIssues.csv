@@ -1,5 +1,5 @@
 API ISSUES;1;We meet currently a problem to update and get orders using ValidateOrderList and GetOrderList by API. Our teams are mobilized to resolved this issue.;IN PROGRESS;T4 2020
-;2;We meet currently a problem to update offers in StockAndPrice mode by API using SubmitOfferPackage. This issue will be resolved W46.;IN PROGRESS;T4 2020
+;2;We meet currently a problem to update offers in StockAndPrice mode by API using SubmitOfferPackage. This issue will be resolved W46.;DONE;T4 2020
 ;3;We meet currently a problem to get products information using our API method GetProductListByIdentifier from S29. Our technical teams are mobilized on the subject.;DONE;T3 2020
 ;4;We meet currently a problem to update offers by API from SubmitOfferPackage from S28. This error message appears: Stock: Not enough stock compared to pending orders. Our technical teams are mobilized on the subject.;DONE;T3 2020
 ;5;We meet currently a problem to get data from GetOfferPackageSubmissionResult by API from S26. Our technical teams are mobilized on the subject.;DONE;T2 2020

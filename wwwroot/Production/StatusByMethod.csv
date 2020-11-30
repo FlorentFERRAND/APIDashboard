@@ -11,9 +11,9 @@ Status By Method;Sellers;GetSellerInformation;OK;
 ;;SubmitProductPackage;OK;
 ;;GetProductPackageSubmissionResult;OK;
 ;;GetProductListByIdentifier;OK;We meet currently a problem to get products information using our API method GetProductListByIdentifier from S29. Our technical teams are mobilized on the subject.
-;Orders;GetOrderList;NOK;We meet currently a problem to get orders by API. Our teams are mobilized to resolved this issue
+;Orders;GetOrderList;OK;We meet currently a problem to get orders by API. Our teams are mobilized to resolved this issue
 ;;GetGlobalConfiguration;OK;
-;;ValidateOrderList;NOK;We meet currently a problem to update orders by API. Our teams are mobilized to resolved this issue
+;;ValidateOrderList;OK;We meet currently a problem to update orders by API. Our teams are mobilized to resolved this issue
 ;;CreateRefundVoucher;OK;
 ;Fulfilment;SubmitFulfilmentSupplyOrder;OK;
 ;;SubmitFulfilmentOnDemandSupplyOrder;OK;

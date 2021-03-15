@@ -39,6 +39,15 @@ a.nav-link-pp{
   text-decoration: none;
 }
 
+.calendarapi{
+  font-size:24px;
+  text-decoration:none;
+  color:black;
+}
+.calendarapi:hover{
+  color:black;
+}
+
 .btn-primary {
   color: #fff;
   background-color: #1b6ec2;

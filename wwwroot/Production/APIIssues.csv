@@ -1,4 +1,4 @@
-API Issues;1;We meet currently a problem to update orders by API using ValidateOrderList. Our technical teams are mobilized on the subject.;IN PROGRESS;T1 2021
+API Issues;1;We meet currently a problem to update orders by API using ValidateOrderList. Our technical teams are mobilized on the subject.;DONE;T1 2021
 ;2;We meet currently a problem to update shipping charges for Librairie category using SubmitOfferPackage by API. Our technical teams are mobilized on the subject.;IN PROGRESS;T1 2021
 ;3;We meet currently a problem to update and get orders using ValidateOrderList and GetOrderList by API. Our teams are mobilized to resolved this issue.;DONE;T4 2020
 ;4;We meet currently a problem to update offers in StockAndPrice mode by API using SubmitOfferPackage. This issue will be resolved W46.;DONE;T4 2020

@@ -14,27 +14,28 @@
     <header class="menu-header-fixed">
         <div class="container">
             <nav class="row navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white mb-3">
-                <div class="col-xs-12 col-md-4 col-lg-3 col-xl-3 navbar-brand">
-                    <a asp-controller="Production" asp-action="Production"><img src="~/img/Logo.png" alt="Cdiscount"></a>
+                <div class="col-xs-12 col-md-3 col-lg-3 col-xl-3 navbar-brand">
+                    <a asp-controller="Production" asp-action="Production"><img src="~/img/Logo.png" title="Cdiscount"></a>
                 </div>
-                <div class="col-xs-12 col-md-7 col-lg-6 col-xl-7 navbar-collapse collapse">
+                <div class="col-xs-12 col-md-6 col-lg-6 col-xl-7 navbar-brand">
                     <ul class="navbar-nav flex-grow-1" >
                         <li class="nav-item">
-                            <a class="nav-link-p" asp-area="" asp-controller="Production" asp-action="Production">Production</a>
+                            <a class="nav-link" asp-area="" asp-controller="Production" asp-action="Production">Production</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link-pp" asp-area="" asp-controller="PreProduction" asp-action="PreProduction">PreProduction</a>
+                            <a class="nav-link" id="nav-link-pp" asp-area="" asp-controller="PreProduction" asp-action="PreProduction">PreProduction</a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-xs-12 col-md-4 col-lg-3 col-xl-3 navbar-collapse collapse">
-                    <ul class="navbar-nav flex-grow-1" >
-                    <li class="nav-item">
-                       <a class="calendarapi" href="https://calendly.com/cdiscount_api_support/30min/" target="blank_"><i class="far fa-calendar-alt" title="Book a Phone call"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="calendarapi1" href="https://portal-marketplaceapi.cdiscount.com/" target="blank_"><i class="fa fa-globe" title="Cdiscount Marketplace API"></i></a>
-                    </li></ul>
+                <div class="col-xs-12 col-md-4 col-lg-3 col-xl-3 navbar-brand">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="calendarapi" id="calendarapi" href="https://calendly.com/cdiscount_api_support/30min/" target="blank_"><i class="far fa-calendar-alt" title="Book a Phone call"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="calendarapi" href="https://portal-marketplaceapi.cdiscount.com/" target="blank_"><i class="fa fa-globe" title="Cdiscount Marketplace API"></i></a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
         </div>

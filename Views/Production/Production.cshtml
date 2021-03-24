@@ -185,19 +185,19 @@
                             <tr>
                                 <th class="issue-font" scope="col">#</th>
                                 <th class="issue-font" scope="col">Issue</th>
-                                <th class="issue-font-w" scope="col">Status</th>
+                                <th class="issue-font" scope="col">Status</th>
                                 <th class="issue-font" scope="col">Planned</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach (Issues myIssue in Model._Issues)
                             {
-                                var style = (myIssue.StateIssue == "DONE") ? "color:#28a745;font-weight:bold;text-align:center;font-size:14px!important;font-family: 'Montserrat-Light', sans-serif" : "color:#007bff;font-weight:bold;text-align:center;font-size:14px!important;font-family: 'Montserrat-Light', sans-serif";
-                                var style1 = (myIssue.StateIssue == "Nothing to report") ? "color:#28a745;font-weight:bold;text-align:center;font-size:14px!important;font-family: 'Montserrat-Light', sans-serif" : "";
+                                var style = (myIssue.StateIssue == "DONE") ? "color:#28a745;font-weight:bold;text-align:center;font-family: 'Montserrat-Light', sans-serif" : "color:#007bff;font-weight:bold;text-align:center;font-family: 'Montserrat-Light', sans-serif";
+                                var style1 = (myIssue.StateIssue == "Nothing to report") ? "color:#28a745;font-weight:bold;text-align:center;font-family: 'Montserrat-Light', sans-serif" : "";
                                 <tr>
                                     <th class="issue-font-content" scope="row">@myIssue.NumberIssue</th>
                                     <td class="issue-font-content-j">@myIssue.ExplicationIssue</td>
-                                    <td style="@style;@style1">@myIssue.StateIssue</td>
+                                    <td style="@style;@style1" id="stateIssue">@myIssue.StateIssue</td>
                                     <td class="issue-font-content">@myIssue.DateOfResolutionIssue</td>
                                 </tr>
                             }
@@ -346,7 +346,7 @@
                                         }
                                         if (myName.NameMethod.Contains("ProductPackageSubmissionResult"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p1">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod.Contains("GetProductListbyIdentifier"))
                                         {
@@ -414,7 +414,7 @@
                                         }
                                         if (myName.NameMethod.Contains("OnDemand"))
                                         {
-                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p2">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span> </p>
                                         }
                                         if (myName.NameMethod == ("GetFulfilmentSupplyOrderReportList"))
                                         {

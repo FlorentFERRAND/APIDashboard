@@ -4,6 +4,12 @@
   src: url('~/font/Montserrat-Light.etf?#iefix') format('embedded-opentype'),
          url('~/font/Montserrat-Light.svg#Montserrat-Light') format('svg');
 }
+#imgCDS{
+  display: block;
+}
+#imgCDSMobile{
+  display: none;
+}
 #menuToggle{
   display: none;
 }
@@ -57,14 +63,62 @@ a.nav-link{
   text-align: justify;
 }
 
+a.card-header-link-title {
+  color:var(--dark-blue-color)!important;
+  font-family: 'Montserrat-Light', sans-serif;
+  text-decoration:none;
+  font-size:32px;
+}
+
+.calM1M2Table {
+  margin-bottom:0;
+}
+
+.deleteHeightTR {
+  height: auto;
+}
+.calM1 {
+  position:absolute;
+}
+.calM2 {
+  left:537px;
+}
+
 @media (max-width:1024px){
   #calendarapi{
     padding-left: 4.5rem;
   }
+  #imgCDSMobile{
+    display: none;
+  }
+  .calM1{
+    position: relative;
+  }
+  .calM2{
+    left: 0;
+  }
 }
 @media (max-width:768px) {
-  .container-fluid{
+  /*.container-fluid{
     margin-top: 70px;
+  }*/
+  #imgCDS{
+    display: none;
+  }
+  #imgCDSMobile{
+    display: block;
+  }
+  header.menu-header-fixed {
+    background-color:#293847;
+  }
+  i.far.fa-calendar-alt{
+    color: white;
+  }
+  i.fa.fa-globe{
+    color: white;
+  }
+  .bg-white{    
+    background-color:#293847!important;
   }
   a#nav-link-pp.nav-link{
     padding-left: 0;
@@ -75,13 +129,20 @@ a.nav-link{
   #calendarapi{
     padding-left: 1rem;
   }
-  
+  #test{
+    display: block;
+  }
+  #test1{
+    display: none;
+  }
   #mainNav{
     position: absolute;
-    width: 100%;
+    width: 50%;
     top: 60px;
-    padding-bottom: 10px;
+    padding-bottom: 0;
     display: none;
+    right: 0;
+    left: 0;
   }
   #mainNav ul{
     list-style: none;
@@ -92,26 +153,41 @@ a.nav-link{
     float: right;
   }
   #menuToggle{
-    background-color: black;
+    background-color: transparent!important;
     border: none;
     background-size: cover;
-    width: 30px;
-    height: 30px;;
+    width: 40px;
+    height: 40px;;
     align-self: start;
     display: block;
   }
   #menuToggle.hamburger{
     background-image: url('../img/hamburger.png');
   }
+
+  #menuToggle.hamburger:hover{
+    outline: none;
+  }
+  .calM1{
+    position: relative;
+  }
+  .calM2{
+    left: 0;
+  }
 }
 @media (max-width:575px) {
-  .container-fluid{
+  /*.container-fluid{
     margin-top: 70px;
-  }
+  }*/
   #imgCDS {
     width: 150px;
     height: 30px;
     margin-left: 20px;
+  }
+  #imgCDSMobile{
+    display: block;
+    width: 150px;
+    height: 30px;
   }
   a#nav-link-pp.nav-link{
     padding: 0;
@@ -126,9 +202,15 @@ a.nav-link{
   .contents{
     display: contents;
   }
+  #test{
+    display: block;
+  }
+  #test1{
+    display: none;
+  }
   #mainNav{
     position: absolute;
-    width: 100%;
+    width: 50%;
     top: 60px;
     padding-bottom: 0;
     display: none;
@@ -143,8 +225,8 @@ a.nav-link{
     background-color: black;
     border: none;
     background-size: cover;
-    width: 30px;
-    height: 30px;;
+    width: 40px;
+    height: 40px;;
     align-self: start;  
     margin-left: auto;
     display: block;
@@ -152,33 +234,65 @@ a.nav-link{
   #menuToggle.hamburger{
     background-image: url('../img/hamburger.png');
   }
+  #menuToggle.hamburger:hover{
+    outline: none;
+  }
   #issues tr{
     height: 0;
   }
   #stateIssue{
     font-size:7px!important;
-    vertical-align: middle;
   }
   .issue-font {
     font-size:7px!important;
     font-family: 'Montserrat-Light', sans-serif;
     text-align: center;
-    vertical-align: middle;
   }
   .issue-font-content{
     font-size:7px!important;
     font-family: 'Montserrat-Light', sans-serif;
-    vertical-align: middle;
   }
   .issue-font-content-j{
     font-size:5px!important;
     font-family: 'Montserrat-Light', sans-serif;
-    vertical-align: middle;
+  }
+  .calM1{
+    position: relative;
+  }
+  .calM2{
+    left: 0;
   }
 }
 @media (max-width:440px){
-  .container-fluid{
+  /*.container-fluid{
     margin-top: 70px;
+  }*/
+  #test{
+    display: block;
+  }
+  #test1{
+    display: none;
+  }
+  #mainNav{
+    position: absolute;
+    width: 50%;
+    top: 60px;
+    padding-bottom: 0;
+    display: none;
+    right: 0;
+    left: 0;
+  }
+  #menuToggle.hamburger:hover{
+    outline: none;
+  }
+  .calendarapi{
+    font-size:20px!important;
+    text-decoration:none;
+    color:black;
+    padding-left: 1.4rem;
+  }
+  .calendarapi:hover{
+    color:black;
   }
   .card-body-methods-p-font {
     font-size:15px!important;
@@ -197,16 +311,32 @@ a.nav-link{
   .card-body-methods-p {
     margin-top: 30px;
     font-family: 'Montserrat-Light', sans-serif;
+  }  
+  .calM1{
+    position: relative;
+  }
+  .calM2{
+    left: 0;
   }
 }
 @media (max-width:320px) {
   .container-fluid{
-    margin-top: 70px;
+    margin-top: 60px;
   }
   #imgCDS{    
     width: 120px;
     height: 20px;
     margin-left: 20px;
+  }
+  .calendarapi{
+    font-size:15px!important;
+    text-decoration:none;
+    color:black;
+    padding-right: 10px;
+    padding-left: 0;
+  }
+  .calendarapi:hover{
+    color:black;
   }
   a#nav-link-pp.nav-link{
     padding: 0;
@@ -221,9 +351,17 @@ a.nav-link{
   .contents{
     display: contents;
   }
+  #test{
+    display: block;
+  }
+  #test1{
+    display: none;
+  }
   #mainNav{
     position: absolute;
-    width: 100%;
+    background-color: #293847!important;
+    color:white;
+    width: 50%;
     top: 60px;
     padding-bottom: 0;
     display: none;
@@ -238,14 +376,17 @@ a.nav-link{
     background-color: black;
     border: none;
     background-size: cover;
-    width: 30px;
-    height: 30px;;
+    width: 40px;
+    height: 40px;;
     align-self: start;  
     margin-left: auto;
     display: block;
   }
   #menuToggle.hamburger{
     background-image: url('../img/hamburger.png');
+  }
+  #menuToggle.hamburger:hover{
+    outline: none;
   }
   .text-issue {
     font-family: 'Montserrat-Light', sans-serif;
@@ -254,9 +395,6 @@ a.nav-link{
   }
   #issues tr{
     height: 0;
-  }
-  #test{
-    font-size:7px!important;
   }
   a.card-header-link-title {
     color: var(--dark-blue-color)!important;
@@ -277,23 +415,33 @@ a.nav-link{
     font-size:5px!important;
     font-family: 'Montserrat-Light', sans-serif;
   }
-  .card-body-methods-p {
-    margin-top: 30px;
+  p.card-body-methods-p {
+    font-size: 7px!important;
+    margin-top: 40px;
     font-family: 'Montserrat-Light', sans-serif;
   }
-  .card-body-methods-p-font {
-    font-size:10px!important;
+  p.card-body-methods-p-font {
+    font-size:7px!important;
     font-family: 'Montserrat-Light', sans-serif;
   }
-  .card-body-methods-p1 {
-    margin-top: 30px;
-    font-size:10px!important;
+  p.card-body-methods-p1 {
+    margin-top: 40px;
+    font-size:7px!important;
     font-family: 'Montserrat-Light', sans-serif;
   }
-  .card-body-methods-p2 {
-    margin-top: 30px;
-    font-size:10px!important;
+  p.card-body-methods-p2 {
+    margin-top: 40px;
+    font-size:7px!important;
     font-family: 'Montserrat-Light', sans-serif;
+  }
+  .calM1{
+    position: relative;
+  }
+  .calM2{
+    left: 0;
+  }
+  .table td{
+    padding: 0.40rem;
   }
 }
 
@@ -624,13 +772,6 @@ button.bg-success:focus {
   .delete-padding-exclam-point{
     padding-right: 0px;
   }
-  a.card-header-link-title {
-    color:var(--dark-blue-color)!important;
-    font-family: 'Montserrat-Light', sans-serif;
-    text-decoration:none;
-    font-size:32px;
-  }
-
 .card-footer {
   padding: 0.75rem 1.25rem;
   background-color: #f8f9fc;
@@ -841,22 +982,6 @@ a.badge-success:focus, a.badge-success.focus {
   .col-lg-3 {
       width: 30%;
   }
-}
-
-.calM1 {
-  position:absolute;
-}
-
-.calM1M2Table {
-  margin-bottom:0;
-}
-
-.deleteHeightTR {
-  height: auto;
-}
-
-.calM2 {
-  left:537px;
 }
 
 .fa-arrow-up{

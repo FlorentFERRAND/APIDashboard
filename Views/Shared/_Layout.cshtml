@@ -14,8 +14,18 @@
     <header class="menu-header-fixed">
         <div class="container">
             <nav class="row navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white mb-3">
-                <div class="col-xs-12 col-md-4 col-lg-4 col-xl-4 navbar-brand contents">
-                    <a asp-controller="Production" asp-action="Production"><img src="~/img/Logo.png" id="imgCDS" title="Cdiscount"></a>
+                <div class="navbar-brand" id="test">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <button id="menuToggle" class="hamburger">&nbsp;</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-8 col-lg-4 col-xl-4 navbar-brand contents">
+                    <a asp-controller="Production" asp-action="Production">
+                        <img src="~/img/Logo.png" id="imgCDS" title="Cdiscount">
+                        <img src="~/img/LogoMobile.png" id="imgCDSMobile" title="Cdiscount">
+                    </a>
                 </div>
                 <div class="col-xs-12 col-md-12 col-lg-5 col-xl-6 navbar-brand contents" id="mainNav">
                     <ul class="navbar-nav flex-grow-1">
@@ -37,7 +47,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="navbar-brand" style="padding-right: 20px;">
+                <div class="navbar-brand" id="test1">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <button id="menuToggle" class="hamburger">&nbsp;</button>

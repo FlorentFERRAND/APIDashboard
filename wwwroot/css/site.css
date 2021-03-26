@@ -99,9 +99,9 @@ a.card-header-link-title {
   }
 }
 @media (max-width:768px) {
-  /*.container-fluid{
-    margin-top: 70px;
-  }*/
+  .container-fluid{
+    margin-top: 60px;
+  }
   #imgCDS{
     display: none;
   }
@@ -176,9 +176,9 @@ a.card-header-link-title {
   }
 }
 @media (max-width:575px) {
-  /*.container-fluid{
-    margin-top: 70px;
-  }*/
+  .container-fluid{
+    margin-top: 60px;
+  }
   #imgCDS {
     width: 150px;
     height: 30px;
@@ -264,9 +264,9 @@ a.card-header-link-title {
   }
 }
 @media (max-width:440px){
-  /*.container-fluid{
-    margin-top: 70px;
-  }*/
+  .container-fluid{
+    margin-top: 60px;
+  }
   #test{
     display: block;
   }

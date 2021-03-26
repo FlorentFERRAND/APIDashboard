@@ -400,7 +400,7 @@ a.card-header-link-title {
     color: var(--dark-blue-color)!important;
     font-family: 'Montserrat-Light', sans-serif;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 15px;
   }
   .issue-font {
     font-size: 7px!important;

@@ -26,7 +26,7 @@ Status By Method;Sellers;GetSellerInformation;OK;
 ;;SubmitOfferStateAction;OK;
 ;;CreateExternalOrder;OK;
 ;;GetExternalOrderStatus;OK;
-;;GetProductStockList;OK;
+;;GetProductStockList;KO;We meet currently a problem to get stocks information using our API method GetProductStockList from S15. Our technical teams are mobilized on the subject.
 ;;ManageParcel;OK;
 ;Discussions;GetOrderClaimList;OK;
 ;;GetOfferQuestionList;OK;

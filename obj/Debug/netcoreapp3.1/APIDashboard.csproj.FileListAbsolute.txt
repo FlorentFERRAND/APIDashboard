@@ -37,3 +37,7 @@ C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\APIDashboard.pdb
 C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\APIDashboard.genruntimeconfig.cache
 C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\APIDashboard.csproj.CopyComplete
 C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\scopedcss\bundle\APIDashboard.styles.css
+C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\Razor\Views\PreProduction\_PopupII.cshtml.g.cs
+C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\Razor\Views\PreProduction\_PopupSBM.cshtml.g.cs
+C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\Razor\Views\Production\_PopupII.cshtml.g.cs
+C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\Razor\Views\Production\_PopupSBM.cshtml.g.cs

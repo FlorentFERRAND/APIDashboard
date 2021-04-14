@@ -405,7 +405,7 @@
     }
     .popup-content-SBM {
         width: 80%;
-      }
+    }
     .calM2{
       left: 450px;
     }
@@ -501,7 +501,6 @@
       float: right;
       z-index: 1;
       left: 100%;
-      transform: translateX(-100%);
     }
     #menuToggle{
       background-color: transparent!important;
@@ -622,6 +621,9 @@
       #issues tr{
         height: 0;
       }
+      #mainNav{
+        width: 57%;
+      }
       #stateIssue{
         font-size:10px!important;
       }
@@ -677,6 +679,7 @@
         font-size:12px!important;
         font-family: 'Montserrat-Light', sans-serif;
         padding-top: 20px;  
+        margin-top: 0;
       }
       .card-body-methods-p-font{
         font-size:13px!important;
@@ -690,6 +693,9 @@
     }
     #issues tr{
       height: 0;
+    }
+    #mainNav{
+      width: 66%;
     }
     #stateIssue{
       font-size:10px!important;

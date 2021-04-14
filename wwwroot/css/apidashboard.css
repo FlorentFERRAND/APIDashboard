@@ -442,7 +442,8 @@
   
   @media (max-width:768px) {
     .container-fluid{
-      margin-top: 60px;
+      position: relative;
+      z-index: -1;
     }
     #nav-item-hamburger {
       padding-left: 10px;
@@ -541,7 +542,8 @@
 
   @media (max-width:425px) {
     .container-fluid{
-      margin-top: 60px;
+      position: relative;
+      z-index: -1;
     }
     #imgCDSMobile{
         display: block;

@@ -17,7 +17,7 @@
     width: 100%;
   }
   #nav-item-p{
-    padding-right: 50px;
+    padding-right: 100px;
     padding-left: 100px;
   }
   #nav-item-pp{
@@ -214,6 +214,15 @@
       text-decoration: none;
       cursor: pointer;
     }
+    .green{
+      color: #1cc88a !important;
+    }
+    .orange{
+      color: orange !important;
+    }
+    .red{
+      color: #e74a3b !important;
+    }
     .popupSBM {
       display: none;
       position: fixed;
@@ -366,7 +375,7 @@
       display: none;
     }
     #nav-item-p{
-      padding-right: 50px;
+      padding-right: 100px;
     }
     #nav-item-pp{
       padding-right: 40px;
@@ -379,8 +388,7 @@
     }
     .popup-content-SBM {
       width: 60%;
-    }
-    
+    }    
   }
   
   @media (max-width:1024px){

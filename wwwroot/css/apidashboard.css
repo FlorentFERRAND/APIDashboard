@@ -490,7 +490,7 @@
     }
     #mainNav{
       position: fixed;
-      width: 30%;
+      width: 100%;
       top: 70px;
       padding-bottom: 0;
       display: none;
@@ -498,8 +498,6 @@
       left: 0;
       background-color: #293847!important;
       color:white;
-      transition: left 1s, transform 1s;
-	    white-space: nowrap;
     }
     #mainNav ul{
       list-style: none;
@@ -508,8 +506,6 @@
       display: flex;
       flex-flow: column nowrap;
       float: right;
-      z-index: 1;
-      left: 100%;
     }
     #menuToggle{
       background-color: transparent!important;
@@ -570,7 +566,7 @@
     }
     #mainNav{
         position: absolute;
-        width: 50%;
+        width: 100%;
         top: 60px;
         padding-bottom: 0;
         display: none;
@@ -632,7 +628,7 @@
         height: 0;
       }
       #mainNav{
-        width: 57%;
+        width: 100%;
       }
       #stateIssue{
         font-size:10px!important;
@@ -705,7 +701,7 @@
       height: 0;
     }
     #mainNav{
-      width: 66%;
+      width: 100%;
     }
     #stateIssue{
       font-size:10px!important;

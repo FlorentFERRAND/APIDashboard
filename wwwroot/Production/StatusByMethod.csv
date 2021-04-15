@@ -9,7 +9,7 @@ Status By Method;Sellers;GetSellerInformation;OK;
 ;;GetModelList;OK;
 ;;GetBrandList;OK;
 ;;SubmitProductPackage;OK;
-;;GetProductPackageSubmissionResult;OK;
+;;GetProductPackageSubmissionResult;KO;We meet currently a problem to get message for each product created using our API method GetProductPackageSubmissionResult from S15. Our technical teams are mobilized on the subject.
 ;;GetProductListByIdentifier;OK;We meet currently a problem to get products information using our API method GetProductListByIdentifier from S29. Our technical teams are mobilized on the subject.
 ;Orders;GetOrderList;OK;We meet currently a problem to get orders by API. Our teams are mobilized to resolved this issue.
 ;;GetGlobalConfiguration;OK;

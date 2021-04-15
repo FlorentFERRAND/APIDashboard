@@ -484,9 +484,11 @@
     }
     a#nav-link-pp.nav-link{
       padding-left: 0;
+      padding-bottom: 15px !important;
     }
     a#nav-link-p.nav-link{
       padding: 0;
+      padding-bottom: 15px !important;
     }
     #mainNav{
       position: fixed;
@@ -502,10 +504,10 @@
     #mainNav ul{
       list-style: none;
       padding: 0;
-      margin: 0;
+      margin: 0 0 0 45px;
       display: flex;
       flex-flow: column nowrap;
-      float: right;
+      float: left;
     }
     #menuToggle{
       background-color: transparent!important;
@@ -575,7 +577,8 @@
       }
       #mainNav ul{
         list-style: none;
-        margin-right: inherit;
+        margin-left: 20px;
+        float: left;
       }
       #menuToggle{
         background-color: black;
@@ -592,6 +595,14 @@
       }
       #menuToggle.hamburger:hover{
         outline: none;
+      }
+      a#nav-link-pp.nav-link{
+        padding-left: 0;
+        padding-bottom: 15px !important;
+      }
+      a#nav-link-p.nav-link{
+        padding: 0;
+        padding-bottom: 15px !important;
       }
       #issues tr{
         height: 0;
@@ -629,6 +640,19 @@
       }
       #mainNav{
         width: 100%;
+      }
+      #mainNav ul{
+        list-style: none;
+        margin-left: 20px;
+        float: left;
+      }
+      a#nav-link-pp.nav-link{
+        padding-left: 0;
+        padding-bottom: 15px !important;
+      }
+      a#nav-link-p.nav-link{
+        padding: 0;
+        padding-bottom: 15px !important;
       }
       #stateIssue{
         font-size:10px!important;

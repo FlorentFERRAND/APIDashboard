@@ -20,6 +20,9 @@ header.menu-header-fixed {
   padding-right: 100px;
   padding-left: 100px;
 }
+#nav-item-p:hover{
+  color: red;
+}
 #nav-item-pp{
   padding-right: 40px;
 }
@@ -464,9 +467,6 @@ a.card-header-link-title {
     display: block;
     padding-right: 150px;
   }
-  #HamOrdi{
-    display: none;
-  }
   #imgCDSMobile{
     display: block;
   }
@@ -562,9 +562,6 @@ a.card-header-link-title {
       margin-right: 0;
       padding-right: 0;
       display: block;
-  }
-  #HamOrdi{
-    display: none;
   }
   #mainNav{
       position: absolute;

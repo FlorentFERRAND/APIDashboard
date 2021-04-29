@@ -20,9 +20,6 @@ header.menu-header-fixed {
   padding-right: 100px;
   padding-left: 100px;
 }
-#nav-item-p:hover{
-  color: red;
-}
 #nav-item-pp{
   padding-right: 40px;
 }
@@ -377,21 +374,12 @@ a.card-header-link-title {
   #imgCDSMobile{
     display: none;
   }
-  #nav-item-p{
-    padding-right: 100px;
-  }
-  #nav-item-pp{
-    padding-right: 40px;
-  }
-  #nav-item_cal{
-    padding-right: 30px;
-  }
   .popup-content-II {
     width: 60%;
-  }
+  }  
   .popup-content-SBM {
     width: 60%;
-  }    
+  }
 }
 
 @media (max-width:1024px){
@@ -408,14 +396,14 @@ a.card-header-link-title {
   #icons{
     padding-left: 50px;
   }
-  #nav-item_cal{
+  #nav-item-cal{
     padding-right: 30px;
   }
   .popup-content-II {
-    width: 80%;
+    width: 60%;
   }
   .popup-content-SBM {
-      width: 80%;
+      width: 60%;
   }
   .calM2{
     left: 450px;
@@ -444,24 +432,24 @@ a.card-header-link-title {
 }
 
 @media (max-width:768px) {
-  .container-fluid{
+  /*.container-fluid{
     position: relative;
     z-index: -1;
-  }
+  }*/
   #nav-item-hamburger {
     padding-left: 10px;
   }
   #imgCDS{
     display: none;
-  } 
-  #icons{
-    padding-left: 50px;
-  }
-  #nav-item-cal{
-    padding-right: 50px;
-  }
+  }  
   #text-issue-II{
     font-size: 20px!important;
+  }
+  #nav-item-cal{
+    padding-left: 25px;
+  }
+  .text-issue{
+    font-size: 20px;
   }
   #HamMobile{
     display: block;
@@ -525,7 +513,7 @@ a.card-header-link-title {
     outline: none;
   }
   .popup-content-II {
-    width: 80%;
+    width: 60%;
   }
   .card-header-link-title{
       font-size: 20px!important;
@@ -539,10 +527,6 @@ a.card-header-link-title {
 }
 
 @media (max-width:425px) {
-  .container-fluid{
-    position: relative;
-    z-index: -1;
-  }
   #imgCDSMobile{
       display: block;
       width: 150px;
@@ -626,97 +610,8 @@ a.card-header-link-title {
 }
 
 @media (max-width:375px){
-    #nav-item-cal{
-      padding-right: 20px;
-    }
-    p#card-body {
-      font-size: 12px!important;
-    }
-    #issues tr{
-      height: 0;
-    }
-    #mainNav{
-      width: 100%;
-    }
-    #mainNav ul{
-      list-style: none;
-      margin-left: 20px;
-      float: left;
-    }
-    a#nav-link-pp.nav-link{
-      padding-left: 0;
-      padding-bottom: 15px !important;
-    }
-    a#nav-link-p.nav-link{
-      padding: 0;
-      padding-bottom: 15px !important;
-    }
-    #stateIssue{
-      font-size:10px!important;
-    }
-    .badge {
-      display: inline-block;
-      padding: 10px 10px;
-      font-size: 15px;
-      font-weight: 700;
-      line-height: 1;
-      text-align: center;
-      white-space: nowrap;
-      vertical-align: baseline;
-      border-radius: 0.35rem;
-      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    }
-    .badge-success {
-      color: #fff;
-      float: right;
-    }
-    a.badge-success:hover, a.badge-success:focus {
-      color: #fff;
-      background-color: #169b6b;
-    }
-    a.badge-success:focus, a.badge-success.focus {
-      outline: 0;
-      box-shadow: 0 0 0 0.2rem rgba(28, 200, 138, 0.5);
-    }
-    .issue-font{
-      font-size:10px!important;
-      font-family: 'Montserrat-Light', sans-serif;
-    }
-    .issue-font-content{
-      font-size:8px!important;
-      font-family: 'Montserrat-Light', sans-serif;
-    }
-    .issue-font-content-j{
-      font-size:8px!important;
-      font-family: 'Montserrat-Light', sans-serif;
-    }
-    .card-body-methods-p{
-      font-size:13px!important;
-      font-family: 'Montserrat-Light', sans-serif;        
-    }
-    .card-body-methods-p1{
-      font-size:12px!important;
-      font-family: 'Montserrat-Light', sans-serif;        
-    }
-    .card-body-methods-p2{
-      font-size:11px!important;
-      font-family: 'Montserrat-Light', sans-serif;        
-    }
-    .card-body-methods-p3{
-      font-size:12px!important;
-      font-family: 'Montserrat-Light', sans-serif;
-      padding-top: 20px;  
-      margin-top: 0;
-    }
-    .card-body-methods-p-font{
-      font-size:13px!important;
-      font-family: 'Montserrat-Light', sans-serif;        
-    }
-}
-
-@media (max-width:320px){
-  #nav-item-cal{
-      padding-right: 20px;
+  p#card-body {
+    font-size: 12px!important;
   }
   #issues tr{
     height: 0;
@@ -724,8 +619,94 @@ a.card-header-link-title {
   #mainNav{
     width: 100%;
   }
+  #mainNav ul{
+    list-style: none;
+    margin-left: 20px;
+    float: left;
+  }
+  a#nav-link-pp.nav-link{
+    padding-left: 0;
+    padding-bottom: 15px !important;
+  }
+  a#nav-link-p.nav-link{
+    padding: 0;
+    padding-bottom: 15px !important;
+  }
   #stateIssue{
+    font-size:8px!important;
+  }
+  .badge {
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.35rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  .badge-success {
+    color: #fff;
+    float: right;
+  }
+  a.badge-success:hover, a.badge-success:focus {
+    color: #fff;
+    background-color: #169b6b;
+  }
+  a.badge-success:focus, a.badge-success.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(28, 200, 138, 0.5);
+  }
+  .issue-font{
     font-size:10px!important;
+    font-family: 'Montserrat-Light', sans-serif;
+  }
+  .issue-font-content{
+    font-size:8px!important;
+    font-family: 'Montserrat-Light', sans-serif;
+  }
+  .issue-font-content-j{
+    font-size:8px!important;
+    font-family: 'Montserrat-Light', sans-serif;
+  }
+  .card-body-methods-p{
+    font-size:13px!important;
+    font-family: 'Montserrat-Light', sans-serif;        
+  }
+  .card-body-methods-p1{
+    font-size:12px!important;
+    font-family: 'Montserrat-Light', sans-serif;        
+  }
+  .card-body-methods-p2{
+    font-size:11px!important;
+    font-family: 'Montserrat-Light', sans-serif;        
+  }
+  .card-body-methods-p3{
+    font-size:12px!important;
+    font-family: 'Montserrat-Light', sans-serif;
+    padding-top: 20px;  
+    margin-top: 0;
+  }
+  .card-body-methods-p-font{
+    font-size:13px!important;
+    font-family: 'Montserrat-Light', sans-serif;        
+  }
+}
+
+@media (max-width:320px) {
+  #issues tr {
+    height: 0;
+  }
+  .deleteHeightTR {
+    font-size: 8px;
+  }
+  #mainNav{
+    width: 100%;
+  }
+  #stateIssue{
+    font-size:7px!important;
   }
   .badge {
     display: inline-block;
@@ -785,7 +766,6 @@ a.card-header-link-title {
     font-family: 'Montserrat-Light', sans-serif;        
   }
 }
-
 
 .fa-arrow-up{
   display: block;

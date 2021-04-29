@@ -62,8 +62,8 @@
         </div>
     </footer>
     <script>
-        $(document).ready(function(){
-            $('#menuToggle').click(function(){
+        $(document).ready(function() {
+            $('#menuToggle').click(function() {
                 $('#mainNav').stop(true, true).slideToggle()
             })
         })
@@ -73,14 +73,14 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
     <script>
-	$(window).scroll(function(){
+	$(window).scroll(function() {
 		var sticky = $('.menu-header-fixed'),
 		 scroll = $(window).scrollTop();
 		if (scroll >= 1) {
             sticky.addClass('sticky');
             sticky.addClass('shadow');
         }
-		else{
+		else {
             sticky.removeClass('sticky');
             sticky.removeClass('shadow');
         }

@@ -459,6 +459,8 @@ a.card-header-link-title {
     display: block;
   }
   header.menu-header-fixed {
+    position: relative;
+    z-index: 1;
     background-color:#293847;
   }
   i.far.fa-calendar-alt{
@@ -527,6 +529,11 @@ a.card-header-link-title {
 }
 
 @media (max-width:425px) {
+  header.menu-header-fixed {
+    position: relative;
+    z-index: 1;
+    background-color:#293847;
+  }
   #imgCDSMobile{
       display: block;
       width: 150px;
@@ -610,6 +617,11 @@ a.card-header-link-title {
 }
 
 @media (max-width:375px){
+  header.menu-header-fixed {
+    position: relative;
+    z-index: 1;
+    background-color:#293847;
+  }
   p#card-body {
     font-size: 12px!important;
   }
@@ -696,6 +708,11 @@ a.card-header-link-title {
 }
 
 @media (max-width:320px) {
+  header.menu-header-fixed {
+    position: relative;
+    z-index: 1;
+    background-color:#293847;
+  }
   #issues tr {
     height: 0;
   }

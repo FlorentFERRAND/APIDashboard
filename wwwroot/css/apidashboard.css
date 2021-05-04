@@ -39,7 +39,7 @@ a.nav-link{
 .calendarapi{
   font-size:24px!important;
   text-decoration:none;
-  color:black;
+  color:#e13a13;
 }
 .calendarapi:hover{
   color:black;
@@ -432,68 +432,89 @@ a.card-header-link-title {
 }
 
 @media (max-width:768px) {
+  .navbar-expand-sm {
+    justify-content: space-around;
+  }
   #nav-item-hamburger {
     padding-left: 10px;
   }
   #imgCDS{
-    display: none;
-  }  
+    display: block;
+  }
+  #nav-item-p{
+    margin-right: 0;
+    padding-right: 0;
+  }
+  #nav-item-pp{
+    padding-right: 0;
+  }
   #text-issue-II {
     font-size: 20px!important;
   }
   #nav-item-cal {
     padding-left: 25px;
   }
+  #icons{
+    margin-right: 0;
+  } 
   .text-issue {
     font-size: 20px;
   }
   #HamMobile {
+    width: 30px;
+    cursor: pointer;
+    margin-right: 0;
+    margin-left: 20px;
+  }
+  #HamMobile span{
     display: block;
-    padding-right: 150px;
+    width: 100%;
+    border-radius: 3px;
+    height: 6px;
+    background:#e13a13;
+    position: relative;
+  }
+  #HamMobile span + span {
+    margin-top: 4px;
+  }
+  #HamMobile span + span {
+    margin-top: 4px;
   }
   #imgCDSMobile {
-    display: block;
+    display: none;
   }
   header.menu-header-fixed {
-    /*position: relative;*/
     z-index: 999999;
-    background-color:#293847;
-  }
-  i.far.fa-calendar-alt{
-    color: white;
-  }
-  i.fa.fa-globe{
-    color: white;
-  }
-  .bg-white{    
-    background-color:#293847!important;
   }
   a#nav-link-pp.nav-link{
-    padding-left: 0;
     padding-bottom: 15px !important;
+    border-bottom: 1px solid #dee2e6;
   }
   a#nav-link-p.nav-link{
-    padding: 0;
     padding-bottom: 15px !important;
+    border-bottom: 1px solid #dee2e6;
   }
   #mainNav{
     position: fixed;
     width: 100%;
     top: 70px;
-    padding-bottom: 0;
     display: none;
     right: 0;
     left: 0;
-    background-color: #293847!important;
-    color:white;
+    background-color: white;
+    color: #293847!important;
+    box-shadow: 0px 5px 10px -5px;
+    border-top: 1px solid #dee2e6;
+    padding-bottom: 10px;
   }
   #mainNav ul{
     list-style: none;
     padding: 0;
-    margin: 0 0 0 45px;
+    margin: 0 0 0 40px;
     display: flex;
     flex-flow: column nowrap;
     float: left;
+    width: 89%;
   }
   #menuToggle{
     background-color: transparent!important;
@@ -526,13 +547,11 @@ a.card-header-link-title {
 
 @media (max-width:425px) {
   header.menu-header-fixed {
-    /*position: relative;*/
     z-index: 999999;
     background-color:#293847;
   }
-  #imgCDSMobile{
+  #imgCDS{
       display: block;
-      width: 150px;
       height: 30px;
   }
   .contents{
@@ -545,19 +564,35 @@ a.card-header-link-title {
   #nav-item-site {
       padding-right: 20px;
   }
-  #HamMobile{
-      margin-right: 0;
-      padding-right: 0;
-      display: block;
+  #HamMobile {
+    width: 30px;
+    cursor: pointer;
+    margin-right: 0;
+    margin-left: 20px;
+  }
+  #HamMobile span{
+    display: block;
+    width: 100%;
+    border-radius: 3px;
+    height: 6px;
+    background:#e13a13;
+    position: relative;
+  }
+  #HamMobile span + span {
+    margin-top: 4px;
+  }
+  #HamMobile span + span {
+    margin-top: 4px;
   }
   #mainNav{
       position: absolute;
       width: 100%;
-      top: 60px;
+      top: 50px;
       padding-bottom: 0;
       display: none;
       right: 0;
       left: 0;
+      padding-bottom: 10px;
     }
     #mainNav ul{
       list-style: none;
@@ -614,7 +649,6 @@ a.card-header-link-title {
 
 @media (max-width:375px){
   header.menu-header-fixed {
-    /*position: relative;*/
     z-index: 999999;
     background-color:#293847;
   }
@@ -705,9 +739,11 @@ a.card-header-link-title {
 
 @media (max-width:320px) {
   header.menu-header-fixed {
-    /*position: relative;*/
     z-index: 999999;
     background-color:#293847;
+  }
+  #nav-item-cal {
+    padding-right: 10px;
   }
   #issues tr {
     height: 0;
@@ -717,6 +753,9 @@ a.card-header-link-title {
   }
   #mainNav{
     width: 100%;
+  }
+  #mainNav ul{
+    margin-left: 16px;
   }
   #stateIssue{
     font-size:7px!important;

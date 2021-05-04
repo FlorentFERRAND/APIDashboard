@@ -16,16 +16,13 @@
         <div class="container">
             <nav class="row navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white mb-3">
                 <div class="navbar-brand" id="HamMobile">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item" id="nav-item-hamburger">
-                            <button id="menuToggle" class="hamburger">&nbsp;</button>
-                        </li>
-                    </ul>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
                 <div class="col-xs-12 col-md-5 col-lg-4 col-xl-2 navbar-brand contents">
                     <a asp-controller="Production" asp-action="Production">
                         <img src="~/img/Logo.png" id="imgCDS" title="Cdiscount">
-                        <img src="~/img/LogoMobile.png" id="imgCDSMobile" title="Cdiscount">
                     </a>
                 </div>
                 <div class="col-xs-12 col-md-12 col-lg-5 col-xl-6 navbar-brand contents" id="mainNav">
@@ -63,7 +60,7 @@
     </footer>
     <script>
         $(document).ready(function() {
-            $('#menuToggle').click(function() {
+            $('#HamMobile').click(function() {
                 $('#mainNav').stop(true, true).slideToggle()
             })
         })

@@ -819,6 +819,12 @@ a.card-header-link-title {
   }
 }
 
+@media (max-width:317px) {
+  .badge-success {
+    padding: 8px;
+  }
+}
+
 .fa-arrow-up{
   display: block;
 }

@@ -815,13 +815,13 @@ a.card-header-link-title {
   }
   .card-body-methods-p-font{
     font-size:10px!important;
-    font-family: 'Montserrat-Light', sans-serif;        
+    font-family: 'Montserrat-Light', sans-serif;
   }
 }
 
 @media (max-width:317px) {
   .badge-success {
-    padding: 8px;
+    padding: 7px;
   }
 }
 

@@ -1,5 +1,7 @@
 #imgCDS{
   display: block;
+  width: 205px;
+  margin-left: 20px;
 }
 #imgCDSMobile{
   display: none;
@@ -497,7 +499,7 @@ a.card-header-link-title {
   #mainNav{
     position: fixed;
     width: 100%;
-    top: 70px;
+    top: 80px;
     display: none;
     right: 0;
     left: 0;
@@ -552,7 +554,8 @@ a.card-header-link-title {
   }
   #imgCDS{
       display: block;
-      height: 30px;
+      width: 150px;
+      margin-left: 0;
   }
   .contents{
       display: contents;
@@ -587,7 +590,7 @@ a.card-header-link-title {
   #mainNav{
       position: absolute;
       width: 100%;
-      top: 50px;
+      top: 60px;
       padding-bottom: 0;
       display: none;
       right: 0;
@@ -651,6 +654,9 @@ a.card-header-link-title {
   header.menu-header-fixed {
     z-index: 999999;
     background-color:#293847;
+  }
+  #imgCDS{
+    width: 100px;
   }
   p#card-body {
     font-size: 12px!important;
@@ -741,6 +747,9 @@ a.card-header-link-title {
   header.menu-header-fixed {
     z-index: 999999;
     background-color:#293847;
+  }
+  #imgCDS{
+    width: 100px;
   }
   #nav-item-cal {
     padding-right: 10px;

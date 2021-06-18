@@ -590,7 +590,7 @@ a.card-header-link-title {
   #mainNav{
       position: absolute;
       width: 100%;
-      top: 60px;
+      top: 50px;
       padding-bottom: 0;
       display: none;
       right: 0;

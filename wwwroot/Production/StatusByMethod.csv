@@ -1,7 +1,7 @@
 Status By Method;Sellers;GetSellerInformation;OK;
 ;;GetSellerIndicator;OK;
 ;Offers;GetOfferListPaginated;OK;
-;;SubmitOfferPackage;NOK;We meet currently a problem to update offers by API from S24. Our teams are mobilized to resolved this issue.
+;;SubmitOfferPackage;OK;We meet currently a problem to update offers by API from S24. Our teams are mobilized to resolved this issue.
 ;;GetOfferPackageSubmissionResult;OK;We meet currently a problem to get data from GetOfferPackageSubmissionResult by API from S26. Our technical teams are mobilized on the subject.
 ;;GetSellerDeals;OK;
 ;Products;GetAllowedCategoryTree;OK;

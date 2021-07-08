@@ -8,7 +8,6 @@ C:\ProjectsC#\APIDashboard\bin\Debug\netcoreapp3.1\APIDashboard.dll
 C:\ProjectsC#\APIDashboard\bin\Debug\netcoreapp3.1\APIDashboard.pdb
 C:\ProjectsC#\APIDashboard\bin\Debug\netcoreapp3.1\APIDashboard.Views.dll
 C:\ProjectsC#\APIDashboard\bin\Debug\netcoreapp3.1\APIDashboard.Views.pdb
-C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\APIDashboard.csprojAssemblyReference.cache
 C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\APIDashboard.csproj.CoreCompileInputs.cache
 C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\APIDashboard.MvcApplicationPartsAssemblyInfo.cache
 C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\APIDashboard.RazorAssemblyInfo.cache
@@ -41,3 +40,4 @@ C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\Razor\Views\Production\_Popup
 C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\Razor\Views\Production\_PopupSBM.cshtml.g.cs
 C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\Razor\Views\PreProduction\_PopupII.cshtml.g.cs
 C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\Razor\Views\PreProduction\_PopupSBM.cshtml.g.cs
+C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\APIDashboard.csproj.AssemblyReference.cache

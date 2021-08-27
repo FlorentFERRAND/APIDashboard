@@ -1,5 +1,2 @@
-API Issues;1;We meet currently a problem to update offers using our API method SubmitOfferPackage from S28. This problem has been resolved.;DONE;T3 2021
-;2;We meet currently a problem to update offers using our API method SubmitOfferPackage from S24. Our technical teams are mobilized on the subject.;DONE;T2 2021
-;3;We meet currently a problem to get stock informations using our API method GetProductStockList from S15. Our technical teams are mobilized on the subject.;DONE;T2 2021
-;4;We meet currently a problem to get message for each product created using our API method GetProductPackageSubmissionResult from S15. Our technical teams are mobilized on the subject.;DONE;S17 2021
-;5;We meet currently a problem to update orders by API using ValidateOrderList. Our technical teams are mobilized on the subject.;DONE;T1 2021
+API Issues;1;We meet currently a problem to get offers by dates using our API method GetOfferListPaginated from S28.;IN PROGRESS;T3 2021
+;2;We meet currently a problem with order status updates by API and inconsistencies on dematerialised product sheets from S32. Our technical teams are mobilized on the subject.;IN PROGRESS;T3 2021

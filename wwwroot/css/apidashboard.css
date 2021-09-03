@@ -11,12 +11,20 @@
 }
 header.menu-header-fixed {
   position: sticky;
+  border-radius: 0 0 36px 36px;
+  max-width: 73rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+#nav_border_radius{
+  border-radius: 0 0 36px 36px;
 }
 .sticky {
-  position: fixed;
+  position: absolute;
   z-index: 999;
   top: 0;
   width: 100%;
+  border-radius: 0 0 36px 36px;
 }
 #nav-item-p{
   padding-right: 100px;

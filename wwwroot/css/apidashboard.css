@@ -18,7 +18,7 @@ a#nav-link-pp.nav-link:focus{
 header.menu-header-fixed {
   position: sticky;
   border-radius: 0 0 36px 36px;
-  max-width: 73rem;
+  max-width: 71rem;
   margin-right: auto;
   margin-left: auto;
 }
@@ -399,6 +399,9 @@ a.card-header-link-title {
 }
 
 @media (max-width:1024px){
+  header.menu-header-fixed {
+    max-width: 60rem;
+  }
   #imgCDSMobile{
     display: none;
   }
@@ -448,6 +451,13 @@ a.card-header-link-title {
 }
 
 @media (max-width:768px) {
+  header.menu-header-fixed {
+    position: sticky;
+    border-radius: 0;
+  }
+  #nav_border_radius {
+    border-radius: 0;
+  }
   .navbar-expand-sm {
     justify-content: space-around;
   }
@@ -565,7 +575,7 @@ a.card-header-link-title {
   header.menu-header-fixed.sticky {
     position: sticky;
     z-index: 999999;
-    border-radius: 0 0 36px 36px;
+    border-radius: 0;
     max-width: 73rem;
     margin-right: auto;
     margin-left: auto;
@@ -672,7 +682,7 @@ a.card-header-link-title {
   header.menu-header-fixed.sticky {
     position: sticky;
     z-index: 999999;
-    border-radius: 0 0 36px 36px;
+    border-radius: 0;
     max-width: 73rem;
     margin-right: auto;
     margin-left: auto;
@@ -769,7 +779,7 @@ a.card-header-link-title {
   header.menu-header-fixed.sticky {
     position: sticky;
     z-index: 999999;
-    border-radius: 0 0 36px 36px;
+    border-radius: 0;
     max-width: 73rem;
     margin-right: auto;
     margin-left: auto;

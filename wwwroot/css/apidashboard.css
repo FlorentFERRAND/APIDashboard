@@ -242,7 +242,7 @@ a.badge-success:focus, a.badge-success.focus {
   .popupSBM {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 999;
     padding-top: 100px;
     left: 0;
     top: 0;
@@ -562,6 +562,12 @@ a.card-header-link-title {
   }
   .card-header-link-title{
       font-size: 20px!important;
+  }
+  .popupII {
+    z-index: 999999;
+  }
+  .popupSBM {
+    z-index: 999999;
   }
   .calM1{
     position: relative;

@@ -41,3 +41,4 @@ C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\Razor\Views\Production\_Popup
 C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\Razor\Views\PreProduction\_PopupII.cshtml.g.cs
 C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\Razor\Views\PreProduction\_PopupSBM.cshtml.g.cs
 C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\APIDashboard.csproj.AssemblyReference.cache
+C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\APIDashboard.GeneratedMSBuildEditorConfig.editorconfig

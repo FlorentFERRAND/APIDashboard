@@ -1,7 +1,7 @@
 Status By Method;Sellers;GetSellerInformation;OK;
 ;;GetSellerIndicator;OK;
-;Offers;GetOfferListPaginated;NOK;We meet currently a problem to get offers by date by API from S28. Our technical teams are mobilized on the subject.
-;;SubmitOfferPackage;NOK;We meet currently a problem to update offers by API from S36. Our teams are mobilized to resolved this issue.
+;Offers;GetOfferListPaginated;OK;We meet currently a problem to get offers by date by API from S28. Our technical teams are mobilized on the subject.
+;;SubmitOfferPackage;OK;We meet currently a problem to update offers by API from S36. Our teams are mobilized to resolved this issue.
 ;;GetOfferPackageSubmissionResult;OK;We meet currently a problem to get data from GetOfferPackageSubmissionResult by API from S26. Our technical teams are mobilized on the subject.
 ;;GetSellerDeals;OK;
 ;Products;GetAllowedCategoryTree;OK;

@@ -20,6 +20,11 @@ namespace APIDashboard.Controllers
             return View();
         }
         
+        public IActionResult _Home()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();

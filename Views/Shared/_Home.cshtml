@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>@ViewData["Title"] - APIDashboard</title>
+        <link rel="icon" type="image/png" href="~/img/favicon_octopia.ico" />
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+        <link rel="stylesheet" href="~/css/apidashboard.css" />
+    </head>
+    <body>
+        <div class="text-center">
+            <h1 class="display-6">Welcome to our API Dashboard</h1>
+            <p>Please choose your specific API dashboard</p>
+            <div class="text-center" style="position:relative;margin-bottom: 10px;">
+                <a class="btn btn-primary" asp-area="" asp-controller="APISOAP" asp-action="Production" role="button">API SOAP</a>
+            </div>
+            <div class="text-center" style="position:relative;">
+                <a class="btn btn-success"  asp-area="" asp-controller="APIREST" asp-action="Production" role="button">API REST</a>
+            </div>
+        </div>
+    </body>
+</html>

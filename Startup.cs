@@ -44,12 +44,8 @@ namespace APIDashboard
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute (
-                    name: "PreProduction",
-                    pattern: "PreProduction",
-                    defaults: new { controller = "PreProduction", action = "PreProduction" });
-                endpoints.MapControllerRoute (
-                    name: "Production",
-                    pattern: "{controller=Production}/{action=Production}/{id?}");                
+                    name: "Home",
+                    pattern: "{controller=Home}/{action=_Home}");
             });
         }
     }

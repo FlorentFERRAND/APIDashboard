@@ -1,8 +1,9 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-6">Welcome to our API Dashboard</h1>
+    <p>Please choose your specific API dashboard</p>
+    <a title="Production" asp-area="" asp-controller="Production"  class="dropdown-item" data-wpel-link="internal" rel="follow" class="btn btn-primary">API SOAP</a>
+    <a title="PreProduction" asp-area="" asp-controller="PreProduction" asp-action="PreProduction" class="dropdown-item" data-wpel-link="internal" rel="follow" class="btn btn-primary">API REST</a>              
 </div>

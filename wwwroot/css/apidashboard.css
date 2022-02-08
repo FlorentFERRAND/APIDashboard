@@ -9,6 +9,9 @@
 #menuToggle{
   display: none;
 }
+#menu-item-dropdown-51{
+  text-decoration: underline;
+}
 a#nav-link-p.nav-link:focus{
   color:#e13a13 !important;
 }
@@ -118,7 +121,27 @@ button.bg-success:focus {
 tr {
   height: 50px;
 }
-
+.dropdown-menu{
+  border-radius: 10px !important;
+  box-shadow: 5px 5px 5px 5px rgba(129, 128, 128, 0.17);
+  border-style: none;
+  margin-left: 120px;
+}
+.dropdown-menu:before {
+  display: block !important;
+  content: ''!important;
+  position: absolute!important;
+  bottom: 100%!important;
+  left: 8.5%!important;
+  width: 10px!important;
+  height: 10px!important;
+  z-index: 1!important;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #505050 transparent;
+  /*box-shadow: 5px 0px 5px 0px rgba(129, 128, 128, 0.17);*/
+  /*transform: rotate(136deg);*/
+}
 .badge {
   display: inline-block;
   padding: 10px 10px;

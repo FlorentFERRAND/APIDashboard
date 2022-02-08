@@ -1,0 +1,42 @@
+<div class="col-xs-5 col-md-2 col-lg-2 col-xl-2 navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse delete-padding-exclam-point">
+    <button id="myBtnII" class="buttonExclamationPopup"><i class='fas fa-exclamation-circle'></i></button>
+</div>
+<div id="myPopupII" class="popupII">
+    <div class="popup-content-II">
+        <div class="popup-title-II">
+            <span class="closeII">&times;</span>
+            <h2 class="popup-title-h2-II">Legends</h2>
+        </div>
+        <div class="contentII">
+            <p class="content-h2-II">You can find below the explanation for each card color:</p>
+            <ul>
+                <li class="content-ul-li"><p class="content-ul-li-II"><img width="42" src="~/img/ok.png"> This functionality has been resolved.</p></li>
+                <li class="content-ul-li"><p class="content-ul-li-II"><img width="42" src="~/img/nok.png"> This functionality has been identified and it is under resolution by one of our team. Also, some information messages are also display (sales, maintenance of web services...).</p></li>
+                <li class="content-ul-li"><p class="content-ul-li-II"><img width="42" src="~/img/ko.png"> This functionality is no longer usable. Our team are mobilized to resolved it.</p></li>
+            </ul>
+        </div>
+    <div class="BtnCenterII"><button type="button" class="btn colorBackGrdBtnII" name="closeII">Close</button></div>
+</div>
+</div>
+<script>
+    var popupII = document.getElementById("myPopupII");
+    var btnII = document.getElementById("myBtnII");
+    var spanII = document.getElementsByClassName("closeII")[0];
+    btnII.onclick = function() {
+        popupII.style.display = "block";
+    }
+    spanII.onclick = function() {
+        popupII.style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == popupII) {
+            popupII.style.display = "none";
+        }
+    }
+    $(popupII).find("button[name=closeII]").on("click", function() {
+		if ($(".formElementError").is(':visible')) {
+			$(".formElementError").remove();
+		}
+		$(popupII).hide();
+	});
+</script>

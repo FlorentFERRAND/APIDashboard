@@ -1,0 +1,52 @@
+<div class="col-xs-5 col-md-2 col-lg-2 col-xl-2 navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse delete-padding-exclam-point">
+	<button id="myBtnSBM" class="buttonExclamationPopup"><i class='fas fa-exclamation-circle'></i></button>
+</div>
+<div id="myPopupSBM" class="popupSBM">
+	<div class="popup-content-SBM">
+		<div class="popup-title-SBM">
+			<span class="closeSBM">&times;</span>
+			<h2 class="popup-title-h2-SBM">Status</h2>
+		</div>
+		<div class="contentSBM">
+			<p class="content-h2-SBM">Each API method will be assigned to a different status like explained below:</p>
+			<ul>
+				<li>
+					<p class="content-ul-li-SBM">
+						<b class="green">OK</b>: All informations can be get by our API method and informations are available from your seller's zone.</p>
+				</li>
+				<li>
+					<p class="content-ul-li-SBM">
+						<b class="orange">NOK</b>: Some issue has been detected like a non update of offers in your Products catalog page of your seller's zone but informations can be get from API method.</p>
+				</li>
+				<li>
+					<p class="content-ul-li-SBM">
+						<b class="red">KO</b>: An issue has been detected about this API method and our team are mobilized to resolved this problem. Some API method are down. No informations are reported.</p>
+				</li>
+			</ul>
+		</div>
+		<div class="BtnCenterSBM"><button type="button" class="btn colorBackGrdBtnSBM" name="closeSBM">Close</button></div>
+</div>
+</div>
+
+<script>
+    var popupSBM = document.getElementById("myPopupSBM");
+    var btnSBM = document.getElementById("myBtnSBM");
+    var spanSBM = document.getElementsByClassName("closeSBM")[0];
+    btnSBM.onclick = function() {
+        popupSBM.style.display = "block";
+    }
+    spanSBM.onclick = function() {
+        popupSBM.style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == popupSBM) {
+            popupSBM.style.display = "none";
+        }
+    }
+    $(popupSBM).find("button[name=closeSBM]").on("click", function() {
+		if ($(".formElementError").is(':visible')) {
+			$(".formElementError").remove();
+		}
+		$(popupSBM).hide();
+	});
+</script>

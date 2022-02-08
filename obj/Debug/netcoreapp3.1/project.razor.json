@@ -14412,8 +14412,13 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\ProjectsC#\\APIDashboard\\Views\\PreProduction\\_PopupSBM.cshtml",
-      "TargetPath": "Views\\PreProduction\\_PopupSBM.cshtml",
+      "FilePath": "c:\\ProjectsC#\\APIDashboard\\Views\\APISOAP\\Production.cshtml",
+      "TargetPath": "Views\\APISOAP\\Production.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\ProjectsC#\\APIDashboard\\Views\\Shared\\_Popup\\_PopupSBM.cshtml",
+      "TargetPath": "Views\\Shared\\_Popup\\_PopupSBM.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14422,18 +14427,13 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\ProjectsC#\\APIDashboard\\Views\\Production\\_PopupSBM.cshtml",
-      "TargetPath": "Views\\Production\\_PopupSBM.cshtml",
+      "FilePath": "c:\\ProjectsC#\\APIDashboard\\Views\\Shared\\_Popup\\_PopupII.cshtml",
+      "TargetPath": "Views\\Shared\\_Popup\\_PopupII.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\ProjectsC#\\APIDashboard\\Views\\PreProduction\\_PopupII.cshtml",
-      "TargetPath": "Views\\PreProduction\\_PopupII.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\ProjectsC#\\APIDashboard\\Views\\Production\\_PopupII.cshtml",
-      "TargetPath": "Views\\Production\\_PopupII.cshtml",
+      "FilePath": "c:\\ProjectsC#\\APIDashboard\\Views\\Shared\\_Home.cshtml",
+      "TargetPath": "Views\\Shared\\_Home.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14442,13 +14442,13 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\ProjectsC#\\APIDashboard\\Views\\PreProduction\\PreProduction.cshtml",
-      "TargetPath": "Views\\PreProduction\\PreProduction.cshtml",
+      "FilePath": "c:\\ProjectsC#\\APIDashboard\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\ProjectsC#\\APIDashboard\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FilePath": "c:\\ProjectsC#\\APIDashboard\\Views\\Shared\\_Header\\_HeaderAPIREST.cshtml",
+      "TargetPath": "Views\\Shared\\_Header\\_HeaderAPIREST.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14457,13 +14457,23 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\ProjectsC#\\APIDashboard\\Views\\APIREST\\Production.cshtml",
+      "TargetPath": "Views\\APIREST\\Production.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\ProjectsC#\\APIDashboard\\Views\\APISOAP\\PreProduction.cshtml",
+      "TargetPath": "Views\\APISOAP\\PreProduction.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\ProjectsC#\\APIDashboard\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\ProjectsC#\\APIDashboard\\Views\\Production\\Production.cshtml",
-      "TargetPath": "Views\\Production\\Production.cshtml",
+      "FilePath": "c:\\ProjectsC#\\APIDashboard\\Views\\Shared\\_Header\\_HeaderAPISOAP.cshtml",
+      "TargetPath": "Views\\Shared\\_Header\\_HeaderAPISOAP.cshtml",
       "FileKind": "mvc"
     }
   ],

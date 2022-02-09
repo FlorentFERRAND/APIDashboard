@@ -13,11 +13,11 @@ Status By Method;Seller Management;Gets seller indicators;OK;
 ;;Searches products by criteria;OK;
 ;;Gets information from a product package;KO;It is not possible to create products from our API yet. Our technical teams are mobilized on the subject.
 ;;Submits a product package;KO;It is not possible to create products from our API yet. Our technical teams are mobilized on the subject.
-;Order Management;Creates a commercial gesture on a order;KO;It is not possible to create a commercial gesture from our API yet. Our technical teams are mobilized on the subject.
-;;Gets if an order is eligible to commercial gesture;KO;It is not possible to create a commercial gesture from our API yet. Our technical teams are mobilized on the subject.
-;;Gets informations about commercial gestures on a order;KO;It is not possible to create a commercial gesture from our API yet. Our technical teams are mobilized on the subject.
+;Order Management;Creates a commercial gesture on a order;OK;It is not possible to create a commercial gesture from our API yet. Our technical teams are mobilized on the subject.
+;;Gets if an order is eligible to commercial gesture;OK;It is not possible to create a commercial gesture from our API yet. Our technical teams are mobilized on the subject.
+;;Gets informations about commercial gestures on a order;OK;It is not possible to create a commercial gesture from our API yet. Our technical teams are mobilized on the subject.
 ;;Searches orders by criteria;OK;
-;;Validates an order;KO;It is not possible to validate orders from our API yet. Our technical teams are mobilized on the subject.
+;;Validates an order;OK;It is not possible to validate orders from our API yet. Our technical teams are mobilized on the subject.
 ;Financial Reporting;Count invoice details;OK;
 ;;Download an invoice;OK;
 ;;Download invoices;OK;

@@ -14412,6 +14412,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\ProjectsC#\\APIDashboard\\Views\\APICV\\Production.cshtml",
+      "TargetPath": "Views\\APICV\\Production.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\ProjectsC#\\APIDashboard\\Views\\APISOAP\\Production.cshtml",
       "TargetPath": "Views\\APISOAP\\Production.cshtml",
       "FileKind": "mvc"

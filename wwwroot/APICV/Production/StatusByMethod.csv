@@ -1,0 +1,25 @@
+Status By Method;Sellers;Retrive seller legal mentions;OK;
+;Offers;Retrieve the amount of offers in the required collection;OK;We meet currently a problem to update stock for offers by API from S02. Our technical teams are mobilized on the subject.
+;;Retrieve a single offer;OK;We meet currently a problem to get data from GetOfferPackageSubmissionResult by API from S26. Our technical teams are mobilized on the subject.
+;;Retrieve offers;OK;
+;Products;Count products;OK;
+;;Retrieve a single product;OK;
+;;Retrieve products;OK;
+;Frontend;Retrieve seller legal mentions;OK;It is not possible to create a commercial gesture from our API yet. Our technical teams are mobilized on the subject.
+;;Update carts;OK;It is not possible to create a commercial gesture from our API yet. Our technical teams are mobilized on the subject.
+;;Retrieve an offer front use;OK;
+;Orders;Create an order;OK;
+;;Retrieve a list of orders;OK;
+;;Retrieve a single order;OK;
+;;Create a cancellation request;OK;
+;;Retrieve cancellation reasons;OK;
+;Discussions;Retrieve subTypologies;OK;
+;;Create a discussion;OK;
+;;Retrieve discussions;OK;
+;;Add a message to a discussion;OK;
+;;Retrieve messages;OK;
+;;Retrieve attachments;OK;
+;Financial Reporting;Count invoices;OK;
+;;Retrieves invoices;OK;
+;;Count fund requests;OK;
+;;Retrieve fund requests;OK;

@@ -1,3 +1,10 @@
+#home_soap {
+  position:relative;
+  margin-bottom: 10px;
+}
+#home_sc {
+  position:relative;
+}
 #imgCDS{
   display: block;
   width: 205px;

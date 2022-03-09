@@ -62,7 +62,10 @@ a.nav-link{
   font-family: 'Montserrat-Light', sans-serif;
 }
 #icons{
-  padding-left: 180px;
+  padding-left: 230px;
+}
+#icons1{
+  padding-left: 260px;
 }
 #nav-item-cal{
   padding-right: 40px;
@@ -456,14 +459,14 @@ a.card-header-link-title {
     display: none;
   }
   #nav-item-p{
-    padding-right: 50px;
+    padding-right: 100px;
     padding-left: 0;
   }
   #nav-item-pp{
     padding-right: 40px;
   }
   #icons{
-    padding-left: 50px;
+    padding-left: 100px;
   }
   #nav-item-cal{
     padding-right: 30px;
@@ -541,7 +544,8 @@ a.card-header-link-title {
   }
   #icons{
     margin-right: 0;
-  } 
+    padding-left: 120px;
+  }
   .text-issue {
     font-size: 20px;
   }
@@ -728,6 +732,9 @@ a.card-header-link-title {
       padding: 0;
       padding-bottom: 15px !important;
     }
+    #nav-item-site{
+      padding-right: 0;
+    }
     #issues tr{
       height: 0;
     }
@@ -794,6 +801,9 @@ a.card-header-link-title {
   a#nav-link-p.nav-link{
     padding: 0;
     padding-bottom: 15px !important;
+  }
+  #nav-item-site{
+    padding-right: 0;
   }
   #stateIssue{
     font-size:8px!important;
@@ -893,6 +903,9 @@ a.card-header-link-title {
   }
   #mainNav ul{
     margin-left: 16px;
+  }
+  #nav-item-site{
+    padding-right: 0;
   }
   #stateIssue{
     font-size:7px!important;

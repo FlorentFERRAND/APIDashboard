@@ -79,6 +79,15 @@ a.nav-link{
   font-family: 'Montserrat-Light', sans-serif;
   color:black;
 }
+#blocklinkapi {
+  padding-bottom: 0px;
+}
+#blocklinkapi1 {
+  margin-bottom: 10px;
+}
+#blocklinkapi2 {
+  margin-bottom: 10px;
+}
 .content-canvas {
   border-radius: 0.45rem;
   background-color: #ffffff;
@@ -382,7 +391,6 @@ a.badge-success:focus, a.badge-success.focus {
 a.card-header-link-title {
   color:var(--dark-blue-color)!important;
   font-family: 'Montserrat-Light', sans-serif;
-  /*text-decoration:none;*/
   font-size:32px;
 }
 .calM1M2Table {
@@ -428,6 +436,15 @@ a.card-header-link-title {
   }  
   .popup-content-SBM {
     width: 60%;
+  }
+  #blocklinkapi {
+    padding-bottom: 0px;
+  }
+  #blocklinkapi1 {
+    margin-bottom: 10px;
+  }
+  #blocklinkapi2 {
+    margin-bottom: 10px;
   }
 }
 
@@ -480,6 +497,15 @@ a.card-header-link-title {
   #myBtn:hover {
     background-color: #293847;
     transition:all ease-in 0.2s;
+  }
+  #blocklinkapi {
+    padding-bottom: 0px;
+  }
+  #blocklinkapi1 {
+    margin-bottom: 10px;
+  }
+  #blocklinkapi2 {
+    margin-bottom: 10px;
   }
 }
 
@@ -608,6 +634,15 @@ a.card-header-link-title {
   .calM2{
     left: 0;
   }
+  #blocklinkapi {
+    padding-bottom: 0px;
+  }
+  #blocklinkapi1 {
+    margin-bottom: 10px;
+  }
+  #blocklinkapi2 {
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width:425px) {
@@ -715,6 +750,15 @@ a.card-header-link-title {
       font-size:15px!important;
       font-family: 'Montserrat-Light', sans-serif;        
     }
+    #blocklinkapi {
+      padding-bottom: 0px;
+    }
+    #blocklinkapi1 {
+      margin-bottom: 10px;
+    }
+    #blocklinkapi2 {
+      margin-bottom: 10px;
+    }
 }
 
 @media (max-width:375px){
@@ -812,6 +856,15 @@ a.card-header-link-title {
     font-size:13px!important;
     font-family: 'Montserrat-Light', sans-serif;        
   }
+  #blocklinkapi {
+    padding-bottom: 0px;
+  }
+  #blocklinkapi1 {
+    margin-bottom: 10px;
+  }
+  #blocklinkapi2 {
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width:320px) {
@@ -900,6 +953,15 @@ a.card-header-link-title {
   .card-body-methods-p-font{
     font-size:10px!important;
     font-family: 'Montserrat-Light', sans-serif;
+  }
+  #blocklinkapi {
+    padding-bottom: 0px;
+  }
+  #blocklinkapi1 {
+    margin-bottom: 10px;
+  }
+  #blocklinkapi2 {
+    margin-bottom: 10px;
   }
 }
 

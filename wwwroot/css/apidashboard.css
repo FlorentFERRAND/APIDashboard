@@ -60,7 +60,6 @@ a.nav-link{
   font-weight: bold;
   color:var(--dark-blue-color)!important;
   font-family: 'Montserrat-Light', sans-serif;
-  /*text-decoration: none;*/
 }
 #icons{
   padding-left: 180px;
@@ -152,8 +151,6 @@ tr {
   border-width: 10px;
   border-style: solid;
   border-color: transparent transparent #505050 transparent;
-  /*box-shadow: 5px 0px 5px 0px rgba(129, 128, 128, 0.17);*/
-  /*transform: rotate(136deg);*/
 }
 .badge {
   display: inline-block;

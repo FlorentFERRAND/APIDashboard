@@ -14427,6 +14427,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\ProjectsC#\\APIDashboard\\Views\\Shared\\_Header\\_HeaderAPISC.cshtml",
+      "TargetPath": "Views\\Shared\\_Header\\_HeaderAPISC.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\ProjectsC#\\APIDashboard\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"

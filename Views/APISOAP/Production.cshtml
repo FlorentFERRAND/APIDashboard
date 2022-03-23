@@ -263,6 +263,10 @@
                                         {
                                             <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span> </p>
                                         }
+                                        if (myName.NameMethod.Contains("Competing"))
+                                        {
+                                            <p class="card-body-methods-p">@myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span> </p>
+                                        }
                                     }
                                 </div>
                             </div>

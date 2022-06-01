@@ -1,7 +1,7 @@
 Status By Method;Sellers;GetSellerInformation;OK;
 ;;GetSellerIndicator;OK;
 ;Offers;GetOfferListPaginated;OK;We meet currently a problem to get offers by date by API from S28. Our technical teams are mobilized on the subject.
-;;SubmitOfferPackage;OK;We meet currently a problem to update stock for offers by API from S02. Our technical teams are mobilized on the subject.
+;;SubmitOfferPackage;NOK;We meet currently a problem to update stock for offers by API from S16. Our technical teams are mobilized on the subject.
 ;;GetOfferPackageSubmissionResult;OK;We meet currently a problem to get data from GetOfferPackageSubmissionResult by API from S26. Our technical teams are mobilized on the subject.
 ;;GetSellerDeals;OK;
 ;;GetCompetingOffers;KO;A problem has been detected in order to get best offers from API from S12. Our technical teams are mobilized on the subject.
@@ -12,7 +12,7 @@ Status By Method;Sellers;GetSellerInformation;OK;
 ;;SubmitProductPackage;OK;
 ;;GetProductPackageSubmissionResult;OK;We meet currently a problem to get message for each product created using our API method GetProductPackageSubmissionResult from S15. Our technical teams are mobilized on the subject.
 ;;GetProductListByIdentifier;OK;We meet currently a problem to get products information using our API method GetProductListByIdentifier from S29. Our technical teams are mobilized on the subject.
-;Orders;GetOrderList;OK;We meet currently a problem to get shipping charges for orders by API. Our teams are mobilized to resolved this issue.
+;Orders;GetOrderList;NOK;A problem has been detected in order to get orders from API from S22. Our teams are mobilized to resolved this issue.
 ;;GetGlobalConfiguration;OK;
 ;;ValidateOrderList;OK;We meet currently a problem with order status updates by API and inconsistencies on dematerialised product sheets. Our technical teams are mobilized on the subject.
 ;;CreateRefundVoucher;OK;

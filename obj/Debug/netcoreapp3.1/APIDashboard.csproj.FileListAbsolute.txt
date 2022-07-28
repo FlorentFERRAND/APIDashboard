@@ -17,8 +17,6 @@ C:\ProjectsC#\APIDashboard\bin\Debug\netcoreapp3.1\APIDashboard.pdb
 C:\ProjectsC#\APIDashboard\bin\Debug\netcoreapp3.1\APIDashboard.Views.dll
 C:\ProjectsC#\APIDashboard\bin\Debug\netcoreapp3.1\APIDashboard.Views.pdb
 C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\staticwebassets\APIDashboard.StaticWebAssets.Manifest.cache
-C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\staticwebassets\APIDashboard.StaticWebAssets.xml
-C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\scopedcss\bundle\APIDashboard.styles.css
 C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\APIDashboard.TagHelpers.input.cache
 C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\APIDashboard.TagHelpers.output.cache
 C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\APIDashboard.RazorCoreGenerate.cache
@@ -46,3 +44,4 @@ C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Header\_H
 C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Header\_HeaderAPISOAP.cshtml.g.cs
 C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\Razor\Views\APISC\Production.cshtml.g.cs
 C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Header\_HeaderAPISC.cshtml.g.cs
+C:\ProjectsC#\APIDashboard\bin\Debug\netcoreapp3.1\APIDashboard.StaticWebAssets.xml

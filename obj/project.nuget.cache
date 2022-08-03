@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "abEyXCHCE8WM66vv5X8lYrFfOQi5rpPC78rogShgvn7k8/E21z3plehkED6q8JL21Ml1WoBF7pihnR7ru5s/+A==",
+  "dgSpecHash": "AlWlxiDL743DJu75IOMaKL09iove9i6XlE7fa0UTRrSy8OSy4VOr9XLgXILB9b3ap0tyfjtHMsobB/pEU3guAw==",
   "success": true,
   "projectFilePath": "C:\\ProjectsC#\\APIDashboard\\APIDashboard.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\florent.ferrand\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.23\\microsoft.netcore.app.host.win-x64.3.1.23.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

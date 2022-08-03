@@ -44,4 +44,3 @@ C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Header\_H
 C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Header\_HeaderAPISOAP.cshtml.g.cs
 C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\Razor\Views\APISC\Production.cshtml.g.cs
 C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Header\_HeaderAPISC.cshtml.g.cs
-C:\ProjectsC#\APIDashboard\bin\Debug\netcoreapp3.1\APIDashboard.StaticWebAssets.xml

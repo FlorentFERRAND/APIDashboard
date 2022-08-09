@@ -1,0 +1,72 @@
+<div class="row">
+		<div class="col-xl-9 col-lg-8 col-md-7 col-xs-6">
+			<div class="card shadow mb-4">
+				<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    @foreach (Informations myInfos in Model._Informations)
+                    {
+					    <h2 class="text-issue" id="text-issue-II">@myInfos.TitleImportantInformations</h2>
+                    }
+                    <partial name="_Popup/_PopupII" />
+				</div>
+				<div class="row">
+					<div class="col-lg-12 mb-4">
+                        @foreach (Informations myInfos in Model._Informations)
+                        {
+                            var style = (myInfos.StateImportantInformations == "OK") ? "background-color:#1cc88a!important;color:#ffffff;font-size:16px!important;font-family:'Montserrat-Light',sans-serif" : "";
+                            var style1 = (myInfos.StateImportantInformations == "KO") ? "background-color:#f2dede!important;color:#a94442;font-size:16px!important;font-family:'Montserrat-Light',sans-serif" : "";
+                            var style2 = (myInfos.StateImportantInformations == "NOK") ? "background-color:#febe28!important;color:#ffffff;font-size:16px!important;font-family:'Montserrat-Light',sans-serif" : "";
+                            <div class="card bg-success text-white shadow" style="@style;@style1;@style2">
+                                <div class="card-body">
+                                    <p style="@style;@style1;@style2" id="card-body">@myInfos.ImportantInfos</p>
+                                </div>
+                            </div>                            
+                        }
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xl-3 col-lg-4 col-md-5 col-xs-6">
+			<div class="card shadow mb-4">
+				<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    @foreach (PieChart myPieChart in Model._PieChart)
+                    {
+					    <h2 class="text-issue" id="text-issue-II">@myPieChart.TitlePieChart</h2>
+                    }
+				</div>
+				<div class="content-canvas">
+                    <canvas id="myPieChart"></canvas>
+                </div>
+                <script>
+                    var ctxP = document.getElementById("myPieChart").getContext('2d');
+                    var myPieChart = new Chart(ctxP, {
+                    type: 'pie',
+                    data: {
+                        labels: ["@foreach (PieChart myPieChart in Model._PieChart) {
+                                                        if (myPieChart.StatusByMethodPieChart == "OK") { @myPieChart.StatusByMethodPieChart; }
+                                                    }", "@foreach (PieChart myPieChart in Model._PieChart) {
+                                                        if (myPieChart.StatusByMethodPieChart == "KO") { @myPieChart.StatusByMethodPieChart; }
+                                                    }", "@foreach (PieChart myPieChart in Model._PieChart) {
+                                                        if (myPieChart.StatusByMethodPieChart == "NOK") { @myPieChart.StatusByMethodPieChart; }
+                                                    }"],
+                        datasets: [{
+                        data: [@foreach (PieChart myPieChart in Model._PieChart) {
+                                                        if (myPieChart.StatusByMethodPieChart == "OK") { @myPieChart.NumberMethodsByStatus; }
+                                                    },
+                                                    @foreach (PieChart myPieChart in Model._PieChart) {
+                                                        if (myPieChart.StatusByMethodPieChart == "KO") { @myPieChart.NumberMethodsByStatus; }
+                                                    },
+                                                    @foreach (PieChart myPieChart in Model._PieChart) {
+                                                        if (myPieChart.StatusByMethodPieChart == "NOK") { @myPieChart.NumberMethodsByStatus; }
+                                                    }],
+                                                backgroundColor: ["#1CC88A", "#FF5A5E", "#FEBE28"],
+                                                hoverBackgroundColor: ["#1CC88A", "#FF5A5E", "#FEBE28"]
+                        }]
+                    },
+                    options: {
+                        responsive: true
+                    }
+                    });
+                </script>
+			</div>
+		</div>
+	</div>

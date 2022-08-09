@@ -44,3 +44,6 @@ C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Header\_H
 C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Header\_HeaderAPISOAP.cshtml.g.cs
 C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\Razor\Views\APISC\Production.cshtml.g.cs
 C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Header\_HeaderAPISC.cshtml.g.cs
+C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ALLAPI\_ImportantInformationsCanvas.cshtml.g.cs
+C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ALLAPI\_ApiIssues.cshtml.g.cs
+C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_APISOAP\_StatusByMethod.cshtml.g.cs

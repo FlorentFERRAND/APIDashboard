@@ -1,3 +1,2 @@
-Important Informations;A problem has been detected in order to use GetCompetingOffers from API from S12. Our technical teams are mobilized on the subject.;OK
-;A problem has been detected in order to update offers get best offers from API from S16. Our technical teams are mobilized on the subject.;OK
-;A problem has been detected in order to get orders from API from S22.;OK
+Important Informations;A problem has been detected in order to get offers using GetOfferPackageSubmissionResult from API from S32. Our technical teams are mobilized on the subject.;OK
+;A problem has been detected in order to update offers using SubmitOfferPackage from API from S32. Our technical teams are mobilized on the subject.;OK

@@ -10,7 +10,7 @@ namespace APIDashboard.Controllers
         public IActionResult APISC(string titleInfos, string infos, string stateInfos,
         string titlePC, string statusbyMetPC, int numberPC,
         string titleIss, int numIss, string expliIss, string stIss, string dateResoIss,
-        string titleMet, string cateMet, string nameMet, string staMet, string tooltipStaMet)
+        string titleMet, string cateMet, string typeMet, string nameMet, string staMet, string tooltipStaMet)
         {
             DashBoardProdSC dashboardSC= new DashBoardProdSC()
             {
@@ -27,6 +27,7 @@ namespace APIDashboard.Controllers
                 DateOfResolutionIssue = dateResoIss,
                 TitleMethod = titleMet,
                 CategoryMethod = cateMet,
+                TypeMethod = typeMet,
                 NameMethod = nameMet,
                 StateMethod = staMet,
                 TooltipStateMethod = tooltipStaMet
@@ -38,7 +39,7 @@ namespace APIDashboard.Controllers
         public IActionResult Production(string titleInfos, string infos, string stateInfos,
         string titlePC, string statusbyMetPC, int numberPC,
         string titleIss, int numIss, string expliIss, string stIss, string dateResoIss,
-        string titleMet, string cateMet, string nameMet, string staMet, string tooltipStaMet)
+        string titleMet, string cateMet, string typeMet, string nameMet, string staMet, string tooltipStaMet)
         {
             DashBoardProdSC dashboardSC = new DashBoardProdSC()
             {
@@ -55,6 +56,7 @@ namespace APIDashboard.Controllers
                 DateOfResolutionIssue = dateResoIss,
                 TitleMethod = titleMet,
                 CategoryMethod = cateMet,
+                TypeMethod = typeMet,
                 NameMethod = nameMet,
                 StateMethod = staMet,
                 TooltipStateMethod = tooltipStaMet

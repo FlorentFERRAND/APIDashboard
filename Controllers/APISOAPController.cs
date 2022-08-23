@@ -10,7 +10,7 @@ namespace APIDashboard.Controllers
         public IActionResult APISOAP(string titleInfos, string infos, string stateInfos,
         string titlePC, string statusbyMetPC, int numberPC,
         string titleIss, int numIss, string expliIss, string stIss, string dateResoIss,
-        string titleMet, string cateMet, string nameMet, string staMet, string tooltipStaMet)
+        string titleMet, string cateMet, string typeMet, string nameMet, string staMet, string tooltipStaMet)
         {
             DashBoardProd dashboardP = new DashBoardProd()
             {
@@ -27,6 +27,7 @@ namespace APIDashboard.Controllers
                 DateOfResolutionIssue = dateResoIss,
                 TitleMethod = titleMet,
                 CategoryMethod = cateMet,
+                TypeMethod = typeMet,
                 NameMethod = nameMet,
                 StateMethod = staMet,
                 TooltipStateMethod = tooltipStaMet
@@ -39,7 +40,7 @@ namespace APIDashboard.Controllers
         public IActionResult Production(string titleInfos, string infos, string stateInfos,
         string titlePC, string statusbyMetPC, int numberPC,
         string titleIss, int numIss, string expliIss, string stIss, string dateResoIss,
-        string titleMet, string cateMet, string nameMet, string staMet, string tooltipStaMet)
+        string titleMet, string cateMet, string typeMet, string nameMet, string staMet, string tooltipStaMet)
         {
             DashBoardProd dashboardP = new DashBoardProd()
             {
@@ -56,6 +57,7 @@ namespace APIDashboard.Controllers
                 DateOfResolutionIssue = dateResoIss,
                 TitleMethod = titleMet,
                 CategoryMethod = cateMet,
+                TypeMethod = typeMet,
                 NameMethod = nameMet,
                 StateMethod = staMet,
                 TooltipStateMethod = tooltipStaMet
@@ -67,7 +69,7 @@ namespace APIDashboard.Controllers
         public IActionResult PreProduction(string titleInfos, string infos, string stateInfos,
         string titlePC, string statusbyMetPC, int numberPC,
         string titleIss, int numIss, string expliIss, string stIss, string dateResoIss,
-        string titleMet, string cateMet, string nameMet, string staMet, string tooltipStaMet,
+        string titleMet, string cateMet, string typeMet, string nameMet, string staMet, string tooltipStaMet,
         string calsCTitle, string monthCalM1, string day1M1, string day2M1, string day3M1, string day4M1, string day5M1,
         string monthCalM2, string day1M2, string day2M2, string day3M2, string day4M2, string day5M2)
         {            
@@ -86,6 +88,7 @@ namespace APIDashboard.Controllers
                 DateOfResolutionIssue = dateResoIss,
                 TitleMethod = titleMet,
                 CategoryMethod = cateMet,
+                TypeMethod = typeMet,
                 NameMethod = nameMet,
                 StateMethod = staMet,
                 TooltipStateMethod = tooltipStaMet,

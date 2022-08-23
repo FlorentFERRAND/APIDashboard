@@ -25,6 +25,7 @@ namespace APIDashboard.Models
 
         public string TitleMethod { get; set; }
         public string CategoryMethod { get; set; }
+        public string TypeMethod { get; set; }
         public string NameMethod { get; set; }
         public string StateMethod { get; set; }
         public string TooltipStateMethod { get; set; }
@@ -241,6 +242,7 @@ namespace APIDashboard.Models
                 {
                     List<string> listTitleMethod = new List<string>();
                     List<string> listCategoryMethod = new List<string>();
+                    List<string> listTypeMethod = new List<string>();
                     List<string> listNameMethod = new List<string>();
                     List<string> listStateMethod = new List<string>();
                     List<string> listTooltipStateMethod = new List<string>();
@@ -251,9 +253,10 @@ namespace APIDashboard.Models
 
                         listTitleMethod.Add(values[0]);
                         listCategoryMethod.Add(values[1]);
-                        listNameMethod.Add(values[2]);
-                        listStateMethod.Add(values[3]);
-                        listTooltipStateMethod.Add(values[4]);
+                        listTypeMethod.Add(values[2]);
+                        listNameMethod.Add(values[3]);
+                        listStateMethod.Add(values[4]);
+                        listTooltipStateMethod.Add(values[5]);
 
                         string Title = "";
                         if (String.IsNullOrEmpty(Title))
@@ -267,28 +270,35 @@ namespace APIDashboard.Models
                             CategoryMeth = values[1];
                         }
 
+                        string TypeMeth = "";
+                        if (String.IsNullOrEmpty(TypeMeth))
+                        {
+                            TypeMeth = values[2];
+                        }
+
                         string Name = "";
                         if (String.IsNullOrEmpty(Name))
                         {
-                            Name = values[2];
+                            Name = values[3];
                         }
 
                         string State = "";
                         if (String.IsNullOrEmpty(State))
                         {
-                            State = values[3];
+                            State = values[4];
                         }
 
                         string Tootltip = "";
                         if (String.IsNullOrEmpty(Tootltip))
                         {
-                            Tootltip = values[4];
+                            Tootltip = values[5];
                         }
 
                         MethodsStatusList.Add(new Methods()
                         {
                             TitleMethod = Title,
                             CategoryMethod = CategoryMeth,
+                            TypeMethod = TypeMeth,
                             NameMethod = Name,
                             StateMethod = State,
                             TooltipStateMethod = Tootltip

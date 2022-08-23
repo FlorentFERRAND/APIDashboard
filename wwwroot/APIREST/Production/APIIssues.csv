@@ -1,3 +1,5 @@
-API Issues;1;It is not possible to create products Casino using our API yet. Our technical teams are mobilized on the subject.;DONE;T1 2022
-;2;An error message appears during the connection to our API portail : 'User with specified identity already exists'. Our technical teams are mobilized on the subject.;IN PROGRESS;T3 2022
-;3;It is not possible to create products form Octopia using our API yet. Our technical teams are mobilized on the subject.;IN PROGRESS;T4 2022
+API Issues;1;A problem has been detected in order to get offers using GetOfferPackageSubmissionResult from API from S32. Our technical teams are mobilized on the subject.;DONE;T3 2022
+;2;A problem has been detected in order to update offers using SubmitOfferPackage from API from S32. Our technical teams are mobilized on the subject.;DONE;T3 2022
+;3;An error message appears during the connection to our API portail : 'User with specified identity already exists'. Our technical teams are mobilized on the subject.;IN PROGRESS;T3 2022
+;4;It is not possible to create products form Octopia using our API yet. Our technical teams are mobilized on the subject.;IN PROGRESS;T4 2022
+;5;It is not possible to get products from Octopia and Casino using our API yet. Our technical teams are mobilized on the subject.;IN PROGRESS;T4 2022

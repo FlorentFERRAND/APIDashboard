@@ -412,6 +412,15 @@ a.card-header-link-title:hover {
   margin-right: 0px;
 }
 
+p.card-header-link-title_SBMAPIREST {
+  color:var(--dark-blue-color)!important;
+  font-family: 'Montserrat-Light', sans-serif;
+  font-size:32px; 
+  margin-right: 0;
+  width: auto;
+  text-decoration: none;
+}
+
 .calM1M2Table {
   margin-bottom:0;
 }
@@ -641,6 +650,10 @@ a.card-header-link-title:hover {
   }
   .card-header-link-title{
       font-size: 20px!important;
+  }
+  .card-header-link-title_SBMAPIREST
+  {    
+    font-size: 20px!important;
   }
   .popupII {
     z-index: 999999;

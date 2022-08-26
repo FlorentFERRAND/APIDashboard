@@ -23,7 +23,7 @@
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                     @foreach (Methods myName in Model._Methods)
                     {
-                        <p data-toggle="collapse" class="card-header-link-title_SBMAPIREST">@myName.TitleMethod</p>
+                        <a data-toggle="collapse" href="#methods" class="card-header-link-title">@myName.TitleMethod</a>
                     }
                     <partial name="_Popup/_PopupSBM" />
                 </div>

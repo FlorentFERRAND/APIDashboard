@@ -48,3 +48,5 @@ C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ALLAPI\_I
 C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ALLAPI\_ApiIssues.cshtml.g.cs
 C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_APISOAP\_StatusByMethod.cshtml.g.cs
 C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_APIREST\_StatusByMethod.cshtml.g.cs
+C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_APISC\_StatusByMethod.cshtml.g.cs
+C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_APISOAP\_Calendars.cshtml.g.cs

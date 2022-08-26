@@ -14407,6 +14407,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\ProjectsC#\\APIDashboard\\Views\\Shared\\_APISOAP\\_Calendars.cshtml",
+      "TargetPath": "Views\\Shared\\_APISOAP\\_Calendars.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\ProjectsC#\\APIDashboard\\Views\\Shared\\_Header\\_HeaderAPISC.cshtml",
       "TargetPath": "Views\\Shared\\_Header\\_HeaderAPISC.cshtml",
       "FileKind": "mvc"
@@ -14489,6 +14494,11 @@
     {
       "FilePath": "c:\\ProjectsC#\\APIDashboard\\Views\\APISOAP\\PreProduction.cshtml",
       "TargetPath": "Views\\APISOAP\\PreProduction.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\ProjectsC#\\APIDashboard\\Views\\Shared\\_APISC\\_StatusByMethod.cshtml",
+      "TargetPath": "Views\\Shared\\_APISC\\_StatusByMethod.cshtml",
       "FileKind": "mvc"
     },
     {

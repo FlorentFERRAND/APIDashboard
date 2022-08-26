@@ -44,7 +44,7 @@ header.menu-header-fixed {
   margin-left: auto;
 }
 
-p{
+p, h2, .table{
   margin-bottom: 0;
 }
 

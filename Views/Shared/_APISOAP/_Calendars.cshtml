@@ -1,0 +1,100 @@
+<div class="row">
+    <div class="col-xl-12 col-lg-12">
+        <div class="card shadow mb-4">
+            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                @foreach (CalendarsTitle myCalTitle in Model._CalendarsTitle)
+                {
+                    <a data-toggle="collapse" href="#calendars" class="card-header-link-title">@myCalTitle.CalendarsCardTitle</a>
+                }
+            </div>
+            <div id="calendars" class="panel-collapse collapse">
+                <div class="col-lg-6 mb-6 calM1">
+                    <div class="card bg-text text-white shadow">
+                        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                            @foreach (CalendarM1 myCalM1 in Model._CalendarM1)
+                            {
+                                <h2 class="text-issue">@myCalM1.MonthCalM1</h2>
+                            }
+                        </div>
+                        <table class="table table-striped calM1M2Table">
+                            <colgroup>
+                                <col span="5" width="50" />
+                            </colgroup>
+                            <div class="text-white shadow">
+                                <tbody>
+                                    <div>
+                                        @foreach (CalendarM1 myCalM1 in Model._CalendarM1)
+                                        {
+                                            var styleSupEmptyM1 = (myCalM1.DayOfTheWeekDayStatusOfTheDay1M1 == "") ? "margin:0;padding:0;display:none" : "";
+                                            var styleDay1M1ON = (myCalM1.DayOfTheWeekDayStatusOfTheDay1M1 == "ON") ? "color:#3c763d;font-weight:bold;text-align:center;font-family: 'Montserrat-Light', sans-serif;" : "text-align:center;font-family: 'Montserrat-Light', sans-serif;";
+                                            var styleDay1M1OFF = (myCalM1.DayOfTheWeekDayStatusOfTheDay1M1 == "OFF") ? "color:#e74a3b;font-weight:bold;text-align:center;font-family: 'Montserrat-Light', sans-serif;" : "text-align:center;font-family: 'Montserrat-Light', sans-serif;";
+                                            var styleDay2M1ON = (myCalM1.DayOfTheWeekDayStatusOfTheDay2M1 == "ON") ? "color:#3c763d;font-weight:bold;text-align:center;font-family: 'Montserrat-Light', sans-serif;" : "text-align:center;font-family: 'Montserrat-Light', sans-serif;";
+                                            var styleDay2M1OFF = (myCalM1.DayOfTheWeekDayStatusOfTheDay2M1 == "OFF") ? "color:#e74a3b;font-weight:bold;text-align:center;font-family: 'Montserrat-Light', sans-serif;" : "text-align:center;font-family: 'Montserrat-Light', sans-serif;";                                                
+                                            var styleDay3M1ON = (myCalM1.DayOfTheWeekDayStatusOfTheDay3M1 == "ON") ? "color:#3c763d;font-weight:bold;text-align:center;font-family: 'Montserrat-Light', sans-serif;" : "text-align:center;font-family: 'Montserrat-Light', sans-serif;";
+                                            var styleDay3M1OFF = (myCalM1.DayOfTheWeekDayStatusOfTheDay3M1 == "OFF") ? "color:#e74a3b;font-weight:bold;text-align:center;font-family: 'Montserrat-Light', sans-serif;" : "text-align:center;font-family: 'Montserrat-Light', sans-serif;";
+                                            var styleDay4M1ON = (myCalM1.DayOfTheWeekDayStatusOfTheDay4M1 == "ON") ? "color:#3c763d;font-weight:bold;text-align:center;font-family: 'Montserrat-Light', sans-serif;" : "text-align:center;font-family: 'Montserrat-Light', sans-serif;";
+                                            var styleDay4M1OFF = (myCalM1.DayOfTheWeekDayStatusOfTheDay4M1 == "OFF") ? "color:#e74a3b;font-weight:bold;text-align:center;font-family: 'Montserrat-Light', sans-serif;" : "text-align:center;font-family: 'Montserrat-Light', sans-serif;";
+                                            var styleDay5M1ON = (myCalM1.DayOfTheWeekDayStatusOfTheDay5M1 == "ON") ? "color:#3c763d;font-weight:bold;text-align:center;font-family: 'Montserrat-Light', sans-serif;" : "text-align:center;font-family: 'Montserrat-Light', sans-serif;";
+                                            var styleDay5M1OFF = (myCalM1.DayOfTheWeekDayStatusOfTheDay5M1 == "OFF") ? "color:#e74a3b;font-weight:bold;text-align:center;font-family: 'Montserrat-Light', sans-serif;" : "text-align:center;font-family: 'Montserrat-Light', sans-serif;";
+
+                                            <tr class="deleteHeightTR">
+                                                <td style="@styleSupEmptyM1;@styleDay1M1ON;@styleDay1M1OFF">@myCalM1.DayOfTheWeekDayStatusOfTheDay1M1</td>
+                                                <td style="@styleSupEmptyM1;@styleDay2M1ON;@styleDay2M1OFF">@myCalM1.DayOfTheWeekDayStatusOfTheDay2M1</td>
+                                                <td style="@styleSupEmptyM1;@styleDay3M1ON;@styleDay3M1OFF">@myCalM1.DayOfTheWeekDayStatusOfTheDay3M1</td>
+                                                <td style="@styleSupEmptyM1;@styleDay4M1ON;@styleDay4M1OFF">@myCalM1.DayOfTheWeekDayStatusOfTheDay4M1</td>
+                                                <td style="@styleSupEmptyM1;@styleDay5M1ON;@styleDay5M1OFF">@myCalM1.DayOfTheWeekDayStatusOfTheDay5M1</td>
+                                            </tr>
+                                        }                                             
+                                    </div>
+                                </tbody>
+                            </div>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-6 calM2">
+                    <div class="card bg-text text-white shadow">
+                        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                            @foreach (CalendarM2 myCalM2 in Model._CalendarM2)
+                            {
+                                <h2 class="text-issue">@myCalM2.MonthCalM2</h2>
+                            }
+                        </div>
+                        <table class="table table-striped calM1M2Table">
+                            <colgroup>
+                                <col span="5" width="50" />
+                            </colgroup>
+                            <div class="text-white shadow">
+                                <tbody>
+                                    <div>
+                                        @foreach (CalendarM2 myCalM2 in Model._CalendarM2)
+                                        {
+                                            var styleSupEmptyM2 = (myCalM2.DayOfTheWeekDayStatusOfTheDay1M2 == "") ? "margin:0;padding:0;display:none;font-family: 'Montserrat-Light', sans-serif;" : "";
+                                            var styleDay1M2ON = (myCalM2.DayOfTheWeekDayStatusOfTheDay1M2 == "ON") ? "color:#3c763d;font-weight:bold;text-align:center;font-family: 'Montserrat-Light', sans-serif;" : "text-align:center;font-family: 'Montserrat-Light', sans-serif;";
+                                            var styleDay1M2OFF = (myCalM2.DayOfTheWeekDayStatusOfTheDay1M2 == "OFF") ? "color:#e74a3b;font-weight:bold;text-align:center;font-family: 'Montserrat-Light', sans-serif;" : "text-align:center;font-family: 'Montserrat-Light', sans-serif;";
+                                            var styleDay2M2ON = (myCalM2.DayOfTheWeekDayStatusOfTheDay2M2 == "ON") ? "color:#3c763d;font-weight:bold;text-align:center;font-family: 'Montserrat-Light', sans-serif;" : "text-align:center;font-family: 'Montserrat-Light', sans-serif;";
+                                            var styleDay2M2OFF = (myCalM2.DayOfTheWeekDayStatusOfTheDay2M2 == "OFF") ? "color:#e74a3b;font-weight:bold;text-align:center;font-family: 'Montserrat-Light', sans-serif;" : "text-align:center;font-family: 'Montserrat-Light', sans-serif;";
+                                            var styleDay3M2ON = (myCalM2.DayOfTheWeekDayStatusOfTheDay3M2 == "ON") ? "color:#3c763d;font-weight:bold;text-align:center;font-family: 'Montserrat-Light', sans-serif;" : "text-align:centerfont-family: 'Montserrat-Light', sans-serif;";
+                                            var styleDay3M2OFF = (myCalM2.DayOfTheWeekDayStatusOfTheDay3M2 == "OFF") ? "color:#e74a3b;font-weight:bold;text-align:center;font-family: 'Montserrat-Light', sans-serif;" : "text-align:center;font-family: 'Montserrat-Light', sans-serif;";
+                                            var styleDay4M2ON = (myCalM2.DayOfTheWeekDayStatusOfTheDay4M2 == "ON") ? "color:#3c763d;font-weight:bold;text-align:center;font-family: 'Montserrat-Light', sans-serif;" : "text-align:center;font-family: 'Montserrat-Light', sans-serif;";
+                                            var styleDay4M2OFF = (myCalM2.DayOfTheWeekDayStatusOfTheDay4M2 == "OFF") ? "color:#e74a3b;font-weight:bold;text-align:center;font-family: 'Montserrat-Light', sans-serif;" : "text-align:center;font-family: 'Montserrat-Light', sans-serif;";
+                                            var styleDay5M2ON = (myCalM2.DayOfTheWeekDayStatusOfTheDay5M2 == "ON") ? "color:#3c763d;font-weight:bold;text-align:center;font-family: 'Montserrat-Light', sans-serif;" : "text-align:center;font-family: 'Montserrat-Light', sans-serif;";
+                                            var styleDay5M2OFF = (myCalM2.DayOfTheWeekDayStatusOfTheDay5M2 == "OFF") ? "color:#e74a3b;font-weight:bold;text-align:center;font-family: 'Montserrat-Light', sans-serif;" : "text-align:center;font-family: 'Montserrat-Light', sans-serif;";
+
+                                            <tr class="deleteHeightTR">
+                                                <td style="@styleSupEmptyM2;@styleDay1M2ON;@styleDay1M2OFF">@myCalM2.DayOfTheWeekDayStatusOfTheDay1M2</td>
+                                                <td style="@styleSupEmptyM2;@styleDay2M2ON;@styleDay2M2OFF">@myCalM2.DayOfTheWeekDayStatusOfTheDay2M2</td>
+                                                <td style="@styleSupEmptyM2;@styleDay3M2ON;@styleDay3M2OFF">@myCalM2.DayOfTheWeekDayStatusOfTheDay3M2</td>
+                                                <td style="@styleSupEmptyM2;@styleDay4M2ON;@styleDay4M2OFF">@myCalM2.DayOfTheWeekDayStatusOfTheDay4M2</td>
+                                                <td style="@styleSupEmptyM2;@styleDay5M2ON;@styleDay5M2OFF">@myCalM2.DayOfTheWeekDayStatusOfTheDay5M2</td>
+                                            </tr>
+                                        }                                             
+                                    </div>
+                                </tbody>
+                            </div>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

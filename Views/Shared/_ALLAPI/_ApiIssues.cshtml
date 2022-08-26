@@ -1,37 +1,37 @@
 <div class="row">
-        <div class="col-xs-7 col-md-12 col-lg-12 col-xl-12">
-            <div class="card shadow mb-4">
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                    @foreach (Issues myIssue in Model._Issues)
-                    {
-                        <a data-toggle="collapse" href="#issues" class="card-header-link-title">@myIssue.TitleIssue</a>
-                    }
-                </div>
-                <div id="issues" class="panel-collapse collapse">
-                    <table class="table table-striped">
-                        <thead>
+    <div class="col-xs-7 col-md-12 col-lg-12 col-xl-12">
+        <div class="card shadow mb-4">
+            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                @foreach (Issues myIssue in Model._Issues)
+                {
+                    <a data-toggle="collapse" href="#issues" class="card-header-link-title">@myIssue.TitleIssue</a>
+                }
+            </div>
+            <div id="issues" class="panel-collapse collapse">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th class="issue-font" scope="col">#</th>
+                            <th class="issue-font" scope="col">Issue</th>
+                            <th class="issue-font" scope="col">Status</th>
+                            <th class="issue-font" scope="col">Planned</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (Issues myIssue in Model._Issues)
+                        {
+                            var style = (myIssue.StateIssue == "DONE") ? "color:#28a745;font-weight:bold;text-align:center;font-family: 'Montserrat-Light', sans-serif" : "color:#007bff;font-weight:bold;text-align:center;font-family: 'Montserrat-Light', sans-serif";
+                            var style1 = (myIssue.StateIssue == "Nothing to report") ? "color:#28a745;font-weight:bold;text-align:center;font-family: 'Montserrat-Light', sans-serif" : "";
                             <tr>
-                                <th class="issue-font" scope="col">#</th>
-                                <th class="issue-font" scope="col">Issue</th>
-                                <th class="issue-font" scope="col">Status</th>
-                                <th class="issue-font" scope="col">Planned</th>
+                                <th class="issue-font-content" scope="row">@myIssue.NumberIssue</th>
+                                <td class="issue-font-content-j">@myIssue.ExplicationIssue</td>
+                                <td style="@style;@style1" id="stateIssue">@myIssue.StateIssue</td>
+                                <td class="issue-font-content">@myIssue.DateOfResolutionIssue</td>
                             </tr>
-                        </thead>
-                        <tbody>
-                            @foreach (Issues myIssue in Model._Issues)
-                            {
-                                var style = (myIssue.StateIssue == "DONE") ? "color:#28a745;font-weight:bold;text-align:center;font-family: 'Montserrat-Light', sans-serif" : "color:#007bff;font-weight:bold;text-align:center;font-family: 'Montserrat-Light', sans-serif";
-                                var style1 = (myIssue.StateIssue == "Nothing to report") ? "color:#28a745;font-weight:bold;text-align:center;font-family: 'Montserrat-Light', sans-serif" : "";
-                                <tr>
-                                    <th class="issue-font-content" scope="row">@myIssue.NumberIssue</th>
-                                    <td class="issue-font-content-j">@myIssue.ExplicationIssue</td>
-                                    <td style="@style;@style1" id="stateIssue">@myIssue.StateIssue</td>
-                                    <td class="issue-font-content">@myIssue.DateOfResolutionIssue</td>
-                                </tr>
-                            }
-                        </tbody>
-                    </table>
-                </div>
+                        }
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
+</div>

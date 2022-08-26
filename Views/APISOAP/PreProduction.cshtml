@@ -120,27 +120,10 @@
             </div>
         </div>
     </div>
-    <div class="text-center" role="group" aria-label="Basic example" id="blocklinkapi">
+    <div class="text-center" role="group" id="blocklinkapi">
         <a class="btn btn-success" asp-area="" asp-controller="APIREST" asp-action="Production" role="button" id="blocklinkapi1">Go to API REST &gt;</a>
         <a class="btn btn-secondary" asp-area="" asp-controller="APISC" asp-action="Production" role="button" id="blocklinkapi2">Go to API Sales Channel &gt;</a>
     </div>
 </div>
 <button onclick="topFunction()" id="myBtn" title="Back to top"><i class="fas fa-arrow-up"></i></button>
-<script>
-    $(document).ready(function() {
-        $('[data-toggle="tooltip"]').tooltip();   
-    });
-</script>
-<script>
-   window.onscroll = function() {scrollFunction()};
-   function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-         document.getElementById("myBtn").style.display = "block";
-      } else {
-         document.getElementById("myBtn").style.display = "none";
-      }
-   }
-   function topFunction() {
-      $('html,body').animate({ scrollTop: 0 }, 1000);
-   }
-</script>
+<script type="text/javascript" src="~/js/site.js"></script>

@@ -1,4 +1,14 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
-
-// Write your JavaScript code.
+﻿$(document).ready(function() {
+    $('[data-toggle="tooltip"]').tooltip();
+});
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+     document.getElementById("myBtn").style.display = "block";
+  } else {
+     document.getElementById("myBtn").style.display = "none";
+  }
+}
+function topFunction() {
+  $('html,body').animate({ scrollTop: 0 }, 1000);
+}

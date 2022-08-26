@@ -3,7 +3,6 @@
   padding: 20px;
   margin: 20px;
 }
-
 #home_soap {
   position: relative;
   margin-bottom: 10px;
@@ -44,6 +43,11 @@ header.menu-header-fixed {
   margin-right: auto;
   margin-left: auto;
 }
+
+p{
+  margin-bottom: 0;
+}
+
 #nav_border_radius{
   border-radius: 0 0 36px 36px;
 }
@@ -412,15 +416,6 @@ a.card-header-link-title:hover {
   margin-right: 0px;
 }
 
-p.card-header-link-title_SBMAPIREST {
-  color:var(--dark-blue-color)!important;
-  font-family: 'Montserrat-Light', sans-serif;
-  font-size:32px; 
-  margin-right: 0;
-  width: auto;
-  text-decoration: none;
-}
-
 .calM1M2Table {
   margin-bottom:0;
 }
@@ -651,10 +646,7 @@ p.card-header-link-title_SBMAPIREST {
   .card-header-link-title{
       font-size: 20px!important;
   }
-  .card-header-link-title_SBMAPIREST
-  {    
-    font-size: 20px!important;
-  }
+
   .popupII {
     z-index: 999999;
   }

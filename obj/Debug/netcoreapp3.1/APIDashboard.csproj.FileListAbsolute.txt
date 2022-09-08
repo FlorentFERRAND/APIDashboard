@@ -50,3 +50,4 @@ C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_APISOAP\_
 C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_APIREST\_StatusByMethod.cshtml.g.cs
 C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_APISC\_StatusByMethod.cshtml.g.cs
 C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_APISOAP\_Calendars.cshtml.g.cs
+C:\ProjectsC#\APIDashboard\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_APIREST\_StatusByMethod_V2.cshtml.g.cs

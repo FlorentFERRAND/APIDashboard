@@ -3,6 +3,7 @@
     public class Methods
     {
         public string TitleMethod { get; set; }
+        public string VersionMethod { get; set; }
         public string CategoryMethod { get; set; }
         public string TypeMethod { get; set; }
         public string NameMethod { get; set; }

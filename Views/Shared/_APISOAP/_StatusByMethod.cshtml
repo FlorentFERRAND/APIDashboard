@@ -15,10 +15,11 @@
                             <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                 @foreach (Methods myName in Model._Methods)
                                 {
-                                    if(myName.CategoryMethod.Contains("Sellers")){
-                                        <h2 class="text-issue">@myName.CategoryMethod</h2> 
+                                    if(myName.CategoryMethod.Contains("Sellers"))
+                                    {
+                                        <h2 class="text-issue">@myName.CategoryMethod</h2>
                                     }
-                                }
+                                }                                
                             </div>
                             <div class="card-body-methods">
                                 @foreach (Methods myName in Model._Methods)
@@ -35,7 +36,7 @@
                                         }
                                         if (myName.NameMethod.Contains("Indi"))
                                         {
-                                            <p class="card-body-methods-p"><span style="@styleType">@myName.TypeMethod</span> @myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span> </p>
+                                            <p class="card-body-methods-p"><span style="@styleType">@myName.TypeMethod</span> @myName.NameMethod<span class="badge badge-success" style="@style;@style1;@style2" data-placement="bottom" data-toggle="tooltip" data-original-title="@if(@myName.StateMethod.Contains("NOK") || @myName.StateMethod.Contains("KO")){@myName.TooltipStateMethod}">@myName.StateMethod</span></p>
                                         }
                                     }
                                 }

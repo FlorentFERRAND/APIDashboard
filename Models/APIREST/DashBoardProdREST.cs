@@ -23,18 +23,29 @@ namespace APIDashboard.Models
         public List<Issues> _Issues;
 
         public string TitleMethod { get; set; }
+        public string VersionMethod { get; set; }
         public string CategoryMethod { get; set; }
         public string TypeMethod { get; set; }
         public string NameMethod { get; set; }
         public string StateMethod { get; set; }
         public string TooltipStateMethod { get; set; }
         public List<Methods> _Methods;
+
+        public string TitleMethodV2 { get; set; }
+        public string VersionMethodV2 { get; set; }
+        public string CategoryMethodV2 { get; set; }
+        public string TypeMethodV2 { get; set; }
+        public string NameMethodV2 { get; set; }
+        public string StateMethodV2 { get; set; }
+        public string TooltipStateMethodV2 { get; set; }
+        public List<MethodsV2> _MethodsV2;
         public DashBoardProdREST()
         {
             _Informations = GetImportantInformationsListREST();
             _PieChart = GetPieChartListREST();
             _Issues = GetAPIIssuesListREST();
             _Methods = GetMethodsStatusListREST();
+            _MethodsV2 = GetMethodsStatusListRESTV2();
         }
 
         public List<Informations> GetImportantInformationsListREST()
@@ -239,6 +250,7 @@ namespace APIDashboard.Models
                 using (var reader = new StreamReader(fileMethodsStatus))
                 {
                     List<string> listTitleMethod = new List<string>();
+                    List<string> listVersionMethod = new List<string>();
                     List<string> listCategoryMethod = new List<string>();
                     List<string> listTypeMethod = new List<string>();
                     List<string> listNameMethod = new List<string>();
@@ -250,11 +262,12 @@ namespace APIDashboard.Models
                         var values = line.Split(';');
 
                         listTitleMethod.Add(values[0]);
-                        listCategoryMethod.Add(values[1]);
-                        listTypeMethod.Add(values[2]);
-                        listNameMethod.Add(values[3]);
-                        listStateMethod.Add(values[4]);
-                        listTooltipStateMethod.Add(values[5]);
+                        listVersionMethod.Add(values[1]);
+                        listCategoryMethod.Add(values[2]);
+                        listTypeMethod.Add(values[3]);
+                        listNameMethod.Add(values[4]);
+                        listStateMethod.Add(values[5]);
+                        listTooltipStateMethod.Add(values[6]);
 
                         string Title = "";
                         if (String.IsNullOrEmpty(Title))
@@ -262,39 +275,46 @@ namespace APIDashboard.Models
                             Title = values[0];
                         }
 
+                        string Version = "";
+                        if (String.IsNullOrEmpty(Version))
+                        {
+                            Version = values[1];
+                        }
+
                         string CategoryMeth = "";
                         if (String.IsNullOrEmpty(CategoryMeth))
                         {
-                            CategoryMeth = values[1];
+                            CategoryMeth = values[2];
                         }
 
                         string TypeMeth = "";
                         if (String.IsNullOrEmpty(TypeMeth))
                         {
-                            TypeMeth = values[2];
+                            TypeMeth = values[3];
                         }
 
                         string Name = "";
                         if (String.IsNullOrEmpty(Name))
                         {
-                            Name = values[3];
+                            Name = values[4];
                         }
 
                         string State = "";
                         if (String.IsNullOrEmpty(State))
                         {
-                            State = values[4];
+                            State = values[5];
                         }
 
                         string Tootltip = "";
                         if (String.IsNullOrEmpty(Tootltip))
                         {
-                            Tootltip = values[5];
+                            Tootltip = values[6];
                         }
 
                         MethodsStatusList.Add(new Methods()
                         {
                             TitleMethod = Title,
+                            VersionMethod = Version,
                             CategoryMethod = CategoryMeth,
                             TypeMethod = TypeMeth,
                             NameMethod = Name,
@@ -311,5 +331,98 @@ namespace APIDashboard.Models
             }
             return MethodsStatusList;
         }
+
+        public List<MethodsV2> GetMethodsStatusListRESTV2()
+        {
+            List<MethodsV2> MethodsStatusList = new List<MethodsV2>();
+            string error = string.Empty;
+            try
+            {
+				string fileMethodsStatus = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot/APIREST/Production","StatusByMethod_V2.csv");
+                using (var reader = new StreamReader(fileMethodsStatus))
+                {
+                    List<string> listTitleMethod = new List<string>();
+                    List<string> listVersionMethod = new List<string>();
+                    List<string> listCategoryMethod = new List<string>();
+                    List<string> listTypeMethod = new List<string>();
+                    List<string> listNameMethod = new List<string>();
+                    List<string> listStateMethod = new List<string>();
+                    List<string> listTooltipStateMethod = new List<string>();
+                    while (!reader.EndOfStream)
+                    {
+                        var line = reader.ReadLine();
+                        var values = line.Split(';');
+
+                        listTitleMethod.Add(values[0]);
+                        listVersionMethod.Add(values[1]);
+                        listCategoryMethod.Add(values[2]);
+                        listTypeMethod.Add(values[3]);
+                        listNameMethod.Add(values[4]);
+                        listStateMethod.Add(values[5]);
+                        listTooltipStateMethod.Add(values[6]);
+
+                        string Title = "";
+                        if (String.IsNullOrEmpty(Title))
+                        {
+                            Title = values[0];
+                        }
+
+                        string Version = "";
+                        if (String.IsNullOrEmpty(Version))
+                        {
+                            Version = values[1];
+                        }
+
+                        string CategoryMeth = "";
+                        if (String.IsNullOrEmpty(CategoryMeth))
+                        {
+                            CategoryMeth = values[2];
+                        }
+
+                        string TypeMeth = "";
+                        if (String.IsNullOrEmpty(TypeMeth))
+                        {
+                            TypeMeth = values[3];
+                        }
+
+                        string Name = "";
+                        if (String.IsNullOrEmpty(Name))
+                        {
+                            Name = values[4];
+                        }
+
+                        string State = "";
+                        if (String.IsNullOrEmpty(State))
+                        {
+                            State = values[5];
+                        }
+
+                        string Tootltip = "";
+                        if (String.IsNullOrEmpty(Tootltip))
+                        {
+                            Tootltip = values[6];
+                        }
+
+                        MethodsStatusList.Add(new MethodsV2()
+                        {
+                            TitleMethodV2 = Title,
+                            VersionMethodV2 = Version,
+                            CategoryMethodV2 = CategoryMeth,
+                            TypeMethodV2 = TypeMeth,
+                            NameMethodV2 = Name,
+                            StateMethodV2 = State,
+                            TooltipStateMethodV2 = Tootltip
+                        });
+                    }
+                    reader.Close();
+                }
+            }
+            catch (Exception e)
+            {
+                error = e.Message;
+            }
+            return MethodsStatusList;
+        }
+
     }
 }

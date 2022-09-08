@@ -1,0 +1,47 @@
+Status By Method;V2;Seller;GET;Gets seller indicators;OK;
+;;;GET;Retrieves seller addresses;OK;
+;;;GET;Retrieves seller delivery modes;OK;
+;;;GET;Retrieves seller information;OK;
+;;;GET;Retrieves seller subscriptions;OK;
+;;Offers;GET;Gets offer package logs;OK;We meet currently a problem to update stock for offers by API from S02. Our technical teams are mobilized on the subject.
+;;;POST;Searches offers by criteria;OK;We meet currently a problem to get data from GetOfferPackageSubmissionResult by API from S26. Our technical teams are mobilized on the subject.
+;;;POST;Submits an offer package;OK;
+;;Products;GET;Get product reports in pagination with filters;OK;
+;;;GET;Submit a products package with JSON data;OK;
+;;;GET;Counts some categories;OK;
+;;;GET;Finds some categories;OK;It is not possible to get products from our API yet. Our technical teams are mobilized on the subject.
+;;;GET;Retrieve a category;OK;It is not possible to create products from our API yet. Our technical teams are mobilized on the subject.
+;;;GET;Retrieves the properties of a category;OK;
+;;Orders;GET;Retrieve carrier list;OK;
+;;;GET;Get an order by identifier;OK;It is not possible to create a commercial gesture from our API yet. Our technical teams are mobilized on the subject.
+;;;GET;Gets the order count by filters;OK;It is not possible to create a commercial gesture from our API yet. Our technical teams are mobilized on the subject.
+;;;POST;Request validation order;OK;It is not possible to create a commercial gesture from our API yet. Our technical teams are mobilized on the subject.
+;;;GET;Search orders using a set of filters;OK;
+;;;POST;Ship an order or order lines;OK;It is not possible to validate orders from our API yet. Our technical teams are mobilized on the subject.
+;;;POST;Create a new partial cancellation request;OK;
+;;;POST;Create a new total cancellation request;OK;
+;;;GET;Get cancellation reasons;OK;
+;;;GET;Get existing total and partial cancellation request;OK;
+;;Finance;GET;Count the number of invoice details;OK;
+;;;GET;Count the number of operations;OK;
+;;;GET;Count the number of payments;OK;
+;;;GET;Download a list of invoices;OK;
+;;;GET;Download an invoice;OK;
+;;;GET;Retrieves a list of invoice details;OK;
+;;;GET;Retrieves a list of payments;OK;
+;;;GET;Retrieves the detailed operations of payments;OK;
+;;Discussions;POST;Add a message to an existing discussion;OK;
+;;;GET;Count discussions;OK;
+;;;GET;Get discussions's subtypologies;OK;
+;;;GET;Get the full discussion using Discussion ID;OK;
+;;;PATCH;Mark a message as read or not read;OK;
+;;;PATCH;Open or close a discussion;OK;
+;;;GET;Retrieve a list of discussions using a set of filters;OK;
+;;;GET;Search attachments with parameters;OK;
+;;Fulfillment;GET;Count outbound-shipments by filters;OK;
+;;;POST;Create a new outbound-shipment;OK;
+;;;GET;Get an outbound shipment by unique identifier;OK;
+;;;GET;Get outbound shipments by specified filters;OK;
+;;;GET;Get paginated fulfillment stock seller references;OK;
+;;;GET;Gets fulfillment stock by filters;OK;
+;;;GET;Gets fulfillment stock by unique identifier;OK;

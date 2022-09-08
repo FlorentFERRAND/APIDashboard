@@ -1,28 +1,39 @@
-Status By Method;Seller Management;GET;Gets seller indicators;OK;
-;;GET;Retrieves seller addresses;OK;
-;;GET;Retrieves seller delivery modes;OK;
-;;GET;Retrieves seller information;OK;
-;Offer Management;GET;Gets competing offers changes;OK;We meet currently a problem to update stock for offers by API from S02. Our technical teams are mobilized on the subject.
-;;GET;Gets competing offers;OK;We meet currently a problem to get data from GetOfferPackageSubmissionResult by API from S26. Our technical teams are mobilized on the subject.
-;;POST;Searches offers by criteria;OK;
-;;GET;Gets offer package logs;OK;A problem has been detected in order to get offers from API from S32. Our technical teams are mobilized on the subject.
-;;POST;Submits an offer package;OK;A problem has been detected in order to update offers from API from S32. Our technical teams are mobilized on the subject.
-;;POST;Searches seller deals by criteria;OK;
-;Product Management;GET;Gets the full tree of categories;OK;
-;;GET;Gets a list of models filtered by category code;OK;
-;;POST;Searches products by criteria;OK;
-;;GET;Gets information from a product package;KO;It is not possible to get products from our API yet. Our technical teams are mobilized on the subject.
-;;POST;Submits a product package;KO;It is not possible to create products from our API yet. Our technical teams are mobilized on the subject.
-;Order Management;POST;Creates a commercial gesture on a order;OK;It is not possible to create a commercial gesture from our API yet. Our technical teams are mobilized on the subject.
-;;GET;Gets if an order is eligible to commercial gesture;OK;It is not possible to create a commercial gesture from our API yet. Our technical teams are mobilized on the subject.
-;;GET;Gets informations to commercial gestures;OK;It is not possible to create a commercial gesture from our API yet. Our technical teams are mobilized on the subject.
-;;POST;Searches orders by criteria;OK;
-;;POST;Validates an order;OK;It is not possible to validate orders from our API yet. Our technical teams are mobilized on the subject.
-;Financial Reporting;GET;Count invoice details;OK;
-;;GET;Download an invoice;OK;
-;;GET;Download invoices;OK;
-;;GET;Retrieve invoice details;OK;
-;;GET;Count payment operations;OK;
-;;GET;Count payments;OK;
-;;GET;Retrieve payment operations;OK;
-;;GET;Retrieve payments;OK;
+Status By Method;V1;Seller Management;GET;Gets seller indicators;OK;
+;;;GET;Retrieves seller addresses;OK;
+;;;GET;Retrieves seller delivery modes;OK;
+;;;GET;Retrieves seller information;OK;
+;;Offer Management;GET;Gets competing offers changes;OK;We meet currently a problem to update stock for offers by API from S02. Our technical teams are mobilized on the subject.
+;;;GET;Gets competing offers;OK;We meet currently a problem to get data from GetOfferPackageSubmissionResult by API from S26. Our technical teams are mobilized on the subject.
+;;;POST;Searches offers by criteria;OK;
+;;;GET;Gets offer package logs;OK;A problem has been detected in order to get offers from API from S32. Our technical teams are mobilized on the subject.
+;;;POST;Submits an offer package;OK;A problem has been detected in order to update offers from API from S32. Our technical teams are mobilized on the subject.
+;;;POST;Searches seller deals by criteria;OK;
+;;Product Management;GET;Gets the full tree of categories;OK;
+;;;GET;Gets a list of models filtered by category code;OK;
+;;;POST;Searches products by criteria;OK;
+;;;GET;Gets information from a product package;KO;It is not possible to get products from our API yet. Our technical teams are mobilized on the subject.
+;;;POST;Submits a product package;KO;It is not possible to create products from our API yet. Our technical teams are mobilized on the subject.
+;;Order Management;POST;Creates a commercial gesture on a order;OK;It is not possible to create a commercial gesture from our API yet. Our technical teams are mobilized on the subject.
+;;;GET;Gets if an order is eligible to commercial gesture;OK;It is not possible to create a commercial gesture from our API yet. Our technical teams are mobilized on the subject.
+;;;GET;Gets informations to commercial gestures;OK;It is not possible to create a commercial gesture from our API yet. Our technical teams are mobilized on the subject.
+;;;POST;Searches orders by criteria;OK;
+;;;POST;Validates an order;OK;It is not possible to validate orders from our API yet. Our technical teams are mobilized on the subject.
+;;Financial Reporting;GET;Count invoice details;OK;
+;;;GET;Download an invoice;OK;
+;;;GET;Download invoices;OK;
+;;;GET;Retrieve invoice details;OK;
+;;;GET;Count payment operations;OK;
+;;;GET;Count payments;OK;
+;;;GET;Retrieve payment operations;OK;
+;;;GET;Retrieve payments;OK;
+;;Finance Management;GET;Gets order details about an invoice;OK;
+;;;POST;Searches invoices by criteria;OK;
+;;;GET;Gets seller payments;OK;
+;;;POST;Searches payments by criteria;OK;
+;;;POST;Searches payments details by criteria;OK;
+;;Fulfillment;GET;Allows an outbound-shipment by an identifier;OK;
+;;;GET;Count outbound-shipments by filters;OK;
+;;;POST;Create a new outbound-shipments;OK;
+;;;GET;Gets fulfillment stock by filters;OK;
+;;;GET;Gets fulfillment stock by unique identifier;OK;
+;;;GET;Retrieve an outbound-shipment list by filters;OK;

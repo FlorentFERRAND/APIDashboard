@@ -1,7 +1,7 @@
 Status By Method;Sellers;GET;GetSellerInformation;OK;
 ;;GET;GetSellerIndicator;OK;
 ;Offers;GET;GetOfferListPaginated;OK;We meet currently a problem to get offers by date by API from S28. Our technical teams are mobilized on the subject.
-;;POST;SubmitOfferPackage;OK;A problem has been detected in order to get offers using GetOfferPackageSubmissionResult from API from S32. Our technical teams are mobilized on the subject.
+;;POST;SubmitOfferPackage;KO;A problem has been detected in order to get offers using SubmitOfferPackage from API from S37. Our technical teams are mobilized on the subject.
 ;;GET;GetOfferPackageSubmissionResult;OK;A problem has been detected in order to update offers using SubmitOfferPackage from API from S32. Our technical teams are mobilized on the subject.
 ;;GET;GetSellerDeals;OK;
 ;;GET;GetCompetingOffers;OK;A problem has been detected in order to get best offers from API from S12. Our technical teams are mobilized on the subject.

@@ -23,11 +23,26 @@
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                     @foreach (Methods myName in Model._Methods)
                     {
-                        <a data-toggle="collapse" href="#methods" class="card-header-link-title">@myName.TitleMethod</a>
+                        <a href="#statusMethods" data-toggle="collapse" class="card-header-link-title1">@myName.TitleMethod</a>
                     }
                     <partial name="_Popup/_PopupSBM" />
                 </div>
-                <partial name="_APISC/_StatusByMethod" />
+                <div id="statusMethods" class="panel-collapse collapse">
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                        @foreach (Methods myName in Model._Methods)
+                        {
+                            <a data-toggle="collapse" href="#methods" class="card-header-link-title">@myName.VersionMethod</a>
+                        }
+                    </div>
+                    <partial name="_APISC/_StatusByMethod" />
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                        @foreach (MethodsV2 myName in Model._MethodsV2)
+                        {
+                            <a data-toggle="collapse" href="#methodsV2" class="card-header-link-title">@myName.VersionMethodV2</a>
+                        }
+                    </div>
+                    <partial name="_APISC/_StatusByMethod_V2" />
+                </div>
             </div>
         </div>
     </div>

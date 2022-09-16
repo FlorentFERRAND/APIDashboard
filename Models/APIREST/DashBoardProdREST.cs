@@ -39,6 +39,7 @@ namespace APIDashboard.Models
         public string StateMethodV2 { get; set; }
         public string TooltipStateMethodV2 { get; set; }
         public List<MethodsV2> _MethodsV2;
+        
         public DashBoardProdREST()
         {
             _Informations = GetImportantInformationsListREST();
@@ -423,6 +424,5 @@ namespace APIDashboard.Models
             }
             return MethodsStatusList;
         }
-
     }
 }

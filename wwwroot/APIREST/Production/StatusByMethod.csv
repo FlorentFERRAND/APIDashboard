@@ -33,7 +33,7 @@ Status By Method;V1;Seller Management;GET;Gets seller indicators;OK;
 ;;;POST;Searches payments details by criteria;OK;
 ;;Fulfillment;GET;Allows an outbound-shipment by an identifier;OK;
 ;;;GET;Count outbound-shipments by filters;OK;
-;;;POST;Create a new outbound-shipments;OK;
+;;;POST;Creates a new outbound-shipments;OK;
 ;;;GET;Gets fulfillment stock by filters;OK;
 ;;;GET;Gets fulfillment stock by unique identifier;OK;
 ;;;GET;Retrieve an outbound-shipment list by filters;OK;

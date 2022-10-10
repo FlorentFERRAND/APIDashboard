@@ -1,7 +1,9 @@
 ﻿$(document).ready(function() {
     $('[data-toggle="tooltip"]').tooltip();
 });
+
 window.onscroll = function() {scrollFunction()};
+
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
      document.getElementById("myBtn").style.display = "block";
@@ -9,6 +11,7 @@ function scrollFunction() {
      document.getElementById("myBtn").style.display = "none";
   }
 }
+
 function topFunction() {
   $('html,body').animate({ scrollTop: 0 }, 1000);
 }

@@ -5,6 +5,7 @@
 }
 #home_soap {
   position: relative;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 #home_sc {
@@ -262,7 +263,7 @@ a.badge-success:focus, a.badge-success.focus {
   .BtnCenterII {
     text-align: center;
   }
-  .colorBackGrdBtnII {
+  /*.colorBackGrdBtnII {
     margin-top: 16px;
     background-color:#293847;
     border:#293847;
@@ -271,7 +272,7 @@ a.badge-success:focus, a.badge-success.focus {
   .colorBackGrdBtnII:hover{
     background-color: #aaaaaa;
     color: #ffffff;
-  }
+  }*/
   .closeII {
     color: #293847;
     float: right;
@@ -347,7 +348,7 @@ a.badge-success:focus, a.badge-success.focus {
   .BtnCenterSBM {
     text-align: center;
   }
-  .colorBackGrdBtnSBM {
+  /*.colorBackGrdBtnSBM {
     background-color:#293847;
     border:#293847;
     color: #ffffff;
@@ -355,7 +356,7 @@ a.badge-success:focus, a.badge-success.focus {
   .colorBackGrdBtnSBM:hover{
     background-color: #aaaaaa;
     color: #ffffff;
-  }
+  }*/
   .closeSBM {
     color: #293847;
     float: right;

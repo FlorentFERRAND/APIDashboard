@@ -263,16 +263,6 @@ a.badge-success:focus, a.badge-success.focus {
   .BtnCenterII {
     text-align: center;
   }
-  /*.colorBackGrdBtnII {
-    margin-top: 16px;
-    background-color:#293847;
-    border:#293847;
-    color: #ffffff;
-  }
-  .colorBackGrdBtnII:hover{
-    background-color: #aaaaaa;
-    color: #ffffff;
-  }*/
   .closeII {
     color: #293847;
     float: right;
@@ -348,15 +338,6 @@ a.badge-success:focus, a.badge-success.focus {
   .BtnCenterSBM {
     text-align: center;
   }
-  /*.colorBackGrdBtnSBM {
-    background-color:#293847;
-    border:#293847;
-    color: #ffffff;
-  }
-  .colorBackGrdBtnSBM:hover{
-    background-color: #aaaaaa;
-    color: #ffffff;
-  }*/
   .closeSBM {
     color: #293847;
     float: right;

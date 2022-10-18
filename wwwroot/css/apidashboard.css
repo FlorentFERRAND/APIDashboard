@@ -48,7 +48,9 @@ header.menu-header-fixed {
 p, h2, .table{
   margin-bottom: 0;
 }
-
+#stateIssue{
+  width: 13%;
+}
 #nav_border_radius{
   border-radius: 0 0 36px 36px;
 }
@@ -525,6 +527,9 @@ a.card-header-link-title1:hover {
   #blocklinkapi2 {
     margin-bottom: 10px;
   }
+  #stateIssue{
+    width: 16%;
+  }
 }
 
 @media (max-width:768px) {
@@ -641,7 +646,9 @@ a.card-header-link-title1:hover {
   .card-header-link-title{
       font-size: 20px!important;
   }
-
+  #stateIssue{
+    width: 21%;
+  }
   .popupII {
     z-index: 999999;
   }
@@ -756,6 +763,7 @@ a.card-header-link-title1:hover {
     }
     #stateIssue{
       font-size:10px!important;
+      width: 25%;
     }
     .issue-font-content{
       font-size:10px!important;
@@ -925,6 +933,7 @@ a.card-header-link-title1:hover {
   }
   #stateIssue{
     font-size:7px!important;
+    width: 27%;
   }
   .badge {
     display: inline-block;

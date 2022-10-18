@@ -27,7 +27,7 @@ Status By Method;Sellers;GET;GetSellerInformation;OK;
 ;;POST;SubmitOfferStateAction;OK;
 ;;POST;CreateExternalOrder;OK;
 ;;GET;GetExternalOrderStatus;OK;
-;;GET;GetProductStockList;NOK;We meet currently a problem to get stocks information using our API method GetProductStockList from S37. Our technical teams are mobilized on the subject.
+;;GET;GetProductStockList;OK;We meet currently a problem to get stocks information using our API method GetProductStockList from S37. Our technical teams are mobilized on the subject.
 ;;POST;ManageParcel;OK;
 ;Discussions;GET;GetOrderClaimList;OK;
 ;;GET;GetOfferQuestionList;OK;
